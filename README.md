@@ -13,8 +13,13 @@ WebApp to Visualize Data on Birds in 3D Environment to bring a new and different
 
 ## Commands
 
-    Work In Progress
+Build Server
 
+    make build-server
+
+Build Website
+
+    make build-website
 
 ### Authors
 
