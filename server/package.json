@@ -1,0 +1,16 @@
+{
+  "name": "server",
+  "version": "0.0.1",
+  "description": "server for projbirdie.tech",
+  "main": "src/server.ts",
+  "repository": "https://github.com/patel-malav/projbirdie",
+  "author": "patel-malav <patelmalav64@gmail.com>",
+  "license": "GPL v3.0",
+  "private": true,
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {
+    "tsc-watch": "^4.2.3",
+    "typescript": "^3.8.3"
+  }
+}
