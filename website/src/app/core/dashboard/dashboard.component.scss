@@ -1,0 +1,26 @@
+:host {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1fr 1rem 4fr;
+    grid-template-columns: 3rem 2rem auto;
+
+    grid-template-areas: ". title title"
+                         "divider divider divider"
+                         "status status status";
+}
+
+h1 {
+    grid-area: title;
+    place-self: center start;
+    margin: 0!important;
+}
+
+mat-divider {
+    grid-area: divider;
+}
+
+h2 {
+    grid-area: status;
+    place-self: center;
+    margin: 0!important;
+}

@@ -19,6 +19,9 @@ header {
 main {
     background-color: var(--main-bg-color);
     grid-area: main;
+    router-outlet {
+        display: block;
+    }
 }
 
 aside {
