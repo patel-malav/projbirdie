@@ -1,0 +1,38 @@
+const fakeData: Bird[] = [
+    {
+        "id": "1",
+        "name": "parrot",
+        "image": "https://en.wikipedia.org/wiki/Parrot#/media/File:Eclectus_roratus-20030511.jpg",
+        "location": {
+          "lat": 22.550495,
+          "long": 72.9192952
+        },
+        "url": {
+          "wiki": "https://en.wikipedia.org/wiki/Parrot"
+        }
+    },
+    {
+        "id": "2",
+        "name": "flamingo",
+        "image": "https://en.wikipedia.org/wiki/Flamingo#/media/File:Flamingos_Laguna_Colorada.jpg",
+        "location": {
+          "lat": 37.550495,
+          "long": 45.9192952
+        },
+        "url": {
+          "wiki": "https://en.wikipedia.org/wiki/Flamingo"
+        }
+    },
+    {
+        "id": "3",
+        "name": "peafowl",
+        "image": "https://en.wikipedia.org/wiki/Peafowl#/media/File:Peacock_Plumage.jpg",
+        "location": {
+          "lat": 22.550495,
+          "long": 72.9192952
+        },
+        "url": {
+          "wiki": "https://en.wikipedia.org/wiki/Peafowl"
+        }
+    }
+];
