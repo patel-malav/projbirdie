@@ -1,0 +1,60 @@
+:host {
+    // box-sizing: border-box;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 3rem 1fr min-content min-content;
+    grid-template-columns: 6fr 1fr;
+    grid-template-areas: "header header"
+                         "main main"
+                         "main main"
+                         "footer footer";
+}
+
+header {
+    // box-sizing: border-box;
+    background-color: var(--main-header-color);
+    grid-area: header;
+}
+
+main {
+    background-color: var(--main-bg-color);
+    grid-area: main;
+}
+
+aside {
+    background-color: var(--main-ui-alt-color);
+    grid-area: side;
+    display: none;
+}
+
+footer {
+    background-color: var(--main-footer-color);
+    grid-area: footer;
+}
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    :host {
+        grid-template-rows: 4rem 1fr min-content min-content;
+        grid-template-columns: 6fr 1fr;
+        grid-template-areas: "header header"
+                             "main side"
+                             "main side"
+                             "footer footer";
+    }
+    aside {
+        display: block;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { ... }
