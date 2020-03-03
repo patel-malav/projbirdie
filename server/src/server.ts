@@ -5,7 +5,6 @@ import path from 'path';
 import express, { Request, Response } from 'express';
 import cors from 'cors';
 import graphqlHTTP from 'express-graphql';
-import axios from 'axios';
 
 // User Code Imports
 import schema from './graphql/schema';
@@ -24,7 +23,7 @@ app.use(cors()); // Enable Cross Origin Resource Sharing.
 app.use('/graphql', graphqlHTTP({
     schema, // GraphQL Schema
     rootValue: rootResolver, // Root Resolver Method Object.
-    graphiql: true // Interface to test API Endpoint.
+    // graphiql: true // Interface to test API Endpoint.
 }));
 
 // Express Static Middleware
