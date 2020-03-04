@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+// import { DataService } from 'src/app/shared/data.service';
 
 @Component({
   selector: 'pb-header',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    // console.log(data.hello);
+  }
 
   ngOnInit(): void {
   }

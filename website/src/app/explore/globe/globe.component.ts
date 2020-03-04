@@ -1,6 +1,9 @@
 import { Component, OnInit, ViewChild, ElementRef, AfterViewInit, AfterViewChecked } from '@angular/core';
 import { Scene, PerspectiveCamera, WebGLRenderer, Light, Color, DirectionalLight, Mesh, BoxGeometry, MeshBasicMaterial } from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import { Pbobj } from '../pbobj';
+import { Earth } from '../objects/earth';
+import { DataService } from 'src/app/shared/data.service';
 
 @Component({
   selector: 'pb-globe',
@@ -27,10 +30,10 @@ export class GlobeComponent implements OnInit, AfterViewInit, AfterViewChecked {
   private camera: PerspectiveCamera;
   private control: OrbitControls;
   private lights: Light[] = [];
-  private objects = [];
+  private objects: Pbobj[] = [];
   private renderer: WebGLRenderer;
 
-  constructor() { }
+  constructor(private data: DataService) { }
 
   ngOnInit(): void { }
 
@@ -84,14 +87,22 @@ export class GlobeComponent implements OnInit, AfterViewInit, AfterViewChecked {
 
         // this.renderer.physicallyCorrectLights = true;
       }
+
+      // Earth Object added
+      {
+        let earth = new Earth(this.data.bird);
+        this.objects.push(earth);
+        this.rootScene.add(earth.mesh);
+      }
+
+      // Animation Loop
+      this.renderer.setAnimationLoop( () => this.animate());
     }
   }
 
   ngAfterViewChecked(): void {
-    this.renderer.setAnimationLoop( () => this.animate());
-    // this.animate();
+    // Object
   }
-
 
   animate() {  
     // call update method for each object
@@ -100,7 +111,6 @@ export class GlobeComponent implements OnInit, AfterViewInit, AfterViewChecked {
         obj.update();
       }
       // console.log(`helo`);
-      
     });
 
     // Adjustment to canvas resizes
