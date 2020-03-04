@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from '../core/dashboard/dashboard.component';
+import { GlobeComponent } from '../explore/globe/globe.component';
 
 
 const routes: Routes = [
@@ -8,14 +9,14 @@ const routes: Routes = [
     path: '',
     component: DashboardComponent
   },
-  // {
-  //   path: 'explore',
-  //   component: DashboardComponent
-  // },
   {
-    path: '**',
-    redirectTo: ''
-  }
+    path: 'explore',
+    component: GlobeComponent
+  },
+  // {
+  //   path: '**',
+  //   redirectTo: ''
+  // }
 ];
 
 @NgModule({

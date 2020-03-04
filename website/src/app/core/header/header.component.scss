@@ -10,10 +10,12 @@ h1 {
     margin: 0 1rem;
     font-family: Vibur;
     font-size: 2rem;
+    z-index: 2;
 }
 
 nav {
     margin: 0 1rem;
+    z-index: 1;
 }
 
 // Extra small devices (portrait phones, less than 576px)
@@ -26,7 +28,16 @@ nav {
 // @media (min-width: 768px) { ... }
 
 // Large devices (desktops, 992px and up)
-// @media (min-width: 992px) { ... }
+@media (min-width: 992px) { 
+    h1 {
+        margin: 0 3rem;
+        font-size: 2.5rem;
+    }
+
+    nav {
+        margin: 0 3rem;
+    }
+}
 
 // Extra large devices (large desktops, 1200px and up)
 // @media (min-width: 1200px) { ... }

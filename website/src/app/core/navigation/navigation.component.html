@@ -1,3 +1,11 @@
-<button mat-icon-button color="accent" aria-label="Menu">
-    <mat-icon>menu</mat-icon>
+<ul [ngClass]="{'open': open}">
+    <li>Account</li>
+    <li>Settings</li>
+</ul>
+
+<button id="menu-button" mat-icon-button color="primary" aria-label="Menu" (click)="toggle()" >
+    <mat-icon id="close-icon">close</mat-icon>
+    <mat-icon id="menu-icon">menu</mat-icon>
 </button>
+
+<button id="explore-button" mat-raised-button color="primary">Explore</button>

@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
 import { FeatureModule } from './feature/feature.module';
+import { ExploreModule } from  './explore/explore.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FeatureModule } from './feature/feature.module';
     AppRoutingModule,
     CoreModule,
     SharedModule,
-    FeatureModule
+    FeatureModule,
+    ExploreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

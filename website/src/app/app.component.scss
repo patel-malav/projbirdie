@@ -1,12 +1,13 @@
 :host {
     // box-sizing: border-box;
     height: 100%;
+    min-width: 320px;
     display: grid;
-    grid-template-rows: 3rem 1fr min-content min-content;
+    grid-template-rows: 3rem calc(100% - 3rem) min-content;
     grid-template-columns: 6fr 1fr;
     grid-template-areas: "header header"
                          "main main"
-                         "main main"
+                        //  "main main"
                          "footer footer";
 }
 
@@ -47,11 +48,11 @@ footer {
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
     :host {
-        grid-template-rows: 4rem 1fr min-content min-content;
+        grid-template-rows: 4rem calc(100% - 4rem) min-content;
         grid-template-columns: 6fr 1fr;
         grid-template-areas: "header header"
                              "main side"
-                             "main side"
+                            //  "main side"
                              "footer footer";
     }
     aside {

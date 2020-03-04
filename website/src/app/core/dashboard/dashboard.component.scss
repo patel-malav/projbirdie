@@ -1,7 +1,7 @@
 :host {
     display: grid;
     height: 100%;
-    grid-template-rows: 1fr 1rem 4fr;
+    grid-template-rows: 1fr min-content 4fr;
     grid-template-columns: 3rem 2rem auto;
 
     grid-template-areas: ". title title"

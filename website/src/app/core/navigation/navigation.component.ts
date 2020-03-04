@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavigationComponent implements OnInit {
 
+  open = false;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  toggle() {
+    this.open = !this.open;
+  }
 }
