@@ -9,5 +9,5 @@ export class DataService {
     console.log(`DataService Started...`);
   }
 
-  
+  public getObservation(id: string) { }
 }
