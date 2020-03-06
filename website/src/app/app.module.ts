@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
-import { GraphQLModule } from './graphql.module';
+import { GraphQLModule } from './graphql/graphql.module';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
