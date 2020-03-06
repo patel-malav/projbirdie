@@ -90,9 +90,9 @@ export class GlobeComponent implements OnInit, AfterViewInit, AfterViewChecked {
 
       // Earth Object added
       {
-        let earth = new Earth(this.data.bird);
-        this.objects.push(earth);
-        this.rootScene.add(earth.mesh);
+        // let earth = new Earth(this.data.getBird());
+        // this.objects.push(earth);
+        // this.rootScene.add(earth.mesh);
       }
 
       // Animation Loop

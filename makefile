@@ -4,6 +4,9 @@ dev-website:
 dev-server:
 	cd server && npx tsc-watch --onCompilationComplete "cp -u -r ./node_modules ../dist" --onSuccess "node ../dist/server" 
 
+dev:
+	make dev-server & make dev-website
+
 build-website:
 	cd website && ng build --prod=true --outputPath="../dist/public"
 

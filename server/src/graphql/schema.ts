@@ -1,38 +1,46 @@
-// Package's Imports
-import { buildSchema } from "graphql";
+import axios from 'axios';
+import { GraphQLSchema, GraphQLObjectType, GraphQLString, GraphQLID } from "graphql";
+import { BirdType } from "./schema/bird.object";
+import { ObservationType } from "./schema/observation.object";
 
-/** 
- * Parse string to get GraphQL Schema.
- *  - type Query is Root Type in GraphQL
- *  - hello - for GraphQL test
- */
-const schema = buildSchema(`
-    type Messages {
-        world: String
-        user: String
+const RootQuery = new GraphQLObjectType({
+    name: 'RootQuery',
+    fields: {
+        hello: {
+            type: GraphQLString,
+            resolve: () => 'data From projbirdie server'
+        },
+        observation: {
+            type: ObservationType,
+            args: {
+                id: {type: GraphQLID}
+            },
+            resolve: async (parent, args, ctx) => {
+                let resp: any;
+                try {
+                    let url = `https://api.inaturalist.org/v1/observations/${args.id}`;
+                    console.log(`Requesting - ${url}`);
+                    resp = await axios(url);
+                    ctx.data = resp.data;
+                } catch(err) {
+                    console.log(err);
+                    return null;
+                }
+                return {};
+            }
+        },
+        bird: {
+            type: BirdType,
+            args: {id: {type: GraphQLID}},
+            resolve: (parent, args) => {
+                return {
+                    id: args.id
+                }
+            }
+        }
     }
+});
 
-    type Coordinate {
-        lat: Float!
-        long: Float!
-    }
-
-    type Links {
-        wiki: String
-    }
-
-    type Bird {
-        id: ID!
-        name: String!
-        image: String
-        location: Coordinate
-        url: Links
-    }
-
-    type Query {
-        hello: Messages
-        getBird(id: ID): Bird
-    }
-`);
-
-export default schema;
+export default new GraphQLSchema({
+    query: RootQuery
+})

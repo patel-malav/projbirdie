@@ -8,7 +8,6 @@ import graphqlHTTP from 'express-graphql';
 
 // User Code Imports
 import schema from './graphql/schema';
-import rootResolver from './graphql/resolver';
 
 const _port = 5555; // NGINX Port. # Change to use NODE_ENV
 const _public = path.join(__dirname, './public'); // Angular Static Website Folder.
@@ -22,8 +21,7 @@ app.use(cors()); // Enable Cross Origin Resource Sharing.
 // GraphQL Middleware
 app.use('/graphql', graphqlHTTP({
     schema, // GraphQL Schema
-    rootValue: rootResolver, // Root Resolver Method Object.
-    // graphiql: true // Interface to test API Endpoint.
+    graphiql: true // Interface to test API Endpoint.
 }));
 
 // Express Static Middleware

@@ -14,17 +14,20 @@ export class Earth implements Pbobj {
     animate = true;
     completed = false;
 
-    constructor(private data: any) {
+    constructor(private data: Promise<any>) {
         this.draw();
     }
 
-    draw() {
+    async draw() {
         let geometry = new BoxGeometry(1, 1, 1);
         let material = new MeshBasicMaterial({color: 0xfff000});
-
         let cube = new Mesh(geometry, material);
-        cube.position.copy(getVector3(this.data.geo.lat, this.data.geo.long));
-        this.mesh.add(cube);
+        this.mesh.add(cube);        
+        let {data:{getBird:{location:{lat,long},name}}} = await this.data;
+
+        console.log(name);
+
+        cube.position.copy(getVector3(lat, long));
     }
 
     update() {       
