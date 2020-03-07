@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { GlobeComponent } from './globe/globe.component';
+import { CanvasComponent } from './canvas/canvas.component';
 
 
 @NgModule({
-  declarations: [GlobeComponent],
+  declarations: [CanvasComponent],
   imports: [
     CommonModule,
   ],
   exports: [
-    GlobeComponent
+    CanvasComponent
   ]
 })
 export class ExploreModule { }

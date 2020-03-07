@@ -1,4 +1,5 @@
 import { SphereBufferGeometry, Material, Geometry, BufferGeometry, Texture, MeshBasicMaterial, Mesh, TextureLoader } from 'three';
+import Bird from './bird';
 
 export default class Earth {
    
@@ -25,11 +26,10 @@ export default class Earth {
                 this.material.needsUpdate = true;
             });
         }
-        this.setup();
     }
 
     setup() {
-        
+        this.mesh.add(new Bird().mesh);
     }
 
     animate() {

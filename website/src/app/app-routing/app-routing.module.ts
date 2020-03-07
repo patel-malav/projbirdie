@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from '../core/dashboard/dashboard.component';
-import { GlobeComponent } from '../explore/globe/globe.component';
+import { CanvasComponent } from '../explore/canvas/canvas.component';
 
 
 const routes: Routes = [
@@ -11,7 +11,7 @@ const routes: Routes = [
   },
   {
     path: 'explore',
-    component: GlobeComponent
+    component: CanvasComponent
   },
   // {
   //   path: '**',
