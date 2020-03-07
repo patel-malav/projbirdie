@@ -68,6 +68,7 @@ export default class Explorer {
         {
             this.earth = new Earth();
             this.rootScene.add(this.earth.mesh);
+            this.earth.setup();
         }
     }
 

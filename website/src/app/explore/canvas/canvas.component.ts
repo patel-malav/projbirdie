@@ -10,6 +10,7 @@ import Explorer from '../explorer';
 export class CanvasComponent implements OnInit, AfterViewInit {
 
   @ViewChild('canvas') private canvasRef: ElementRef;
+  explorer: Explorer;
 
   private get canvas(): HTMLCanvasElement{
     return this.canvasRef.nativeElement;
@@ -20,6 +21,7 @@ export class CanvasComponent implements OnInit, AfterViewInit {
   ngOnInit(): void { }
 
   ngAfterViewInit(): void {
-    new Explorer(this.canvas).setup();
+    this.explorer = new Explorer(this.canvas);
+    this.explorer.setup();
   }
 }
