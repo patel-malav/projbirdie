@@ -1,16 +1,21 @@
 import { Injectable } from '@angular/core';
-import { Apollo } from 'apollo-angular';
 import { DataService } from 'src/app/shared/data.service';
+import { Subject } from 'rxjs';
+import { Apollo } from 'apollo-angular';
+import gql from 'graphql-tag';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable({providedIn: 'root'})
 export class CanvasService {
-  constructor(private apollo: Apollo, private data: DataService) { }
 
-  showObservation() {
-    this.data.getObservation('32860312').subscribe(data => {
-      console.log(data);
-    });
+  observations$ = new Subject<{[key:string]: string}>();
+
+  constructor(private data: DataService, private apollo: Apollo) { }
+
+  showObservation(id: string) {
+    console.log(`Show Me Observation - ${id}`);
+    this.data.getObservation(id).subscribe(resp => {
+      // console.log(resp); # There are various fields to consider.
+      this.observations$.next(resp.geo);
+    })
   }
 }

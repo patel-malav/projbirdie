@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from 'src/app/shared/data.service';
 import { Observable } from 'rxjs';
+import { CanvasService } from 'src/app/explore/canvas/canvas.service';
 
 @Component({
   selector: 'pb-side',
@@ -10,9 +11,10 @@ import { Observable } from 'rxjs';
 export class SideComponent implements OnInit {
 
   obs: Observable<any>;
-  constructor(private data: DataService) { }
+  constructor(private dataServ: DataService, private canvasServ: CanvasService) { }
 
   ngOnInit(): void {
-    this.obs = this.data.getObservation('32860312');
+    this.obs = this.dataServ.getObservation('32860312');
+    this.canvasServ.showObservation('32860312');
   }
 }

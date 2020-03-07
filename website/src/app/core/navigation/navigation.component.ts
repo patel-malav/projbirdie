@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'pb-navigation',
@@ -9,10 +9,10 @@ export class NavigationComponent implements OnInit {
 
   open = false;
 
+  
   constructor() { }
-
-  ngOnInit(): void {
-  }
+  
+  ngOnInit(): void { }
 
   toggle() {
     this.open = !this.open;
