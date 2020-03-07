@@ -21,7 +21,7 @@ import { ExploreModule } from  './explore/explore.module';
     BrowserAnimationsModule,
     AppRoutingModule,
     CoreModule,
-    SharedModule,
+    SharedModule.forRoot(),
     FeatureModule,
     ExploreModule,
     GraphQLModule,

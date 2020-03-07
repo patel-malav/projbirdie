@@ -49,7 +49,7 @@ footer {
 @media (min-width: 992px) {
     :host {
         grid-template-rows: 4rem calc(100% - 4rem) min-content;
-        grid-template-columns: 6fr 1fr;
+        grid-template-columns: 4fr 1fr;
         grid-template-areas: "header header"
                              "main side"
                             //  "main side"

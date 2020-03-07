@@ -1,1 +1,16 @@
-<p>side works!</p>
+<ng-container *ngIf="obs|async as obs">
+    <h1>Id: {{obs.id}}</h1>
+    <hr>
+    <h2>User: {{obs.user.id}}</h2>
+    <hr>
+    <p>Name: {{obs.user.name}}</p>
+    <h2>Bird: {{obs.bird.id}}</h2>
+    <hr>
+    <h2>Geolocation</h2>
+    <hr>
+    <p>Lattitude: {{obs.geo.lat}}</p>
+    <p>Longitude: {{obs.geo.long}}</p>
+    <h1>Images</h1>
+    <hr>
+    <a href={{obs.images[0].url}}>url</a>
+</ng-container>
