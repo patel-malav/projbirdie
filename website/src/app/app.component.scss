@@ -3,11 +3,11 @@
     height: 100%;
     min-width: 320px;
     display: grid;
-    grid-template-rows: 3rem calc(100% - 3rem) min-content;
+    grid-template-rows: 3rem calc(100% - 3rem) min-content min-content;
     grid-template-columns: 6fr 1fr;
     grid-template-areas: "header header"
                          "main main"
-                        //  "main main"
+                         "side side"
                          "footer footer";
 }
 
@@ -28,7 +28,6 @@ main {
 aside {
     background-color: var(--main-ui-alt-color);
     grid-area: side;
-    display: none;
 }
 
 footer {
