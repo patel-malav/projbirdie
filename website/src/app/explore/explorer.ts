@@ -1,17 +1,15 @@
-import { Scene, PerspectiveCamera, WebGLRenderer, Light, Color, DirectionalLight} from 'three';
+import { Scene, PerspectiveCamera, WebGLRenderer, Light, Color, DirectionalLight, Object3D} from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-import Earth from './objects/earth';
 
 export default class Explorer {
-    rootScene: Scene;
+    scene: Scene;
     camera: PerspectiveCamera;
     control: OrbitControls;
     renderer: WebGLRenderer;
-    earth: Earth;
-    lights: Light[] = [];
+    updates: {(): void} [] = [];
     constructor(public canvas: HTMLCanvasElement) {
         // Creating root scene
-        this.rootScene = new Scene();
+        this.scene = new Scene();
 
         // Creating Camera
         {
@@ -46,39 +44,24 @@ export default class Explorer {
 
         // Animation Loop
         this.renderer.setAnimationLoop(() => {
-            this.animate();
+            this.updateAspect();
+            this.renderer.render(this.scene, this.camera);
         });
-    }
-
-    /**
-     * Method To Custom Stuff
-     */
-    setup() {
-        // Adding Light
-        {
-            let color = new Color('#ffffff'), intensity = 1;
-            // let light = new PointLight(color, intensity, distance);
-            let light = new DirectionalLight(color, intensity);
-            let x = -2, y = 5, z = 5;
-            light.position.set(x, y, z);
-            this.lights.push(light);
-            this.rootScene.add(light);
-        }
-        // Earth
-        {
-            this.earth = new Earth();
-            this.rootScene.add(this.earth.mesh);
-            this.earth.setup();
-        }
     }
 
     /**
      * Method Run's Every Frame
      */
-    animate() {
-        this.earth.animate();
-        this.updateAspect();
-        this.renderer.render(this.rootScene, this.camera);
+    // public animate(obj: PbObj) {
+    //     obj.animate();
+    // }
+
+    /**
+     * Add object to scene
+     * @param obj Any Object3D
+     */
+    public add(obj: Object3D) {
+        this.scene.add(obj);
     }
 
     /**

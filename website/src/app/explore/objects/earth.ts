@@ -3,9 +3,9 @@ import Bird from './bird';
 
 export default class Earth {
    
-    geometry: BufferGeometry;
-    material: Material | MeshBasicMaterial;
-    texture: Texture;
+    private geometry: BufferGeometry;
+    private material: Material | MeshBasicMaterial;
+    private texture: Texture;
     mesh: Mesh;
    
     constructor(
@@ -28,11 +28,9 @@ export default class Earth {
         }
     }
 
-    setup() {
-        this.mesh.add(new Bird().mesh);
+    showObservation(id: string) {
+        console.log(id);
     }
 
-    animate() {
-        this.mesh.rotateY(0.001);
-    }
+    // animate() { }
 }
