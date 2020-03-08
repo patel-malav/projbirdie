@@ -14,7 +14,7 @@ export class SideComponent implements OnInit {
   constructor(private dataServ: DataService, private canvasServ: CanvasService) { }
 
   ngOnInit(): void {
-    this.obs = this.dataServ.getObservation('32860312');
-    this.canvasServ.showObservation('32860312');
+    this.obs = this.dataServ.getObservation('39667810');
+    this.canvasServ.showObservation('39667810');
   }
 }

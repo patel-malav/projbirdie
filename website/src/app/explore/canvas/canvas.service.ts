@@ -7,7 +7,7 @@ import gql from 'graphql-tag';
 @Injectable({providedIn: 'root'})
 export class CanvasService {
 
-  observations$ = new Subject<{[key:string]: string}>();
+  observations$ = new Subject<{[key:string]: any}>();
 
   constructor(private data: DataService, private apollo: Apollo) { }
 

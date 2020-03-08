@@ -24,6 +24,7 @@ export default class Explorer {
             let camera = this.camera, domEle = canvas;
             this.control = new OrbitControls(camera, domEle);
             this.control.enableKeys = false;
+            this.control.enableZoom = false;
             this.control.enablePan = false;
         }
 

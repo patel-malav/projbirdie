@@ -3,6 +3,7 @@ import { Subscription } from 'rxjs';
 import Explorer from '../explorer';
 import Earth from '../objects/earth';
 import { CanvasService } from './canvas.service';
+import Bird from '../objects/bird';
 
 @Component({
   selector: 'pb-canvas',
@@ -30,10 +31,12 @@ export class CanvasComponent implements OnInit, OnDestroy, AfterViewInit {
     this.explorer.add(this.earth.mesh);
 
     // Subscibe to observations
-    {    
+    {
       let sub = this.canvasService.observations$.subscribe({
-        next: (data) => {
-          console.log(data);
+        next: ({lat, long}) => {
+          let bird = new Bird();
+          bird.location(lat, long);
+          this.earth.mesh.add(bird.mesh)
         },
         error: (err) => console.log(err),
         complete: () => console.log(`done!!!<- with observation`)
