@@ -5,12 +5,12 @@ import { CanvasComponent } from '../explore/canvas/canvas.component';
 
 
 const routes: Routes = [
+  // {
+  //   path: '',
+  //   component: DashboardComponent
+  // },
   {
     path: '',
-    component: DashboardComponent
-  },
-  {
-    path: 'explore',
     component: CanvasComponent
   },
   // {
