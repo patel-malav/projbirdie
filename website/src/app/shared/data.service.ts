@@ -12,7 +12,10 @@ export class DataService {
 
   public getObservation(id: string) {
     return this.apollo.query<any>({
-      query: gql`{observation(id: ${id}){id user{id name} bird{id} geo{lat long} images{url}}}`
-    }).pipe(map(resp => {return resp.data.observation}));
+      query: gql`{observation(id: ${id}){id user{id name} bird{id} geo{lat long} images{id url}}}`
+    }).pipe(map(resp => {
+      resp.data.observation.images[0].url = resp.data.observation.images[0].url.replace('square', 'medium');
+      return resp.data.observation
+    }));
   }
 }

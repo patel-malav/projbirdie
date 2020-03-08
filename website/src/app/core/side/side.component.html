@@ -1,4 +1,11 @@
-<ng-container *ngIf="obs|async as obs">
+<h1 id="title">Observation</h1>
+<mat-form-field appearance="outline" color="primary">
+    <mat-label>Search</mat-label>
+    <input (keyup.enter)="enterEventListner($event)" #search matInput placeholder="Search INat Observation ID">
+    <mat-icon matSuffix>search</mat-icon>
+</mat-form-field>
+<p>{{term}}</p>
+<div id="data" *ngIf="obs|async as obs">
     <h1>Id: {{obs.id}}</h1>
     <hr>
     <h2>User: {{obs.user.id}}</h2>
@@ -12,5 +19,5 @@
     <p>Longitude: {{obs.geo.long}}</p>
     <h1>Images</h1>
     <hr>
-    <a href={{obs.images[0].url}}>url</a>
-</ng-container>
+    <img src={{obs.images[0].url}} alt="observation image">
+<div>

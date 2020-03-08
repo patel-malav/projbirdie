@@ -10,6 +10,8 @@ import { CanvasService } from 'src/app/explore/canvas/canvas.service';
 })
 export class SideComponent implements OnInit {
 
+  public term: string;
+
   obs: Observable<any>;
   constructor(private dataServ: DataService, private canvasServ: CanvasService) { }
 
@@ -17,4 +19,12 @@ export class SideComponent implements OnInit {
     this.obs = this.dataServ.getObservation('39667810');
     this.canvasServ.showObservation('39667810');
   }
+  
+  enterEventListner(event: KeyboardEvent) {
+    //@ts-ignore
+    let id: string = event.target.value.match(/[0-9]*/);
+    this.obs = this.dataServ.getObservation(id);
+    this.canvasServ.showObservation(id);
+  }
+
 }
