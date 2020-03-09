@@ -15,16 +15,16 @@ export class SideComponent implements OnInit {
   obs: Observable<any>;
   constructor(private dataServ: DataService, private canvasServ: CanvasService) { }
 
-  ngOnInit(): void {
-    this.obs = this.dataServ.getObservation('39667810');
-    this.canvasServ.showObservation('39667810');
-  }
+  ngOnInit(): void { }
   
-  enterEventListner(event: KeyboardEvent) {
-    //@ts-ignore
-    let id: string = event.target.value.match(/[0-9]*/);
-    this.obs = this.dataServ.getObservation(id);
-    this.canvasServ.showObservation(id);
+  search(value: string) {
+    let id = value.match(/[0-9]*/).pop();
+    if(id) {
+      // this.obs = this.dataServ.getObservation(id);
+      // this.canvasServ.showObservation(id);
+    } else {
+      console.log(`idiot ${value} is not a Id`);
+    }
   }
 
 }

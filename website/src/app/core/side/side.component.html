@@ -1,11 +1,14 @@
 <h1 id="title">Observation</h1>
 <mat-form-field appearance="outline" color="primary">
     <mat-label>Search</mat-label>
-    <input (keyup.enter)="enterEventListner($event)" #search matInput placeholder="Search INat Observation ID">
+    <input (keyup.enter)="search($event.target.value)" matInput placeholder="Search INat Observation ID">
     <mat-icon matSuffix>search</mat-icon>
 </mat-form-field>
 <p>{{term}}</p>
-<div id="data" *ngIf="obs|async as obs">
+<ng-template #info>
+    <h2>Search any Observation Id from Inaturalist</h2>
+</ng-template>
+<div id="data" *ngIf="obs|async as obs; else info">
     <h1>Id: {{obs.id}}</h1>
     <hr>
     <h2>User: {{obs.user.id}}</h2>

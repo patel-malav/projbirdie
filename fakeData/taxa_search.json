@@ -1,0 +1,27 @@
+{
+  "total_results": 0,
+  "page": 0,
+  "per_page": 0,
+  "results": [
+    {
+      "id": 0,
+      "iconic_taxon_id": 0,
+      "iconic_taxon_name": "string",
+      "is_active": true,
+      "name": "string",
+      "preferred_common_name": "string",
+      "rank": "string",
+      "rank_level": 0,
+      "default_photo": {
+        "id": 0,
+        "attribution": "string",
+        "license_code": "string",
+        "url": "string",
+        "medium_url": "string",
+        "square_url": "string"
+      },
+      "matched_term": "string",
+      "observations_count": 0
+    }
+  ]
+}
