@@ -1,16 +1,20 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DataService } from './data.service';
-
+import { MediaComponent } from './media/media.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [MediaComponent],
   providers: [],
   imports: [
-    CommonModule
+    CommonModule,
+    MatButtonModule,
+    MatIconModule
   ],
-  exports: []
+  exports: [MediaComponent]
 })
 export class SharedModule {
   static forRoot(): ModuleWithProviders {

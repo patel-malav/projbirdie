@@ -7,6 +7,7 @@
 <p>{{term}}</p>
 <ng-template #info>
     <h2>Search any Observation Id from Inaturalist</h2>
+    <!-- <pb-media img="" title="lol"></pb-media> -->
 </ng-template>
 <div id="data" *ngIf="obs|async as obs; else info">
     <h1>Id: {{obs.id}}</h1>
