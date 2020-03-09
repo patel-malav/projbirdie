@@ -31,6 +31,7 @@ const search = {
         }
 
         let output = [];
+        // console.log(`From INaturalist:- Results Length = ${resp.data.results.length} Per_Page = ${resp.data.per_page} Total_Result = ${resp.data.total_results}`);
         for(let result of resp.data.results) {
             let {id, name, default_photo: {id: photo_id}} = result;
             output.push({id, name, images: {id: photo_id}});

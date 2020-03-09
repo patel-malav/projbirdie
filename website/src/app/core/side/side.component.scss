@@ -5,11 +5,12 @@
     width: 100%;
     flex-direction: column;
     color: var(--main-ui-alt-color);
-    padding: 2rem 1rem;
+    padding: 1rem;
+    overflow-y: auto;
 }
 
 #title {
-    padding: 0 1rem;
+    padding: 0;
     margin: 1rem 0;
     font-size: 2rem;
 }

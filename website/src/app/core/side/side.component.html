@@ -4,24 +4,7 @@
     <input (keyup.enter)="search($event.target.value)" matInput placeholder="Search INat Observation ID">
     <mat-icon matSuffix>search</mat-icon>
 </mat-form-field>
-<p>{{term}}</p>
-<ng-template #info>
-    <h2>Search any Observation Id from Inaturalist</h2>
-    <!-- <pb-media img="" title="lol"></pb-media> -->
-</ng-template>
-<div id="data" *ngIf="obs|async as obs; else info">
-    <h1>Id: {{obs.id}}</h1>
-    <hr>
-    <h2>User: {{obs.user.id}}</h2>
-    <hr>
-    <p>Name: {{obs.user.name}}</p>
-    <h2>Bird: {{obs.bird.id}}</h2>
-    <hr>
-    <h2>Geolocation</h2>
-    <hr>
-    <p>Lattitude: {{obs.geo.lat}}</p>
-    <p>Longitude: {{obs.geo.long}}</p>
-    <h1>Images</h1>
-    <hr>
-    <img src={{obs.images[0].url}} alt="observation image">
-<div>
+<h2>Search any Observation Id from Inaturalist</h2>
+<ng-container *ngIf="data | async as data">
+    <pb-media *ngFor="let item of data" [img]="item.images.square" [title]="item.name"></pb-media>
+</ng-container>
