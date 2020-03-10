@@ -137,7 +137,7 @@ const observations = {
       if(location) {
           [geo.lat, geo.long] = location.split(",");
       }
-      console.log(user);
+      // console.log(user);
       output.push({ id, user, geo, images: photos });
     }
     return output;

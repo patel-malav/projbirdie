@@ -10,12 +10,12 @@ export default class Bird {
 
     constructor(opts?: {[key:string]: any}) {
         // Temp.
-        this.geometry = new BoxGeometry(1, 1, 1);
+        this.geometry = new BoxGeometry(2, 2, 2);
         this.material = opts?.material ? opts.material : new MeshBasicMaterial({color: 0x00ff00});
         this.mesh = new Mesh(this.geometry, this.material);
     }
 
     location(lat: number, long: number) {
-        this.mesh.position.copy(getVector3(lat, long, 1));
+        this.mesh.position.copy(getVector3(lat, long, 4));
     }
 }

@@ -21,22 +21,29 @@
   </div>
   <div id="taxanomy" *ngSwitchCase="'taxanomy'">
     <ng-container *ngIf="taxanomy$ | async as taxa">
-      <img [src]="taxa.image.medium" alt="photo of bird">
-      <h3>Taxanomy Id - {{taxa.id}}</h3>
-      <h3>Taxanomy Common Name - {{taxa.name.common}}</h3>
-      <h3>Taxanomy Scientific Name- {{taxa.name.sci}}</h3>
-      <h3>Image Id - {{taxa.image.id}}</h3>
+      <img [src]="taxa.image.medium" alt="photo of bird" />
+      <h3>Taxanomy Id - {{ taxa.id }}</h3>
+      <h3>Taxanomy Common Name - {{ taxa.name.common }}</h3>
+      <h3>Taxanomy Scientific Name- {{ taxa.name.sci }}</h3>
+      <h3>Image Id - {{ taxa.image.id }}</h3>
+      <button
+        mat-raised-button
+        color="warn"
+        (click)="displayObservations(taxa.id)"
+      >
+        Show Observations
+      </button>
     </ng-container>
   </div>
   <div id="observation" *ngSwitchCase="'observation'">
     <ng-container *ngIf="observation$ | async as obs">
-      <img src="obs.image.medium" alt="photo of bird">
-      <h3>ID - {{obs.id}}</h3>
-      <h3>User ID - {{obs.user.id}}</h3>
-      <h3>User Name - {{obs.user.name}}</h3>
-      <h3>Location Lat - {{obs.geo.lat}}</h3>
-      <h3>Location Long- {{obs.user.id}}</h3>
-      <h3>Image ID - {{obs.user.id}}</h3>
+      <img src="obs.image.medium" alt="photo of bird" />
+      <h3>ID - {{ obs.id }}</h3>
+      <h3>User ID - {{ obs.user.id }}</h3>
+      <h3>User Name - {{ obs.user.name }}</h3>
+      <h3>Location Lat - {{ obs.geo.lat }}</h3>
+      <h3>Location Long- {{ obs.user.id }}</h3>
+      <h3>Image ID - {{ obs.user.id }}</h3>
     </ng-container>
   </div>
   <div *ngSwitchDefault>

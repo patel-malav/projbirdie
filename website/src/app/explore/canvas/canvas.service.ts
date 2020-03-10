@@ -6,15 +6,15 @@ import gql from 'graphql-tag';
 @Injectable({providedIn: 'root'})
 export class CanvasService {
 
-  observations$ = new Subject<{[key:string]: any}>();
+  observations$ = new Subject<{lat: number, long: number}>();
 
   constructor(private apollo: Apollo) { }
 
-  showObservation(id: string) {
-    console.log(`Show Me Observation - ${id}`);
+  // showObservation(id: string) {
+    // console.log(`Show Me Observation - ${id}`);
     // this.data.getObservation(id).subscribe(resp => {
     //   // console.log(resp); # There are various fields to consider.
     //   this.observations$.next(resp.geo);
     // })
-  }
+  // }
 }

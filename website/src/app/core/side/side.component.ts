@@ -22,25 +22,42 @@ export class SideComponent implements OnInit {
   ngOnInit(): void {}
 
   search(value: string) {
+    this.case = "search";
     this.search$ = this.apollo
       .query<any>({
         query: gql`{search(term: "${value}"){taxaId name {common sci} image}}`
       })
       .pipe(map(resp => resp.data.search));
-      this.case = 'search';
   }
 
-  taxanomy(id: number) {
-    console.log(id);
+  taxanomy(id: string) {
+    this.case = "taxanomy";
     this.taxanomy$ = this.apollo
-      .query<any>({ query: gql`{taxanomy(id:${id}){id name{common sci}image{id medium}}}` })
+      .query<any>({
+        query: gql`{taxanomy(id:${id}){id name{common sci}image{id medium}}}`
+      })
       .pipe(map(resp => resp.data.taxanomy));
-    this.case = 'taxanomy';
     // this.apollo
     // .query<any>({query: gql`{}`})
   }
 
-  observation(id: number) {
+  displayObservations(id: string) {
+    let observations: { id: string; geo: { lat: string; long: string } }[];
+    this.apollo
+      .query<any>({
+        query: gql`{observations(taxaId:${id}){id geo{lat long}}}`
+      })
+      .subscribe(resp => {
+        observations = resp.data.observations;
+        for (let obs of observations) {
+          let lat = parseFloat(obs.geo.lat),
+            long = parseFloat(obs.geo.long);
+          this.canvasServ.observations$.next({ lat, long });
+        }
+      });
+  }
+
+  observation(id: string) {
     this.observation$ = this.apollo
       .query<any>({
         query: gql`{observation(id:${id}){id user{id name}geo{lat long}images{id medium}}}`
