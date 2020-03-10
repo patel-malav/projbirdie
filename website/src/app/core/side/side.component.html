@@ -1,11 +1,45 @@
 <!-- <h2>Search any Spiecies Inaturalist</h2> -->
 <mat-form-field appearance="outline" color="primary">
-    <mat-label>Species</mat-label>
-    <input (keyup.enter)="search($event.target.value)" matInput placeholder="Search INat Observation ID">
-    <mat-icon matSuffix>search</mat-icon>
+  <mat-label>Species</mat-label>
+  <input
+    (keyup.enter)="search($event.target.value)"
+    matInput
+    placeholder="Search INat Observation ID"
+  />
+  <mat-icon matSuffix>search</mat-icon>
 </mat-form-field>
-<ng-container *ngIf="data | async as data">
-    <div id="results">
-        <pb-media *ngFor="let item of data" [img]="item.image" [title]="item.name"></pb-media>
-    </div>
+<ng-container [ngSwitch]="case">
+  <div id="search" *ngSwitchCase="'search'">
+    <ng-container *ngIf="search$ | async as data">
+      <pb-media
+        *ngFor="let item of data"
+        [img]="item.image"
+        [title]="item.name.common"
+        (click)="taxanomy(item.taxaId)"
+      ></pb-media>
+    </ng-container>
+  </div>
+  <div id="taxanomy" *ngSwitchCase="'taxanomy'">
+    <ng-container *ngIf="taxanomy$ | async as taxa">
+      <img [src]="taxa.image.medium" alt="photo of bird">
+      <h3>Taxanomy Id - {{taxa.id}}</h3>
+      <h3>Taxanomy Common Name - {{taxa.name.common}}</h3>
+      <h3>Taxanomy Scientific Name- {{taxa.name.sci}}</h3>
+      <h3>Image Id - {{taxa.image.id}}</h3>
+    </ng-container>
+  </div>
+  <div id="observation" *ngSwitchCase="'observation'">
+    <ng-container *ngIf="observation$ | async as obs">
+      <img src="obs.image.medium" alt="photo of bird">
+      <h3>ID - {{obs.id}}</h3>
+      <h3>User ID - {{obs.user.id}}</h3>
+      <h3>User Name - {{obs.user.name}}</h3>
+      <h3>Location Lat - {{obs.geo.lat}}</h3>
+      <h3>Location Long- {{obs.user.id}}</h3>
+      <h3>Image ID - {{obs.user.id}}</h3>
+    </ng-container>
+  </div>
+  <div *ngSwitchDefault>
+    <h1>Search Any Species...</h1>
+  </div>
 </ng-container>
