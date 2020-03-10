@@ -15,3 +15,6 @@ build-server:
 
 build:
 	make build-server && make build-website
+
+deploy:
+	rsync -avzz dist/ malav@projbirdie.tech:/apps/dist
