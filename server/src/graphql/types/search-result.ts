@@ -1,12 +1,12 @@
 import { GraphQLObjectType, GraphQLString, GraphQLID } from "graphql";
-import ImageType from "../types/image.type";
+import NameType from "./name.type";
 
 const SearchResultType = new GraphQLObjectType({
     name: 'SearchResult',
     fields: {
-        id: {type: GraphQLID},
-        name: {type: GraphQLString},
-        images: {type: ImageType}
+        taxaId: {type: GraphQLID},
+        name: {type: NameType},
+        image: {type: GraphQLString}
     }
 });
 

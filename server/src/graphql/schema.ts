@@ -1,9 +1,9 @@
 import axios, { AxiosResponse } from 'axios';
 import { GraphQLSchema, GraphQLObjectType, GraphQLString, GraphQLID, GraphQLList, GraphQLNonNull } from "graphql";
-import { TaxaSearch } from './typings';
-import { BirdType } from "./schema/bird.object";
-import { ObservationType } from "./schema/observation.object";
 import SearchResultType from './types/search-result';
+import TaxanomyType from './types/taxa.type';
+
+const url = 'https://api.inaturalist.org/v1';
 
 /**
  * Hello Message
@@ -21,20 +21,20 @@ const search = {
     args: {
         term: {type: new GraphQLNonNull(GraphQLString)}
     },
-    resolve: async (parent: any, { term }) => {
-        let resp: AxiosResponse<TaxaSearch>;
+    resolve: async (parent: any, args: any) => {
+        let resp: AxiosResponse<any>;
         try {
-            resp = await axios.get(`https://api.inaturalist.org/v1/taxa/autocomplete?q=${term}`);
+            resp = await axios.get(`${url}/taxa/autocomplete?q=${args.term}`);
         } catch(err) {
-            console.log(err);
+            console.log(`Error in API call TaxanomySearch For Term:- ${args.term}`,err);
             return null;
         }
 
         let output = [];
         // console.log(`From INaturalist:- Results Length = ${resp.data.results.length} Per_Page = ${resp.data.per_page} Total_Result = ${resp.data.total_results}`);
         for(let result of resp.data.results) {
-            let {id, name, default_photo: {id: photo_id}} = result;
-            output.push({id, name, images: {id: photo_id}});
+            let {id: taxaId, name: common, preferred_common_name: sci, default_photo: {url: image}} = result;
+            output.push({taxaId, name: {common, sci}, image});
         }
         return output;
     }
@@ -44,8 +44,31 @@ const observations = {
 
 }
 
-const taxa = {
+const taxanomy = {
+    type: TaxanomyType,
+    args: {
+        id: {type: GraphQLID}
+    },
+    resolve: async (parent: any, args:{id: any}) => {
+        // console.log(args.id);
+        let resp: AxiosResponse<any>;
+        try {
+            resp = await axios.get(`${url}/taxa/${args.id}`);
+        } catch (err) {
+            console.log(`Error in API call For TaxaId For Id:- ${args.id}`,err);
+            return null;
+        }
+        // console.log(resp.data);
+        let {
+            id, 
+            name: sci, 
+            preferred_common_name: common,
+            default_photo: image
+        } = resp.data.results.pop();
+        // console.log(image);
 
+        return {id, name: {common, sci}, image};
+    }
 }
 
 const RootQuery = new GraphQLObjectType({
@@ -53,7 +76,7 @@ const RootQuery = new GraphQLObjectType({
     fields: {
         hello,
         search,
-
+        taxanomy
         // observation: {
         //     type: ObservationType,
         //     args: {

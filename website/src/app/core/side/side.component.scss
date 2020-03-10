@@ -6,7 +6,11 @@
     flex-direction: column;
     color: var(--main-ui-alt-color);
     padding: 1rem;
-    overflow-y: auto;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 // #title {
@@ -18,13 +22,12 @@
 mat-form-field {
     box-sizing: border-box;
     align-self: stretch;
-    padding: 1rem 0;
 }
 
-img {
-    max-width: 100%;
-    max-height: 100%;
+#results {
+    overflow-y: auto;
 }
+
 // Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap
 

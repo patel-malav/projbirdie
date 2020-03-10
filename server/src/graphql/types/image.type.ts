@@ -12,7 +12,10 @@ const ImageType = new GraphQLObjectType({
         },
         small: {
             type: GraphQLString,
-            resolve: (parent) => `${inat_img_url}${parent.id}/small.jpg`
+            resolve: (parent) => {
+                console.log(`Parent ------` + parent.id);
+                return `${inat_img_url}${parent.id}/small.jpg`;
+            }
         },
         medium: {
             type: GraphQLString,

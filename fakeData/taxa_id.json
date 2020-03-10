@@ -1,0 +1,916 @@
+{
+  "total_results": 1,
+  "page": 1,
+  "per_page": 30,
+  "results": [
+    {
+      "observations_count": 9672,
+      "taxon_schemes_count": 1,
+      "ancestry": "48460/1/2/355675/47273/505362/448201",
+      "is_active": true,
+      "flag_counts": {
+        "unresolved": 0,
+        "resolved": 1
+      },
+      "wikipedia_url": "http://en.wikipedia.org/wiki/Myliobatiformes",
+      "current_synonymous_taxon_ids": null,
+      "iconic_taxon_id": 1,
+      "taxon_photos": [
+        {
+          "taxon_id": 196615,
+          "photo": {
+            "flags": [],
+            "type": "LocalPhoto",
+            "url": "https://static.inaturalist.org/photos/5319155/square.jpg?1545672040",
+            "square_url": "https://static.inaturalist.org/photos/5319155/square.jpg?1545672040",
+            "native_page_url": "https://www.flickr.com/photos/joachim_s_mueller/9717467669/",
+            "native_photo_id": "9717467669",
+            "small_url": "https://static.inaturalist.org/photos/5319155/small.jpg?1545672040",
+            "original_url": "https://static.inaturalist.org/photos/5319155/original.jpg?1545672040",
+            "attribution": "(c) Joachim S. Müller, some rights reserved (CC BY-NC-SA)",
+            "medium_url": "https://static.inaturalist.org/photos/5319155/medium.jpg?1545672040",
+            "id": 5319155,
+            "license_code": "cc-by-nc-sa",
+            "original_dimensions": {
+              "width": 1600,
+              "height": 1200
+            },
+            "large_url": "https://static.inaturalist.org/photos/5319155/large.jpg?1545672040"
+          },
+          "taxon": {
+            "taxon_schemes_count": 1,
+            "ancestry": "48460/1/2/355675/47273/505362/448201",
+            "min_species_ancestry": "48460,1,2,355675,47273,505362,448201,196615",
+            "wikipedia_url": "http://en.wikipedia.org/wiki/Myliobatiformes",
+            "current_synonymous_taxon_ids": null,
+            "iconic_taxon_id": 1,
+            "created_at": "2012-12-10T16:32:32+00:00",
+            "taxon_changes_count": 1,
+            "complete_species_count": 247,
+            "rank": "order",
+            "extinct": false,
+            "id": 196615,
+            "universal_search_rank": 9672,
+            "ancestor_ids": [
+              48460,
+              1,
+              2,
+              355675,
+              47273,
+              505362,
+              448201,
+              196615
+            ],
+            "observations_count": 9672,
+            "is_active": true,
+            "flag_counts": {
+              "unresolved": 0,
+              "resolved": 1
+            },
+            "min_species_taxon_id": 196615,
+            "rank_level": 40,
+            "atlas_id": null,
+            "parent_id": 448201,
+            "complete_rank": "subspecies",
+            "name": "Myliobatiformes",
+            "default_photo": {
+              "square_url": "https://static.inaturalist.org/photos/5319155/square.jpg?1545672040",
+              "attribution": "(c) Joachim S. Müller, some rights reserved (CC BY-NC-SA)",
+              "flags": [],
+              "medium_url": "https://static.inaturalist.org/photos/5319155/medium.jpg?1545672040",
+              "id": 5319155,
+              "license_code": "cc-by-nc-sa",
+              "original_dimensions": {
+                "width": 1600,
+                "height": 1200
+              },
+              "url": "https://static.inaturalist.org/photos/5319155/square.jpg?1545672040"
+            },
+            "iconic_taxon_name": "Animalia",
+            "preferred_common_name": "Stingrays"
+          }
+        }
+      ],
+      "rank_level": 40,
+      "taxon_changes_count": 1,
+      "atlas_id": null,
+      "complete_species_count": 247,
+      "parent_id": 448201,
+      "complete_rank": "subspecies",
+      "name": "Myliobatiformes",
+      "rank": "order",
+      "extinct": false,
+      "id": 196615,
+      "default_photo": {
+        "square_url": "https://static.inaturalist.org/photos/5319155/square.jpg?1545672040",
+        "attribution": "(c) Joachim S. Müller, some rights reserved (CC BY-NC-SA)",
+        "flags": [],
+        "medium_url": "https://static.inaturalist.org/photos/5319155/medium.jpg?1545672040",
+        "id": 5319155,
+        "license_code": "cc-by-nc-sa",
+        "original_dimensions": {
+          "width": 1600,
+          "height": 1200
+        },
+        "url": "https://static.inaturalist.org/photos/5319155/square.jpg?1545672040"
+      },
+      "ancestor_ids": [
+        48460,
+        1,
+        2,
+        355675,
+        47273,
+        505362,
+        448201
+      ],
+      "iconic_taxon_name": "Animalia",
+      "preferred_common_name": "Stingrays",
+      "ancestors": [
+        {
+          "observations_count": 19364377,
+          "taxon_schemes_count": 2,
+          "ancestry": "48460",
+          "is_active": true,
+          "flag_counts": {
+            "unresolved": 0,
+            "resolved": 7
+          },
+          "wikipedia_url": "http://en.wikipedia.org/wiki/Animal",
+          "current_synonymous_taxon_ids": null,
+          "iconic_taxon_id": 1,
+          "rank_level": 70,
+          "taxon_changes_count": 4,
+          "atlas_id": null,
+          "complete_species_count": null,
+          "parent_id": 48460,
+          "complete_rank": "order",
+          "name": "Animalia",
+          "rank": "kingdom",
+          "extinct": false,
+          "id": 1,
+          "default_photo": {
+            "square_url": "https://static.inaturalist.org/photos/55133652/square.jpg?1572218969",
+            "attribution": "(c) Chien Lee, all rights reserved",
+            "flags": [],
+            "medium_url": "https://static.inaturalist.org/photos/55133652/medium.jpg?1572218969",
+            "id": 55133652,
+            "license_code": null,
+            "original_dimensions": {
+              "width": 1080,
+              "height": 721
+            },
+            "url": "https://static.inaturalist.org/photos/55133652/square.jpg?1572218969"
+          },
+          "ancestor_ids": [
+            48460,
+            1
+          ],
+          "iconic_taxon_name": "Animalia",
+          "preferred_common_name": "Animals"
+        },
+        {
+          "observations_count": 8998357,
+          "taxon_schemes_count": 2,
+          "ancestry": "48460/1",
+          "is_active": true,
+          "flag_counts": {
+            "unresolved": 0,
+            "resolved": 0
+          },
+          "wikipedia_url": "http://en.wikipedia.org/wiki/Chordate",
+          "current_synonymous_taxon_ids": null,
+          "iconic_taxon_id": 1,
+          "rank_level": 60,
+          "taxon_changes_count": 0,
+          "atlas_id": null,
+          "complete_species_count": 72966,
+          "parent_id": 1,
+          "complete_rank": "subspecies",
+          "name": "Chordata",
+          "rank": "phylum",
+          "extinct": false,
+          "id": 2,
+          "default_photo": {
+            "square_url": "https://static.inaturalist.org/photos/13861431/square.jpg?1545716483",
+            "attribution": "(c) Claudine Lamothe, some rights reserved (CC BY-NC)",
+            "flags": [],
+            "medium_url": "https://static.inaturalist.org/photos/13861431/medium.jpg?1545716483",
+            "id": 13861431,
+            "license_code": "cc-by-nc",
+            "original_dimensions": {
+              "width": 2000,
+              "height": 1333
+            },
+            "url": "https://static.inaturalist.org/photos/13861431/square.jpg?1545716483"
+          },
+          "ancestor_ids": [
+            48460,
+            1,
+            2
+          ],
+          "iconic_taxon_name": "Animalia",
+          "preferred_common_name": "Chordates"
+        },
+        {
+          "observations_count": 8985509,
+          "taxon_schemes_count": 1,
+          "ancestry": "48460/1/2",
+          "is_active": true,
+          "flag_counts": {
+            "unresolved": 0,
+            "resolved": 1
+          },
+          "wikipedia_url": "http://en.wikipedia.org/wiki/Vertebrate",
+          "current_synonymous_taxon_ids": null,
+          "iconic_taxon_id": 1,
+          "rank_level": 57,
+          "taxon_changes_count": 1,
+          "atlas_id": null,
+          "complete_species_count": 69867,
+          "parent_id": 2,
+          "complete_rank": "subspecies",
+          "name": "Vertebrata",
+          "rank": "subphylum",
+          "extinct": false,
+          "id": 355675,
+          "default_photo": {
+            "square_url": "https://live.staticflickr.com/4133/4833432689_03bdbf4bbb_s.jpg",
+            "attribution": "(c) kombipom, some rights reserved (CC BY-NC-SA)",
+            "flags": [],
+            "medium_url": "https://live.staticflickr.com/4133/4833432689_03bdbf4bbb.jpg",
+            "id": 60495836,
+            "license_code": "cc-by-nc-sa",
+            "original_dimensions": null,
+            "url": "https://live.staticflickr.com/4133/4833432689_03bdbf4bbb_s.jpg"
+          },
+          "ancestor_ids": [
+            48460,
+            1,
+            2,
+            355675
+          ],
+          "iconic_taxon_name": "Animalia",
+          "preferred_common_name": "Vertebrates"
+        },
+        {
+          "observations_count": 26653,
+          "taxon_schemes_count": 2,
+          "ancestry": "48460/1/2/355675",
+          "is_active": true,
+          "flag_counts": {
+            "unresolved": 0,
+            "resolved": 1
+          },
+          "wikipedia_url": "http://en.wikipedia.org/wiki/Elasmobranchii",
+          "current_synonymous_taxon_ids": null,
+          "iconic_taxon_id": 1,
+          "rank_level": 50,
+          "taxon_changes_count": 3,
+          "atlas_id": null,
+          "complete_species_count": 1235,
+          "parent_id": 355675,
+          "complete_rank": "subspecies",
+          "name": "Elasmobranchii",
+          "rank": "class",
+          "extinct": false,
+          "id": 47273,
+          "default_photo": {
+            "square_url": "https://static.inaturalist.org/photos/581459/square.JPG?1384777809",
+            "attribution": "(c) Carmelo López Abad, some rights reserved (CC BY-NC)",
+            "flags": [],
+            "medium_url": "https://static.inaturalist.org/photos/581459/medium.JPG?1384777809",
+            "id": 581459,
+            "license_code": "cc-by-nc",
+            "original_dimensions": {
+              "width": 1024,
+              "height": 768
+            },
+            "url": "https://static.inaturalist.org/photos/581459/square.JPG?1384777809"
+          },
+          "ancestor_ids": [
+            48460,
+            1,
+            2,
+            355675,
+            47273
+          ],
+          "iconic_taxon_name": "Animalia",
+          "preferred_common_name": "Elasmobranchs"
+        },
+        {
+          "observations_count": 26495,
+          "taxon_schemes_count": 1,
+          "ancestry": "48460/1/2/355675/47273",
+          "is_active": true,
+          "flag_counts": {
+            "unresolved": 0,
+            "resolved": 0
+          },
+          "wikipedia_url": "http://en.wikipedia.org/wiki/Neoselachii",
+          "current_synonymous_taxon_ids": null,
+          "iconic_taxon_id": 1,
+          "rank_level": 47,
+          "taxon_changes_count": 0,
+          "atlas_id": null,
+          "complete_species_count": 1235,
+          "parent_id": 47273,
+          "complete_rank": "subspecies",
+          "name": "Neoselachii",
+          "rank": "subclass",
+          "extinct": false,
+          "id": 505362,
+          "default_photo": {
+            "square_url": "https://static.inaturalist.org/photos/4944487/square.jpeg?1474335938",
+            "attribution": "(c) craigdux, some rights reserved (CC BY-NC)",
+            "flags": [],
+            "medium_url": "https://static.inaturalist.org/photos/4944487/medium.jpeg?1474335938",
+            "id": 4944487,
+            "license_code": "cc-by-nc",
+            "original_dimensions": {
+              "width": 2048,
+              "height": 1536
+            },
+            "url": "https://static.inaturalist.org/photos/4944487/square.jpeg?1474335938"
+          },
+          "ancestor_ids": [
+            48460,
+            1,
+            2,
+            355675,
+            47273,
+            505362
+          ],
+          "iconic_taxon_name": "Animalia",
+          "preferred_common_name": "Sharks and Rays"
+        },
+        {
+          "observations_count": 13905,
+          "taxon_schemes_count": 1,
+          "ancestry": "48460/1/2/355675/47273/505362",
+          "is_active": true,
+          "flag_counts": {
+            "unresolved": 0,
+            "resolved": 0
+          },
+          "wikipedia_url": "http://en.wikipedia.org/wiki/Batoidea",
+          "current_synonymous_taxon_ids": null,
+          "iconic_taxon_id": 1,
+          "rank_level": 45,
+          "taxon_changes_count": 0,
+          "atlas_id": null,
+          "complete_species_count": 693,
+          "parent_id": 505362,
+          "complete_rank": "subspecies",
+          "name": "Batoidea",
+          "rank": "infraclass",
+          "extinct": false,
+          "id": 448201,
+          "default_photo": {
+            "square_url": "https://static.inaturalist.org/photos/26032212/square.jpg?1538621168",
+            "attribution": "(c) Jay Clue, all rights reserved",
+            "flags": [],
+            "medium_url": "https://static.inaturalist.org/photos/26032212/medium.jpg?1538621168",
+            "id": 26032212,
+            "license_code": null,
+            "original_dimensions": {
+              "width": 1999,
+              "height": 1331
+            },
+            "url": "https://static.inaturalist.org/photos/26032212/square.jpg?1538621168"
+          },
+          "ancestor_ids": [
+            48460,
+            1,
+            2,
+            355675,
+            47273,
+            505362,
+            448201
+          ],
+          "iconic_taxon_name": "Animalia",
+          "preferred_common_name": "Rays"
+        }
+      ],
+      "children": [
+        {
+          "observations_count": 3655,
+          "taxon_schemes_count": 2,
+          "ancestry": "48460/1/2/355675/47273/505362/448201/196615",
+          "is_active": true,
+          "flag_counts": {
+            "unresolved": 0,
+            "resolved": 0
+          },
+          "wikipedia_url": "http://en.wikipedia.org/wiki/Whiptail_stingray",
+          "current_synonymous_taxon_ids": null,
+          "iconic_taxon_id": 1,
+          "rank_level": 30,
+          "taxon_changes_count": 0,
+          "atlas_id": null,
+          "complete_species_count": 100,
+          "parent_id": 196615,
+          "complete_rank": "subspecies",
+          "name": "Dasyatidae",
+          "rank": "family",
+          "extinct": false,
+          "id": 47271,
+          "default_photo": {
+            "square_url": "https://static.inaturalist.org/photos/7644940/square.jpeg?1494065260",
+            "attribution": "(c) Harry Rosenthal, some rights reserved (CC BY-NC)",
+            "flags": [],
+            "medium_url": "https://static.inaturalist.org/photos/7644940/medium.jpeg?1494065260",
+            "id": 7644940,
+            "license_code": "cc-by-nc",
+            "original_dimensions": {
+              "width": 2048,
+              "height": 1311
+            },
+            "url": "https://static.inaturalist.org/photos/7644940/square.jpeg?1494065260"
+          },
+          "ancestor_ids": [
+            48460,
+            1,
+            2,
+            355675,
+            47273,
+            505362,
+            448201,
+            196615,
+            47271
+          ],
+          "iconic_taxon_name": "Animalia",
+          "preferred_common_name": "Whiptail Stingrays"
+        },
+        {
+          "observations_count": 1936,
+          "taxon_schemes_count": 2,
+          "ancestry": "48460/1/2/355675/47273/505362/448201/196615",
+          "is_active": true,
+          "flag_counts": {
+            "unresolved": 0,
+            "resolved": 0
+          },
+          "wikipedia_url": "http://en.wikipedia.org/wiki/Eagle_ray",
+          "current_synonymous_taxon_ids": null,
+          "iconic_taxon_id": 1,
+          "rank_level": 30,
+          "taxon_changes_count": 1,
+          "atlas_id": null,
+          "complete_species_count": 30,
+          "parent_id": 196615,
+          "complete_rank": "subspecies",
+          "name": "Myliobatidae",
+          "rank": "family",
+          "extinct": false,
+          "id": 49298,
+          "default_photo": {
+            "square_url": "https://static.inaturalist.org/photos/27393606/square.jpeg?1540804056",
+            "attribution": "(c) Harry Rosenthal, some rights reserved (CC BY-NC)",
+            "flags": [],
+            "medium_url": "https://static.inaturalist.org/photos/27393606/medium.jpeg?1540804056",
+            "id": 27393606,
+            "license_code": "cc-by-nc",
+            "original_dimensions": {
+              "width": 2048,
+              "height": 1536
+            },
+            "url": "https://static.inaturalist.org/photos/27393606/square.jpeg?1540804056"
+          },
+          "ancestor_ids": [
+            48460,
+            1,
+            2,
+            355675,
+            47273,
+            505362,
+            448201,
+            196615,
+            49298
+          ],
+          "iconic_taxon_name": "Animalia",
+          "preferred_common_name": "Eagle and Devil Rays"
+        },
+        {
+          "observations_count": 1368,
+          "taxon_schemes_count": 1,
+          "ancestry": "48460/1/2/355675/47273/505362/448201/196615",
+          "is_active": true,
+          "flag_counts": {
+            "unresolved": 0,
+            "resolved": 0
+          },
+          "wikipedia_url": "http://en.wikipedia.org/wiki/Urolophidae",
+          "current_synonymous_taxon_ids": null,
+          "iconic_taxon_id": 1,
+          "rank_level": 30,
+          "taxon_changes_count": 0,
+          "atlas_id": null,
+          "complete_species_count": 28,
+          "parent_id": 196615,
+          "complete_rank": "subspecies",
+          "name": "Urolophidae",
+          "rank": "family",
+          "extinct": false,
+          "id": 49200,
+          "default_photo": {
+            "square_url": "https://static.inaturalist.org/photos/5641919/square.jpg?1544134020",
+            "attribution": "(c) Richard Ling, some rights reserved (CC BY-NC-ND)",
+            "flags": [],
+            "medium_url": "https://static.inaturalist.org/photos/5641919/medium.jpg?1544134020",
+            "id": 5641919,
+            "license_code": "cc-by-nc-nd",
+            "original_dimensions": {
+              "width": 1024,
+              "height": 768
+            },
+            "url": "https://static.inaturalist.org/photos/5641919/square.jpg?1544134020"
+          },
+          "ancestor_ids": [
+            48460,
+            1,
+            2,
+            355675,
+            47273,
+            505362,
+            448201,
+            196615,
+            49200
+          ],
+          "iconic_taxon_name": "Animalia",
+          "preferred_common_name": "Round Rays"
+        },
+        {
+          "observations_count": 966,
+          "taxon_schemes_count": 1,
+          "ancestry": "48460/1/2/355675/47273/505362/448201/196615",
+          "is_active": true,
+          "flag_counts": {
+            "unresolved": 0,
+            "resolved": 0
+          },
+          "wikipedia_url": "http://en.wikipedia.org/wiki/Urotrygonidae",
+          "current_synonymous_taxon_ids": null,
+          "iconic_taxon_id": 1,
+          "rank_level": 30,
+          "taxon_changes_count": 0,
+          "atlas_id": null,
+          "complete_species_count": 20,
+          "parent_id": 196615,
+          "complete_rank": "subspecies",
+          "name": "Urotrygonidae",
+          "rank": "family",
+          "extinct": false,
+          "id": 86128,
+          "default_photo": {
+            "square_url": "https://static.inaturalist.org/photos/18516983/square.jpg?1527186504",
+            "attribution": "(c) Comunidad y Biodiversidad A. C., some rights reserved (CC BY-NC)",
+            "flags": [],
+            "medium_url": "https://static.inaturalist.org/photos/18516983/medium.jpg?1527186504",
+            "id": 18516983,
+            "license_code": "cc-by-nc",
+            "original_dimensions": {
+              "width": 1600,
+              "height": 1200
+            },
+            "url": "https://static.inaturalist.org/photos/18516983/square.jpg?1527186504"
+          },
+          "ancestor_ids": [
+            48460,
+            1,
+            2,
+            355675,
+            47273,
+            505362,
+            448201,
+            196615,
+            86128
+          ],
+          "iconic_taxon_name": "Animalia",
+          "preferred_common_name": "American Round Rays"
+        },
+        {
+          "observations_count": 948,
+          "taxon_schemes_count": 1,
+          "ancestry": "48460/1/2/355675/47273/505362/448201/196615",
+          "is_active": true,
+          "flag_counts": {
+            "unresolved": 0,
+            "resolved": 0
+          },
+          "wikipedia_url": null,
+          "current_synonymous_taxon_ids": null,
+          "iconic_taxon_id": 1,
+          "rank_level": 30,
+          "taxon_changes_count": 0,
+          "atlas_id": null,
+          "complete_species_count": 4,
+          "parent_id": 196615,
+          "complete_rank": "subspecies",
+          "name": "Aetobatidae",
+          "rank": "family",
+          "extinct": false,
+          "id": 883878,
+          "default_photo": {
+            "square_url": "https://static.inaturalist.org/photos/11974598/square.jpeg?1511381121",
+            "attribution": "(c) ianbanks, some rights reserved (CC BY-NC), uploaded by Ian Banks",
+            "flags": [],
+            "medium_url": "https://static.inaturalist.org/photos/11974598/medium.jpeg?1511381121",
+            "id": 11974598,
+            "license_code": "cc-by-nc",
+            "original_dimensions": {
+              "width": 960,
+              "height": 817
+            },
+            "url": "https://static.inaturalist.org/photos/11974598/square.jpeg?1511381121"
+          },
+          "ancestor_ids": [
+            48460,
+            1,
+            2,
+            355675,
+            47273,
+            505362,
+            448201,
+            196615,
+            883878
+          ],
+          "iconic_taxon_name": "Animalia",
+          "preferred_common_name": "Painted Rays"
+        },
+        {
+          "observations_count": 269,
+          "taxon_schemes_count": 2,
+          "ancestry": "48460/1/2/355675/47273/505362/448201/196615",
+          "is_active": true,
+          "flag_counts": {
+            "unresolved": 0,
+            "resolved": 0
+          },
+          "wikipedia_url": "http://en.wikipedia.org/wiki/Potamotrygonidae",
+          "current_synonymous_taxon_ids": null,
+          "iconic_taxon_id": 1,
+          "rank_level": 30,
+          "taxon_changes_count": 0,
+          "atlas_id": null,
+          "complete_species_count": 37,
+          "parent_id": 196615,
+          "complete_rank": "subspecies",
+          "name": "Potamotrygonidae",
+          "rank": "family",
+          "extinct": false,
+          "id": 86008,
+          "default_photo": {
+            "square_url": "https://static.inaturalist.org/photos/161464/square.jpg?1545374426",
+            "attribution": "(c) Dave Pape, some rights reserved (CC BY)",
+            "flags": [],
+            "medium_url": "https://static.inaturalist.org/photos/161464/medium.jpg?1545374426",
+            "id": 161464,
+            "license_code": "cc-by",
+            "original_dimensions": {
+              "width": 2048,
+              "height": 932
+            },
+            "url": "https://static.inaturalist.org/photos/161464/square.jpg?1545374426"
+          },
+          "ancestor_ids": [
+            48460,
+            1,
+            2,
+            355675,
+            47273,
+            505362,
+            448201,
+            196615,
+            86008
+          ],
+          "iconic_taxon_name": "Animalia",
+          "preferred_common_name": "River Stingrays"
+        },
+        {
+          "observations_count": 172,
+          "taxon_schemes_count": 1,
+          "ancestry": "48460/1/2/355675/47273/505362/448201/196615",
+          "is_active": true,
+          "flag_counts": {
+            "unresolved": 0,
+            "resolved": 0
+          },
+          "wikipedia_url": "http://en.wikipedia.org/wiki/Butterfly_ray",
+          "current_synonymous_taxon_ids": null,
+          "iconic_taxon_id": 1,
+          "rank_level": 30,
+          "taxon_changes_count": 0,
+          "atlas_id": null,
+          "complete_species_count": 16,
+          "parent_id": 196615,
+          "complete_rank": "subspecies",
+          "name": "Gymnuridae",
+          "rank": "family",
+          "extinct": false,
+          "id": 85801,
+          "default_photo": {
+            "square_url": "https://static.inaturalist.org/photos/31382018/square.jpeg?1550079629",
+            "attribution": "(c) Aristide Takoukam, all rights reserved",
+            "flags": [],
+            "medium_url": "https://static.inaturalist.org/photos/31382018/medium.jpeg?1550079629",
+            "id": 31382018,
+            "license_code": null,
+            "original_dimensions": {
+              "width": 810,
+              "height": 1080
+            },
+            "url": "https://static.inaturalist.org/photos/31382018/square.jpeg?1550079629"
+          },
+          "ancestor_ids": [
+            48460,
+            1,
+            2,
+            355675,
+            47273,
+            505362,
+            448201,
+            196615,
+            85801
+          ],
+          "iconic_taxon_name": "Animalia",
+          "preferred_common_name": "Butterfly Rays"
+        },
+        {
+          "observations_count": 124,
+          "taxon_schemes_count": 1,
+          "ancestry": "48460/1/2/355675/47273/505362/448201/196615",
+          "is_active": true,
+          "flag_counts": {
+            "unresolved": 0,
+            "resolved": 0
+          },
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Rhinoptera",
+          "current_synonymous_taxon_ids": null,
+          "iconic_taxon_id": 1,
+          "rank_level": 30,
+          "taxon_changes_count": 1,
+          "atlas_id": null,
+          "complete_species_count": 8,
+          "parent_id": 196615,
+          "complete_rank": "subspecies",
+          "name": "Rhinopteridae",
+          "rank": "family",
+          "extinct": false,
+          "id": 1032446,
+          "default_photo": {
+            "square_url": "https://static.inaturalist.org/photos/11974633/square.jpeg?1511381196",
+            "attribution": "(c) ianbanks, some rights reserved (CC BY-NC), uploaded by Ian Banks",
+            "flags": [],
+            "medium_url": "https://static.inaturalist.org/photos/11974633/medium.jpeg?1511381196",
+            "id": 11974633,
+            "license_code": "cc-by-nc",
+            "original_dimensions": {
+              "width": 960,
+              "height": 605
+            },
+            "url": "https://static.inaturalist.org/photos/11974633/square.jpeg?1511381196"
+          },
+          "ancestor_ids": [
+            48460,
+            1,
+            2,
+            355675,
+            47273,
+            505362,
+            448201,
+            196615,
+            1032446
+          ],
+          "iconic_taxon_name": "Animalia",
+          "preferred_common_name": "Cownose Rays and Velvet Skates"
+        },
+        {
+          "observations_count": 1,
+          "taxon_schemes_count": 1,
+          "ancestry": "48460/1/2/355675/47273/505362/448201/196615",
+          "is_active": true,
+          "flag_counts": {
+            "unresolved": 0,
+            "resolved": 0
+          },
+          "wikipedia_url": "http://en.wikipedia.org/wiki/Sixgill_stingray",
+          "current_synonymous_taxon_ids": null,
+          "iconic_taxon_id": 1,
+          "rank_level": 30,
+          "taxon_changes_count": 0,
+          "atlas_id": null,
+          "complete_species_count": 1,
+          "parent_id": 196615,
+          "complete_rank": "subspecies",
+          "name": "Hexatrygonidae",
+          "rank": "family",
+          "extinct": false,
+          "id": 85825,
+          "default_photo": null,
+          "ancestor_ids": [
+            48460,
+            1,
+            2,
+            355675,
+            47273,
+            505362,
+            448201,
+            196615,
+            85825
+          ],
+          "iconic_taxon_name": "Animalia",
+          "preferred_common_name": "Sixgill Stingrays"
+        },
+        {
+          "observations_count": 1,
+          "taxon_schemes_count": 1,
+          "ancestry": "48460/1/2/355675/47273/505362/448201/196615",
+          "is_active": true,
+          "flag_counts": {
+            "unresolved": 0,
+            "resolved": 0
+          },
+          "wikipedia_url": "http://en.wikipedia.org/wiki/Deepwater_stingray",
+          "current_synonymous_taxon_ids": null,
+          "iconic_taxon_id": 1,
+          "rank_level": 30,
+          "taxon_changes_count": 0,
+          "atlas_id": null,
+          "complete_species_count": 1,
+          "parent_id": 196615,
+          "complete_rank": "subspecies",
+          "name": "Plesiobatidae",
+          "rank": "family",
+          "extinct": false,
+          "id": 85997,
+          "default_photo": {
+            "square_url": "https://static.inaturalist.org/photos/160954/square.jpg?1544533152",
+            "attribution": "(c) FishWise Professional, some rights reserved (CC BY-NC-SA)",
+            "flags": [],
+            "medium_url": "https://static.inaturalist.org/photos/160954/medium.jpg?1544533152",
+            "id": 160954,
+            "license_code": "cc-by-nc-sa",
+            "original_dimensions": {
+              "width": 720,
+              "height": 400
+            },
+            "url": "https://static.inaturalist.org/photos/160954/square.jpg?1544533152"
+          },
+          "ancestor_ids": [
+            48460,
+            1,
+            2,
+            355675,
+            47273,
+            505362,
+            448201,
+            196615,
+            85997
+          ],
+          "iconic_taxon_name": "Animalia",
+          "preferred_common_name": "Giant Stingarees"
+        },
+        {
+          "observations_count": 0,
+          "taxon_schemes_count": 1,
+          "ancestry": "48460/1/2/355675/47273/505362/448201/196615",
+          "is_active": true,
+          "flag_counts": {
+            "unresolved": 0,
+            "resolved": 0
+          },
+          "wikipedia_url": null,
+          "current_synonymous_taxon_ids": null,
+          "iconic_taxon_id": 1,
+          "rank_level": 30,
+          "taxon_changes_count": 0,
+          "atlas_id": null,
+          "complete_species_count": 2,
+          "parent_id": 196615,
+          "complete_rank": "subspecies",
+          "name": "Zanobatidae",
+          "rank": "family",
+          "extinct": false,
+          "id": 1032433,
+          "default_photo": null,
+          "ancestor_ids": [
+            48460,
+            1,
+            2,
+            355675,
+            47273,
+            505362,
+            448201,
+            196615,
+            1032433
+          ],
+          "iconic_taxon_name": "Animalia"
+        }
+      ],
+      "conservation_statuses": [],
+      "listed_taxa_count": 0,
+      "listed_taxa": [],
+      "wikipedia_summary": "<b>Myliobatiformes</b> is one of the four orders of batoids, cartilaginous fishes related to sharks. They were formerly included in the order Rajiformes, but more recent phylogenetic studies have shown the myliobatiforms to be a monophyletic group, and its more derived members evolved their highly flattened shapes independently of the skates."
+    }
+  ]
+}

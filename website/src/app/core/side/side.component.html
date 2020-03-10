@@ -1,10 +1,11 @@
-<!-- <h1 id="title">Search</h1> -->
+<!-- <h2>Search any Spiecies Inaturalist</h2> -->
 <mat-form-field appearance="outline" color="primary">
-    <mat-label>Search</mat-label>
+    <mat-label>Species</mat-label>
     <input (keyup.enter)="search($event.target.value)" matInput placeholder="Search INat Observation ID">
     <mat-icon matSuffix>search</mat-icon>
 </mat-form-field>
-<h2>Search any Spiecies Inaturalist</h2>
 <ng-container *ngIf="data | async as data">
-    <pb-media *ngFor="let item of data" [img]="item.images.square" [title]="item.name"></pb-media>
+    <div id="results">
+        <pb-media *ngFor="let item of data" [img]="item.image" [title]="item.name"></pb-media>
+    </div>
 </ng-container>

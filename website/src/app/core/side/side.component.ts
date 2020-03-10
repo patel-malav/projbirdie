@@ -21,7 +21,7 @@ export class SideComponent implements OnInit {
   ngOnInit(): void { }
   
   search(value: string) {
-    this.data = this.apollo.query<any>({query: gql`{search(term:"${value}"){id name images{square}}}`}).pipe(map(resp => {
+    this.data = this.apollo.query<any>({query: gql`{search(term:"${value}"){taxaId name image}}`}).pipe(map(resp => {
       console.log(resp.data);
       return resp.data.search
     }));
