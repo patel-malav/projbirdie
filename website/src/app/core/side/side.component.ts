@@ -21,6 +21,10 @@ export class SideComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  /**
+   * Search a term for auto complete
+   * @param value string to search
+   */
   search(value: string) {
     this.case = "search";
     this.search$ = this.apollo
@@ -30,6 +34,10 @@ export class SideComponent implements OnInit {
       .pipe(map(resp => resp.data.search));
   }
 
+  /**
+   * Get Taxanomy of TaxaId Provided
+   * @param id Id to search
+   */
   taxanomy(id: string) {
     this.case = "taxanomy";
     this.taxanomy$ = this.apollo
@@ -41,22 +49,32 @@ export class SideComponent implements OnInit {
     // .query<any>({query: gql`{}`})
   }
 
-  displayObservations(id: string) {
+  /**
+   * Show Observation for the corresponding TaxaId
+   * @param id TaxaId for which observations to show
+   */
+
+  displayObservations(taxaId: string) {
+    this.canvasServ.clear$.next('all');
     let observations: { id: string; geo: { lat: string; long: string } }[];
     this.apollo
       .query<any>({
-        query: gql`{observations(taxaId:${id}){id geo{lat long}}}`
+        query: gql`{observations(taxaId:${taxaId}){id geo{lat long}}}`
       })
       .subscribe(resp => {
         observations = resp.data.observations;
         for (let obs of observations) {
           let lat = parseFloat(obs.geo.lat),
             long = parseFloat(obs.geo.long);
-          this.canvasServ.observations$.next({ lat, long });
+          this.canvasServ.observation$.next({ lat, long });
         }
       });
   }
 
+  /**
+   * Display Data about an Observation.
+   * @param id Observation ID to show
+   */
   observation(id: string) {
     this.observation$ = this.apollo
       .query<any>({

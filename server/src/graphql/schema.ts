@@ -45,8 +45,8 @@ const search = {
     for (let result of resp.data.results) {
       let {
         id: taxaId,
-        name: common,
-        preferred_common_name: sci,
+        name: sci,
+        preferred_common_name: common,
         default_photo: { url: image }
       } = result;
       output.push({ taxaId, name: { common, sci }, image });

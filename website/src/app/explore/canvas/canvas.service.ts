@@ -6,7 +6,15 @@ import gql from 'graphql-tag';
 @Injectable({providedIn: 'root'})
 export class CanvasService {
 
-  observations$ = new Subject<{lat: number, long: number}>();
+  /**
+   * Show Observation by giving lat & long arguments.
+   */
+  observation$ = new Subject<{lat: number, long: number}>();
+  /**
+   * Clear The Observation from the globe by id or "all" to
+   * remove everything.
+   */
+  clear$ = new Subject<string>();
 
   constructor(private apollo: Apollo) { }
 

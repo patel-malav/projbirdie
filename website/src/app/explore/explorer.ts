@@ -23,6 +23,8 @@ export default class Explorer {
         {
             let camera = this.camera, domEle = canvas;
             this.control = new OrbitControls(camera, domEle);
+            this.control.autoRotate = true;
+            this.control.autoRotateSpeed = 1;
             this.control.enableKeys = false;
             this.control.enableZoom = false;
             this.control.enablePan = false;
@@ -45,6 +47,7 @@ export default class Explorer {
 
         // Animation Loop
         this.renderer.setAnimationLoop(() => {
+            this.control.update();
             this.updateAspect();
             this.renderer.render(this.scene, this.camera);
         });
