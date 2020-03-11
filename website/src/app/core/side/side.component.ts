@@ -12,7 +12,7 @@ import { map } from "rxjs/operators";
 })
 export class SideComponent implements OnInit {
   public term: string;
-  public case: string = "search";
+  public case: string;
   public search$: Observable<any>;
   public observation$: Observable<any>;
   public taxanomy$: Observable<any>;

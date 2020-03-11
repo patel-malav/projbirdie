@@ -1,8 +1,11 @@
 import { Component, OnInit, ViewChild, ElementRef, AfterViewInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
+import { OBJLoader2 } from 'three/examples/jsm/loaders/OBJLoader2';
+import { Object3D } from 'three';
+
+import { CanvasService } from './canvas.service';
 import Explorer from '../explorer';
 import Earth from '../objects/earth';
-import { CanvasService } from './canvas.service';
 import Bird from '../objects/bird';
 
 @Component({
@@ -15,8 +18,9 @@ export class CanvasComponent implements OnInit, OnDestroy, AfterViewInit {
   @ViewChild('canvas') private canvasRef: ElementRef;
   private explorer: Explorer;
   private earth: Earth;
-  // private birds: Bird[] = [];
   private subscriptions: Subscription[] = [];
+  private objLoader: OBJLoader2 = new OBJLoader2();
+  private birdModel: Object3D;
 
   private get canvas(): HTMLCanvasElement{
     return this.canvasRef.nativeElement;
@@ -30,12 +34,13 @@ export class CanvasComponent implements OnInit, OnDestroy, AfterViewInit {
     this.explorer = new Explorer(this.canvas);
     this.earth = new Earth(100, 32);
     this.explorer.add(this.earth.mesh);
-
-    // Subscibe to show observation command
+    
+    // // Subscibe to show observation command
     {
+      this.objLoader.load('assets/HUMBIRD.OBJ', (obj)=>{this.birdModel = obj}, null, (err: any) => console.log(`Error Occurend While Loading ObjBird`));
       let sub = this.canvasService.observation$.subscribe({
         next: ({lat, long}) => {
-          let bird = new Bird();
+          let bird = new Bird({model: this.birdModel});
           bird.location(lat, long);
           // this.birds.push(bird);
           this.earth.mesh.add(bird.mesh)
@@ -51,9 +56,8 @@ export class CanvasComponent implements OnInit, OnDestroy, AfterViewInit {
         next: (value) => {
           if(value === 'all') {
             let children = this.earth.mesh.children;
-            console.log(`removing childrens total - ${children.length}`);
+            // console.log(`removing childrens total - ${children.length}`);
             for(let i = children.length - 1; i >= 0; i--) {
-              console.log(`removing - ${i}`);
               this.earth.mesh.remove(children[i]);
             }
           }
@@ -68,4 +72,5 @@ export class CanvasComponent implements OnInit, OnDestroy, AfterViewInit {
   ngOnDestroy(): void {
     this.subscriptions.forEach(sub => sub.unsubscribe());
   }
+
 }
