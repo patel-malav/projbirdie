@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
+import { EngineService } from 'src/app/explore/engine/engine.service';
 import { Observable } from "rxjs";
-import { CanvasService } from "src/app/explore/canvas/canvas.service";
 import { Apollo } from "apollo-angular";
 import gql from "graphql-tag";
 import { map } from "rxjs/operators";
@@ -17,7 +17,7 @@ export class SideComponent implements OnInit {
   public observation$: Observable<any>;
   public taxanomy$: Observable<any>;
 
-  constructor(private apollo: Apollo, private canvasServ: CanvasService) {}
+  constructor(private apollo: Apollo, private engServ: EngineService) {}
 
   ngOnInit(): void {}
 
@@ -55,7 +55,7 @@ export class SideComponent implements OnInit {
    */
 
   displayObservations(taxaId: string) {
-    this.canvasServ.clear$.next('all');
+    // this.canvasServ.clear$.next('all');
     let observations: { id: string; geo: { lat: string; long: string } }[];
     this.apollo
       .query<any>({
@@ -66,7 +66,8 @@ export class SideComponent implements OnInit {
         for (let obs of observations) {
           let lat = parseFloat(obs.geo.lat),
             long = parseFloat(obs.geo.long);
-          this.canvasServ.observation$.next({ lat, long });
+          this.engServ.showBird({id: obs.id, geo:{lat, long}});
+          // this.canvasServ.observation$.next({ lat, long });
         }
       });
   }
