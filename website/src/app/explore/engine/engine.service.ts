@@ -43,6 +43,14 @@ export class EngineService implements OnDestroy {
     }
   }
 
+  public stop(): void{
+    console.log(`removing the canvas`);
+    if (this.frameId !== null) {
+      console.log(`nulll`);
+      cancelAnimationFrame(this.frameId);
+    }
+  }
+
   /**
    * Kickstart's threejs engine with this method.
    * @param canvas <- Canvas Element of DOM.
@@ -72,8 +80,8 @@ export class EngineService implements OnDestroy {
     {
       let fov = 75, // field of view angle
         aspect = this.canvas.clientWidth / this.canvas.clientHeight, // Width / Height
-        near = 0.1, // nearest distance to render from origin
-        far = 600; // farthest distance to render from origin
+        near = 1, // nearest distance to render from origin
+        far = 25; // farthest distance to render from origin
       this.camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
 
       // Cartesian coordinates.
@@ -102,7 +110,7 @@ export class EngineService implements OnDestroy {
         domEle = this.canvas; // Movement Control Element
       this.control = new OrbitControls(camera, domEle);
       this.control.maxDistance = 25;
-      this.control.minDistance = 15;
+      // this.control.minDistance = 15;
       // this.control.autoRotate = true;
       // this.control.autoRotateSpeed = 1;
       this.control.enableKeys = false;
@@ -161,15 +169,23 @@ export class EngineService implements OnDestroy {
   /**
    * Create Earth and add to canvas.
    */
-  public showEarth() {
+  public showEarth(): void {
     new Earth(10, 32);
     this.scene.add(Earth.object);
   }
 
-  public showBird(data: any) {
+  /**
+   * Show The bird based on data.
+   * @param data id: number, geo: {lat, long}
+   */
+  public showBird(data: any):void {
     Bird.model.then(obj => {
       new Bird(data, {model: obj, color: 0x00ff00});
       Earth.object.add(...Bird.objects);
     });
+  }
+
+  public add(obj: Object3D):void {
+    this.scene.add(obj);
   }
 }

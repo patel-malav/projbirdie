@@ -7,6 +7,7 @@ import {
   MeshStandardMaterial
 } from "three";
 import { OBJLoader2 } from "three/examples/jsm/loaders/OBJLoader2";
+import { lonLatToVector3 } from '../lib';
 
 interface data {
   id: string;
@@ -18,17 +19,6 @@ interface data {
 interface opts {
   model?: Object3D;
   color?: number;
-}
-
-function getVector3(lat: number, long: number, alti = 0, radius = 10) {
-  radius += alti;
-  const phi = (90 - lat) * (Math.PI / 180);
-  const theta = (long + 180) * (Math.PI / 180);
-  return new Vector3(
-    -radius * Math.sin(phi) * Math.cos(theta),
-    radius * Math.cos(phi),
-    radius * Math.sin(phi) * Math.sin(theta)
-  );
 }
 
 export default class Bird {
@@ -58,8 +48,9 @@ export default class Bird {
       object.add(new Mesh(geometry, material));
     }
     object.userData = data;
-    object.position.copy(getVector3(data.geo.lat, data.geo.long));
-    object.scale.set(10, 10, 10);
+    lonLatToVector3(data.geo.long, data.geo.lat, object.position);
+    object.position.multiplyScalar(10.5);
+    object.scale.multiplyScalar(5);
     Bird.objects.push(object);
   }
 }
