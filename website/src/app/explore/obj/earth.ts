@@ -10,12 +10,21 @@ import {
   CurvePath,
   BufferGeometry,
   LineBasicMaterial,
-  Line,
   Color,
   Material,
-  Geometry
+  Geometry,
+  LineLoop,
+  BoxGeometry,
+  Line,
+  FontLoader,
+  TextGeometry,
+  MeshBasicMaterial,
+  Font,
+  TextBufferGeometry
 } from "three";
+import { from, of, timer, asyncScheduler } from "rxjs";
 import { lonLatToVector3 } from "../lib";
+import { delay, take } from "rxjs/operators";
 
 interface opts {
   name?: string;
@@ -51,87 +60,107 @@ export default class Earth {
       });
     }
 
-    this.do();
+    Earth.showBorders();
+    Earth.showCountries();
 
     object.add(mesh);
     Earth.object.add(object);
   }
 
-  // Covert points to Vector.
-  private _convCoords(coordinates: number[][]): Vector3[] {
-    let vectors: Vector3[] = [];
-    for (let cord of coordinates) {
-      let [long, lat] = cord;
-      let vec3 = lonLatToVector3(long, lat);
-      vectors.push(vec3.multiplyScalar(10));
-    }
-    return vectors;
-  }
+  /**
+   * Method to show border of countries...
+   */
+  static async showBorders() {
+    // console.log(`Starting Creation of Border and Capitals....`);
+    /**
+     * Draw Border's...
+     */
+    let borders = new Object3D();
+    // Get Data from the server..
+    let data: { type: string; features: any[] } = await fetch(
+      "assets/countires.json"
+    ).then(resp => resp.json());
+    // console.log(`Showing - ${data.type}... Countries`);
 
-  private _convVec3(vectors: Vector3[]): LineCurve3[] {
-    let segments: LineCurve3[] = [];
-    for (let i = 0; i < vectors.length; i++) {
-      if (i === vectors.length) {
-        segments.push(new LineCurve3(vectors[i], vectors[0]));
-      } else {
-        segments.push(new LineCurve3(vectors[i], vectors[i + 1]));
-      }
-    }
-    return segments;
-  }
+    // Observable to as addon to manipulate data if needed future proofing...
+    let countires = from(data.features, asyncScheduler); //.pipe(take(1));
 
-  private _makeShape(
-    segments: LineCurve3[],
-    material: LineBasicMaterial
-  ): Object3D {
-    let curve = new CurvePath<Vector3>();
-    curve.curves = segments;
-    let geometry = new BufferGeometry().setFromPoints(curve.getPoints(1));
-    // if (!material){
-    //   let color = new Color(Math.random() * 255, Math.random()*255, Math.random()*255);
-    //   material = new LineBasicMaterial({color});
-    // }
-    return new Line(geometry, material);
-  }
-
-  private do() {
-    let material = new LineBasicMaterial({color: '#f44336'});
-    fetch("assets/countires.json")
-      .then(resp => resp.json())
-      .then(resp => {
-        for(let feature of resp.features)
-        // for (let i = 0; i < 1; i++) 
-        {
-          let geoData = feature.geometry;
-          // let geoData = resp.features[i].geometry;
-          // let id = resp.features[i].id;
-          // let name = resp.features[i].properties.name;
-          // let r = Math.random() * 255, g = Math.random() * 255, b = Math.random() * 255;
-          // let color = new Color(r,g,b);
-          // let color = new Color(255, 0, 0);
-          // let material = new LineBasicMaterial({color});
-          let obj = new Object3D();
-
-          if (geoData.type === "MultiPolygon") {
-            for (let polygon of geoData.coordinates) {
-              for (let subgon of polygon) {
-                let vectors = this._convCoords(subgon);
-                let segments = this._convVec3(vectors);
-                let shape = this._makeShape(segments, material);
-                obj.add(shape);
-              }
-            }
-          } else {
-            for (let polygon of geoData.coordinates) {
-              let vectors = this._convCoords(polygon);
-              let segments = this._convVec3(vectors);
-              let shape = this._makeShape(segments, material);
-              obj.add(shape);
-
-            }
-          }
-          Earth.object.add(obj);
-        }
+    // Subscribe to data from json...
+    countires.subscribe(data => {
+      // console.log(data.properties.name ,data.geometry);
+      // Material for a country border...
+      let material = new LineBasicMaterial({
+        color: Math.random() * 0xffffff
       });
+
+      // Loop through all polygons...
+      for (let polygon of data.geometry.coordinates) {
+        // GeoJson has Coordinate Array if MultiPolygon then there is one more Nested Array
+        if (data.geometry.type === "MultiPolygon") {
+          polygon = polygon[0];
+        }
+        let obj = new Object3D();
+        let vectors: Vector3[] = []; // Array to store calculated vectors..
+        let segments: LineCurve3[] = []; //  Array to store all LineCurves..
+        let curve = new CurvePath<Vector3>(); // Curve represinting all vectors..
+        let geometry = new BufferGeometry(); // Geometry calcutated from curve
+
+        // Loop through each coordinate in polygon data..
+        for (let coord of polygon) {
+          let vec3 = lonLatToVector3(coord[0], coord[1]);
+          vectors.push(vec3.multiplyScalar(10));
+        }
+        // Make LineCurve's from Vectors..
+        for (let i = 0; i < vectors.length - 1; i++) {
+          let segment = new LineCurve3(vectors[i], vectors[i + 1]);
+          segments.push(segment);
+        }
+
+        // Assigning the curves to segment to make a Conneted figure...
+        curve.curves = segments;
+        // Make geometry from curve..
+        geometry.setFromPoints(curve.getPoints(1));
+        // Line Respresing the a border for a polygon..
+        let border = new LineLoop(geometry, material);
+        // border.position.set(rand,rand,rand);
+
+        // adding to a object represting collection of border's
+
+        borders.add(obj.add(border));
+      }
+    });
+    // Add the borders Object to Earth...
+    Earth.object.add(borders);
+  }
+
+  static async showCountries() {
+    let font = await new Promise((res, rej) => {
+      let loader = new FontLoader();
+      loader.load(`assets/gentilis_regular.typeface.json`, (font: Font) => {res(font)}, null, err => {rej(err)});
+    });
+    let data = await fetch(`assets/capitals.json`).then(resp => resp.json());
+    let capitals: any = from(data.features, asyncScheduler); //.pipe(take(1));
+
+    let config = {
+      font,
+      size: 0.1,
+      height: 0.01
+    }
+    let obj = new Object3D();
+    let material = new MeshBasicMaterial({color: 0xf44336});
+    capitals.subscribe((data: any) => {
+      let {properties: {name}, geometry:{coordinates: [long, lat]}} = data;
+      // console.log(name, lat, long);
+      //@ts-ignore
+      let geometry = new TextBufferGeometry(name, config);
+      let mesh = new Mesh(geometry, material);
+      lonLatToVector3(long, lat, mesh.position);
+      let temp = Object.create(mesh.position.multiplyScalar(10));
+      mesh.lookAt(temp.multiplyScalar(2));
+      // console.log(temp);
+      obj.add(mesh);
+    });
+
+    Earth.object.add(obj);
   }
 }

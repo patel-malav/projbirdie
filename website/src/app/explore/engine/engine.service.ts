@@ -110,7 +110,7 @@ export class EngineService implements OnDestroy {
         domEle = this.canvas; // Movement Control Element
       this.control = new OrbitControls(camera, domEle);
       this.control.maxDistance = 25;
-      // this.control.minDistance = 15;
+      this.control.minDistance = 15;
       // this.control.autoRotate = true;
       // this.control.autoRotateSpeed = 1;
       this.control.enableKeys = false;
@@ -171,6 +171,7 @@ export class EngineService implements OnDestroy {
    */
   public showEarth(): void {
     new Earth(10, 32);
+    // new Earth(10, 32,{wireframe: true});
     this.scene.add(Earth.object);
   }
 
