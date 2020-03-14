@@ -117,6 +117,7 @@ export class EngineService implements OnDestroy {
       // this.control.enableZoom = false;
       this.control.enablePan = false;
       this.control.enableDamping = true;
+      this.control.zoomSpeed = 0.4;
     }
   }
 

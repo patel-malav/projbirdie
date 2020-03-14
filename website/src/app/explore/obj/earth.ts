@@ -38,12 +38,13 @@ export default class Earth {
   static object: Object3D = new Object3D();
   static texture: Texture = new TextureLoader().load(
     `https://i.imgur.com/45naBE9.jpg`
+    // `assets/earth_0`
   );
 
   constructor(radius: number = 10, segment: number = 32, opts?: opts) {
     let object = new Object3D();
     let geometry = new SphereBufferGeometry(radius, segment, segment);
-    let material = new MeshStandardMaterial({ map: Earth.texture });
+    let material = new MeshStandardMaterial({ map: Earth.texture, color: 0xffffff});
     let mesh = new Mesh(geometry, material);
     if (opts?.wireframe) material.wireframe = opts.wireframe;
     if (opts?.name) object.name = name;
@@ -89,8 +90,9 @@ export default class Earth {
     countires.subscribe(data => {
       // console.log(data.properties.name ,data.geometry);
       // Material for a country border...
+      let rand = Math.floor(Math.random() * 360);
       let material = new LineBasicMaterial({
-        color: Math.random() * 0xffffff
+        color: new Color(`hsl(${rand}, 80%, 30%)`)
       });
 
       // Loop through all polygons...
@@ -147,7 +149,7 @@ export default class Earth {
       height: 0.01
     }
     let obj = new Object3D();
-    let material = new MeshBasicMaterial({color: 0xf44336});
+    let material = new MeshBasicMaterial({color: 0xababab});
     capitals.subscribe((data: any) => {
       let {properties: {name}, geometry:{coordinates: [long, lat]}} = data;
       // console.log(name, lat, long);
