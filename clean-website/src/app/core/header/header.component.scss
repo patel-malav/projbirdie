@@ -1,0 +1,123 @@
+:host {
+  min-width: 20rem;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 495;
+  background-color: var(--secondary-background);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Vibur&display=swap");
+
+h1 {
+  margin: 0 1rem;
+  font: 400 2rem/3rem "Vibur", cursive;
+}
+
+nav {
+  background-color: #e91e63;
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  outline: none;
+  display: block;
+  cursor: pointer;
+  span {
+    display: block;
+  }
+}
+
+h2 {
+  font-family: "Vibur", cursive;
+}
+
+.open {
+  position: fixed;
+  top: 3rem;
+  left: 0;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: stretch;
+  min-width: 20rem;
+  width: 100%;
+  height: calc(100vh - 3rem);
+  padding: 2rem 4rem 5rem;
+  li {
+    height: 5rem;
+    padding: 1rem;
+    h2 {
+      margin: 1rem 0;
+      font-size: 2.5rem;
+      text-align: center;
+    }
+  }
+}
+
+.active {
+  color: var(--secondary-background);
+}
+
+.mat-icon-button {
+  margin: 0 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  .mat-icon {
+    width: 2rem;
+    height: 2rem;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+
+// Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+// @media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  nav {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: static;
+    width: min-content;
+    height: 80%;
+    border-radius: 1rem;
+    padding: 0 1rem;
+    margin: 0 1rem;
+    li {
+      height: min-content;
+      padding: 0 1rem;
+      h2 {
+        margin: 0;
+        line-height: 2.5rem;
+        font-size: 1.5rem;
+        text-align: center;
+      }
+    }
+  }
+  .mat-icon-button {
+      display: none;
+  }
+}

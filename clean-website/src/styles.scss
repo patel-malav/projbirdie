@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root {
+  --primary-background: #202124;
+  --secondary-background: #1a1a1d;
+  --primary-font: #ffffff;
+  --secondary-font: #abacad;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-width: 20rem;
+  width: 100%;
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+  background-color: var(--primary-background);
+  color: var(--primary-font);
+}

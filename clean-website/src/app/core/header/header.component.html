@@ -1,0 +1,10 @@
+<h1>{{ title }}</h1>
+<nav [ngClass]="{'open': navOpen}">
+    <ul *ngFor="let route of routes">
+        <li [routerLink]="'/' + route" routerLinkActive="active" matRipple><h2>{{route|titlecase}}</h2></li>
+    </ul>
+</nav>
+<button mat-icon-button color="primary" (click)="toggleNav()">
+    <mat-icon *ngIf="!navOpen">menu</mat-icon>
+    <mat-icon *ngIf="navOpen">close</mat-icon>
+</button>

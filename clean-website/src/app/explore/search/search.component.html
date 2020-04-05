@@ -1,0 +1,24 @@
+<form #searchForm="ngForm">
+  <mat-icon id="search-icon" class="fix">search</mat-icon>
+  <mat-form-field id="search">
+    <input [(ngModel)]="term" matInput type="text" name="term" placeholder="Search" required />
+  </mat-form-field>
+  <mat-icon id="at-icon" class="fix">alternate_email</mat-icon>
+  <mat-form-field id="filter">
+    <mat-select [(ngModel)]="filter" name="filter" value="aves">
+      <mat-option value="aves" selected>Aves</mat-option>
+      <mat-option value="observation">Observation</mat-option>
+      <mat-option value="user">User</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <button
+    id="search-btn"
+    mat-raised-button
+    color="primary"
+    type="button"
+    (click)="search(searchForm.form.value)"
+    [disabled]="!searchForm.form.valid"
+  >
+    Go
+  </button>
+</form>

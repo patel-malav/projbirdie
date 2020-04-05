@@ -1,0 +1,43 @@
+:host {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-content: center;
+  box-sizing: border-box;
+  height: min-content;
+  width: 100%;
+  min-width: 20rem;
+  padding: 0.5rem 1rem;
+  background-color: #000;
+}
+
+h3 {
+  text-align: center;
+  margin: 0;
+  flex: 1 1 8rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: #e91e63;
+}
+
+// Extra small devices (portrait phones, less than 576px)
+
+// Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+// @media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { ... }

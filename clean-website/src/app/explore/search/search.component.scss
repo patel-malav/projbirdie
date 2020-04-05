@@ -1,0 +1,51 @@
+:host {
+    margin-top: .5rem;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: stretch;
+    grid-template-columns: min-content 1fr 0.7fr;
+    grid-template-areas: "s_icon s_input s_input"
+                         "at_icon filter s_btn";
+}
+
+form {
+    display: contents;
+}
+
+mat-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 32px;
+    margin: 8px;
+    color: #c2185b;
+}
+
+mat-form-field {
+    margin: 0 8px;
+}
+
+::ng-deep .mat-form-field-flex {
+    padding-top: 0 !important;
+}
+
+#search-icon {
+    grid-area: s_icon;
+}
+
+#search {
+    grid-area: s_input;
+}
+
+#at-icon {
+    grid-area: at_icon;
+}
+
+#filter {
+    grid-area: filter;
+}
+
+#search-btn {
+    grid-area: s_btn;
+    margin: 0 8px;
+}
