@@ -1,37 +1,22 @@
-// Node Imports
-import path from 'path';
+import path from "path";
+import express from "express";
 
-// Package's Imports
-import express, { Request, Response } from 'express';
-import cors from 'cors';
-import graphqlHTTP from 'express-graphql';
-
-// User Code Imports
-import schema from './graphql/schema';
-
-const _port = 5555; // NGINX Port. # Change to use NODE_ENV
-const _public = path.join(__dirname, './public'); // Angular Static Website Folder.
+/**
+ * Port to start server.
+ */
+const $_port: number = 5555;
+/**
+ * Folder to serve static content.
+ */
+const $_public = path.join(__dirname, "./public");
 const app = express();
 
-app.use(express.json()); // Parse headers and body to JSON format.
+app.use(express.json());
 
-// CORS Middleware
-app.use(cors()); // Enable Cross Origin Resource Sharing.
+// app.use("/graphql");
 
-// GraphQL Middleware
-app.use('/graphql', graphqlHTTP({
-    schema, // GraphQL Schema
-    graphiql: true // Interface to test API Endpoint.
-}));
+app.use("/", express.static($_public));
 
-// Express Static Middleware
-app.use('/', express.static(_public)); //  Serving Angular Static Website Folder to '/' Endpoint.
-
-// app.get('/test', (req, res) => {});
-
-// Sending index.html to any non relative path. # Redirect to Error 404 page
-app.get('*', (req: Request, res: Response) => {
-    res.sendFile('/', {root: _public});
-});
-
-app.listen(_port, () => { console.log(`SERVER STARTED @ http://localhost:${_port}`); });
+app.listen($_port, () =>
+  console.log(`Server Started @http://localhost:${$_port}`)
+);

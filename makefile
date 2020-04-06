@@ -1,3 +1,6 @@
+install:
+	cd server && yarn install && cd ../website && yarn install && echo "\nInstallation Complete..."
+
 dev-website:
 	cd website && ng serve --open=true --host=0.0.0.0
 
