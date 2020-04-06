@@ -19,8 +19,12 @@ export class AvesComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.param = this.route.params;
-    let sub = this.param.subscribe((data) => console.log(data));
-    this.subs.push(sub);
+    this.exploreService.test();
+    // this.exploreService.testCube();
+    // let sub = this.param.subscribe((data) => {
+      // this.exploreService.testEarth();
+    // });
+    // this.subs.push(sub);
   }
 
   ngOnDestroy(): void {

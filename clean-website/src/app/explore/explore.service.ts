@@ -1,4 +1,4 @@
-import { Injectable, OnDestroy, NgZone, OnChanges } from "@angular/core";
+import { Injectable, NgZone, OnChanges } from "@angular/core";
 import {
   WebGLRenderer,
   PerspectiveCamera,
@@ -7,12 +7,13 @@ import {
   BoxGeometry,
   MeshBasicMaterial,
   Mesh,
-  Vector2,
   Color,
 } from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { Subject, Subscription } from "rxjs";
 import { take } from "rxjs/operators";
+import { Earth } from "./objects/earth";
+import { Country } from './objects/country';
 
 @Injectable({
   providedIn: "root",
@@ -99,10 +100,22 @@ export class ExploreService implements OnChanges {
     this.subs.forEach((sub) => sub.unsubscribe());
   }
 
+  public test(): void {
+    console.warn(`Testing Three..`);
+    let country = new Country();
+    this.scene.add(country);
+  }
+
   public testCube(): void {
-    let geometry = new BoxGeometry(4,4,4);
+    let geometry = new BoxGeometry(5, 5, 5);
     let material = new MeshBasicMaterial({ color: 0xffffff });
     let cube = new Mesh(geometry, material);
     this.scene.add(cube);
+  }
+
+  public testEarth(): void {
+    // console.log(new Earth());
+    let earth = new Earth();
+    this.scene.add(earth);
   }
 }
