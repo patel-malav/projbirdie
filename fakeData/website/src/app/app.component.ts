@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from './shared/data.service';
 
 @Component({
   selector: 'pb-root',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'clean-website';
+  title = 'website';
+  constructor(public data: DataService) { }
 }

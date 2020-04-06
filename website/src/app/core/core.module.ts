@@ -1,38 +1,21 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-
-import { HeaderComponent } from './header/header.component';
-import { NavigationComponent } from './navigation/navigation.component';
-import { FooterComponent } from './footer/footer.component';
-import { SideComponent } from './side/side.component';
-
-import { MaterialModule } from '../material/material.module';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { FormsModule } from '@angular/forms';
-import { RouterModule } from '@angular/router';
-import { SharedModule } from '../shared/shared.module';
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { RouterModule } from "@angular/router";
+import { MatButtonModule } from "@angular/material/button";
+import { MatIconModule } from "@angular/material/icon";
+import { MatRippleModule } from "@angular/material/core";
+import { HeaderComponent } from "./header/header.component";
+import { FooterComponent } from "./footer/footer.component";
 
 @NgModule({
-  declarations: [
-    HeaderComponent,
-    NavigationComponent,
-    FooterComponent,
-    SideComponent,
-    DashboardComponent
-  ],
+  declarations: [HeaderComponent, FooterComponent],
   imports: [
     CommonModule,
-    MaterialModule,
-    FormsModule,
-    RouterModule,
-    SharedModule
+    MatButtonModule,
+    MatIconModule,
+    MatRippleModule,
+    RouterModule
   ],
-  exports: [
-    HeaderComponent,
-    NavigationComponent,
-    FooterComponent,
-    SideComponent,
-    DashboardComponent
-  ]
+  exports: [HeaderComponent, FooterComponent]
 })
-export class CoreModule { }
+export class CoreModule {}

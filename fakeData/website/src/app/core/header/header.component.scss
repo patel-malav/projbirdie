@@ -1,0 +1,42 @@
+:host {
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0 1rem;
+    font-family: Vibur;
+    font-size: 2rem;
+    z-index: 2;
+}
+
+nav {
+    margin: 0 1rem;
+    z-index: 1;
+}
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    h1 {
+        margin: 0 3rem;
+    }
+
+    nav {
+        margin: 0 3rem;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { ... }

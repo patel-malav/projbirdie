@@ -1,0 +1,62 @@
+:host {
+    // box-sizing: border-box;
+    height: 100%;
+    min-width: 320px;
+    display: grid;
+    grid-template-rows: 3rem min-content calc(100% - 3rem) min-content;
+    grid-template-columns: 6fr minmax(1fr, 10vw);
+    grid-template-areas: "header header"
+                         "side side"
+                         "main main"
+                         "footer footer";
+}
+
+header {
+    // box-sizing: border-box;
+    background-color: var(--main-header-color);
+    grid-area: header;
+}
+
+main {
+    background-color: var(--main-bg-color);
+    grid-area: main;
+    router-outlet {
+        display: block;
+    }
+}
+
+aside {
+    background-color: var(--main-bg-color);
+    grid-area: side;
+}
+
+footer {
+    background-color: var(--main-footer-color);
+    grid-area: footer;
+}
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    :host {
+        grid-template-rows: 3rem calc(100% - 3rem) min-content;
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas: "header header"
+                             "main side"
+                             "footer footer";
+    }
+    aside {
+        display: block;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { ... }

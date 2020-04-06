@@ -2,11 +2,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { AppRoutingModule } from './app-routing/app-routing.module';
+import { GraphQLModule } from './graphql/graphql.module';
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
-import { AppRoutingModule } from './app-routing.module';
-import { ExploreModule } from './explore/explore.module';
-import { AccountModule } from './account/account.module';
+import { SharedModule } from './shared/shared.module';
+import { FeatureModule } from './feature/feature.module';
+import { ExploreModule } from  './explore/explore.module';
 
 @NgModule({
   declarations: [
@@ -15,11 +19,15 @@ import { AccountModule } from './account/account.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    CoreModule,
     AppRoutingModule,
+    CoreModule,
+    SharedModule.forRoot(),
+    FeatureModule,
     ExploreModule,
-    AccountModule
+    GraphQLModule,
+    HttpClientModule
   ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
