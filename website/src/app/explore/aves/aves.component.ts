@@ -2,6 +2,14 @@ import { Component, OnInit, OnDestroy } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { Observable, Subscription } from "rxjs";
 import { ExploreService } from "../explore.service";
+import gql from "graphql-tag";
+import { Apollo } from 'apollo-angular';
+
+const test = gql`
+  {
+    hello
+  }
+`
 
 @Component({
   selector: "pb-aves",
@@ -14,17 +22,15 @@ export class AvesComponent implements OnInit, OnDestroy {
 
   constructor(
     private route: ActivatedRoute,
-    private exploreService: ExploreService
+    private exploreService: ExploreService,
+    private apollo: Apollo
   ) {}
 
   ngOnInit(): void {
     this.param = this.route.params;
-    this.exploreService.test();
-    // this.exploreService.testCube();
-    // let sub = this.param.subscribe((data) => {
-      // this.exploreService.testEarth();
-    // });
-    // this.subs.push(sub);
+    this.apollo.query({
+      query: test
+    }).subscribe(result => console.log(result.data));
   }
 
   ngOnDestroy(): void {

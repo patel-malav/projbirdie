@@ -1,16 +1,21 @@
-import { Component, OnInit, ViewChild, ElementRef, AfterViewInit, AfterViewChecked, OnChanges, OnDestroy } from "@angular/core";
-import { ExploreService } from '../explore.service';
-import { Subject, Subscription } from 'rxjs';
-import { debounceTime, throttleTime } from 'rxjs/operators';
+import {
+  Component,
+  OnInit,
+  ViewChild,
+  ElementRef,
+  OnDestroy,
+} from "@angular/core";
+import { Subject, Subscription } from "rxjs";
+import { ExploreService } from "../explore.service";
 
 @Component({
   selector: "pb-explore",
   templateUrl: "./explore.component.html",
-  styleUrls: ["./explore.component.scss"]
+  styleUrls: ["./explore.component.scss"],
 })
 export class ExploreComponent implements OnInit, OnDestroy {
-  @ViewChild("canvas", {static: true})
-  private canvas: ElementRef<HTMLCanvasElement>
+  @ViewChild("canvas", { static: true })
+  private canvas: ElementRef<HTMLCanvasElement>;
 
   public resize$ = new Subject<any>();
   private subs: Subscription[] = [];
@@ -20,17 +25,16 @@ export class ExploreComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.exploreService.setCanvas = this.canvas.nativeElement;
     this.exploreService.start();
-    let sub = this.resize$.subscribe(event => this.change(event));
+    let sub = this.resize$.subscribe((event) => this.change(event));
     this.subs.push(sub);
-    // this.exploreService.testCube();
   }
 
   ngOnDestroy(): void {
-    this.subs.forEach(sub => sub.unsubscribe());
+    this.subs.forEach((sub) => sub.unsubscribe());
     this.exploreService.stop();
   }
 
-  private change(event:any) {
+  private change(event: any) {
     this.exploreService.resize(event.newWidth - 16, event.newHeight);
   }
 }

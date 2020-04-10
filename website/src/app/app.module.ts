@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import { GraphQLModule } from './graphql.module';
+// import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
@@ -18,7 +20,9 @@ import { AccountModule } from './account/account.module';
     CoreModule,
     AppRoutingModule,
     ExploreModule,
-    AccountModule
+    AccountModule,
+    // GraphQLModule,
+    // HttpClientModule
   ],
   bootstrap: [AppComponent]
 })

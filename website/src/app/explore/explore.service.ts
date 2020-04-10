@@ -1,24 +1,19 @@
-import { Injectable, NgZone, OnChanges } from "@angular/core";
+import { Injectable, NgZone, OnDestroy } from "@angular/core";
 import {
   WebGLRenderer,
   PerspectiveCamera,
   Scene,
-  AmbientLight,
-  BoxGeometry,
-  MeshBasicMaterial,
-  Mesh,
-  Color,
+  Light,
+  DirectionalLight,
 } from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { Subject, Subscription } from "rxjs";
-import { take } from "rxjs/operators";
-import { Earth } from "./objects/earth";
-import { Country } from './objects/country';
+import { Apollo } from "apollo-angular";
 
 @Injectable({
   providedIn: "root",
 })
-export class ExploreService implements OnChanges {
+export class ExploreService implements OnDestroy {
   // Rxjs Subs
   private subs: Subscription[] = [];
   // Canvas
@@ -29,27 +24,32 @@ export class ExploreService implements OnChanges {
   // Three Globals
   private scene: Scene = new Scene();
   private camera: PerspectiveCamera = new PerspectiveCamera();
-  private light: AmbientLight = new AmbientLight(new Color(0xffffff), 1);
+  private light: Light = new DirectionalLight();
   private renderer: WebGLRenderer;
   private control: OrbitControls;
 
-  constructor(private ngZone: NgZone) {
+  constructor(private ngZone: NgZone, private apollo: Apollo) {
     console.log(`Explore Service Created...`);
     // Camera Stuff
-    this.camera.position.set(0, 0, 8);
+    this.camera.position.set(0, 0, 100);
     this.camera.fov = 75;
     this.camera.near = 1;
-    this.camera.far = 10;
+    this.camera.far = 500;
     this.camera.updateProjectionMatrix();
+    this.scene.add(this.camera);
 
     // Light Stuff
-    this.light.position.set(0, 0, 15);
+    // this.light.lookAt(0,0,0);
+    this.camera.add(this.light);
 
-    this.canvas$.pipe(take(1)).subscribe((canvas) => this.init(canvas));
+    this.canvas$.subscribe((canvas) => this.init(canvas));
   }
 
-  ngOnChanges(): void {
-    console.log(`Changes`);
+  public ngOnDestroy(): void {
+    console.log("Destroying Explore Service... ");
+    this.renderer.setAnimationLoop(null);
+    this.renderer.dispose();
+    this.subs.forEach((sub) => sub.unsubscribe());
   }
 
   private init(canvas: HTMLCanvasElement): void {
@@ -60,12 +60,12 @@ export class ExploreService implements OnChanges {
     });
     this.renderer.setPixelRatio(window.devicePixelRatio);
     this.control = new OrbitControls(this.camera, canvas);
-    this.control.minDistance = 4;
+    this.control.minDistance = 6;
     this.control.maxDistance = 10;
     this.control.autoRotate = true;
     this.control.autoRotateSpeed = 1;
     this.control.enableKeys = false;
-    // this.control.enableZoom = false;
+    this.control.enableZoom = false;
     this.control.enablePan = false;
     this.control.enableDamping = true;
     this.control.zoomSpeed = 0.4;
@@ -79,16 +79,15 @@ export class ExploreService implements OnChanges {
   }
 
   public resize(width: number, height: number): void {
-    // console.log(canvas, canvas.clientWidth, canvas.clientHeight);
-    // console.log(canvas, canvas.width, canvas.height);
-    this.camera.aspect = width / height;
-    this.camera.updateProjectionMatrix();
-    this.renderer.setSize(width, height);
-    // console.log(canvas.clientWidth / canvas.clientHeight);
+    this.ngZone.runOutsideAngular(() => {
+      this.camera.aspect = width / height;
+      this.camera.updateProjectionMatrix();
+      this.renderer.setSize(width, height);
+    });
   }
 
   public start(): void {
-    console.log(`Canvas Rendering Started...`);
+    console.log("Rendering Started...");
     this.renderer.setAnimationLoop(() => {
       this.render();
     });
@@ -96,26 +95,6 @@ export class ExploreService implements OnChanges {
 
   public stop(): void {
     this.renderer.setAnimationLoop(null);
-    this.renderer.dispose();
-    this.subs.forEach((sub) => sub.unsubscribe());
-  }
-
-  public test(): void {
-    console.warn(`Testing Three..`);
-    let country = new Country();
-    this.scene.add(country);
-  }
-
-  public testCube(): void {
-    let geometry = new BoxGeometry(5, 5, 5);
-    let material = new MeshBasicMaterial({ color: 0xffffff });
-    let cube = new Mesh(geometry, material);
-    this.scene.add(cube);
-  }
-
-  public testEarth(): void {
-    // console.log(new Earth());
-    let earth = new Earth();
-    this.scene.add(earth);
+    console.log("Rendering Stopped...");
   }
 }

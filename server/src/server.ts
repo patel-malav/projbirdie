@@ -1,22 +1,16 @@
 import path from "path";
 import express from "express";
+import { ApolloGraphQLServer } from "./graphql";
 
-/**
- * Port to start server.
- */
-const $_port: number = 5555;
-/**
- * Folder to serve static content.
- */
-const $_public = path.join(__dirname, "./public");
+globalThis.port = 5555;
+globalThis.public = path.join(__dirname, "./public");
+globalThis.assets = path.join(__dirname, "./assets");
+
+const graphql = new ApolloGraphQLServer();
 const app = express();
+graphql.applyMiddleware({ app, cors: true });
+app.use("/", express.static(globalThis.public));
 
-app.use(express.json());
-
-// app.use("/graphql");
-
-app.use("/", express.static($_public));
-
-app.listen($_port, () =>
-  console.log(`Server Started @http://localhost:${$_port}`)
+app.listen(globalThis.port, () =>
+  console.log(`🧞 Server Started @http://localhost:${globalThis.port}`)
 );
