@@ -1,14 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// import { GraphQLModule } from './graphql.module';
-// import { HttpClientModule } from '@angular/common/http';
-
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { AppRoutingModule } from './app-routing.module';
 import { ExploreModule } from './explore/explore.module';
 import { AccountModule } from './account/account.module';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { HttpClientModule } from '@angular/common/http';
+import { GraphQLModule } from './graphql.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -17,12 +18,14 @@ import { AccountModule } from './account/account.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    CoreModule,
+    MatProgressBarModule,
+    HttpClientModule,
     AppRoutingModule,
+    GraphQLModule,
+    SharedModule.forRoot(),
+    CoreModule,
     ExploreModule,
-    AccountModule,
-    // GraphQLModule,
-    // HttpClientModule
+    AccountModule
   ],
   bootstrap: [AppComponent]
 })

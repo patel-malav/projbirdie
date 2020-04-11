@@ -2,7 +2,6 @@ import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { ExploreComponent } from "./explore/explore.component";
 import { AvesComponent } from './aves/aves.component';
-import { SearchResultComponent } from './search-result/search-result.component';
 import { ObservationComponent } from './observation/observation.component';
 import { UserComponent } from './user/user.component';
 

@@ -29,9 +29,7 @@ const typeDefs = gql`
 let resolvers = [
   {
     Query: {
-      hello() {
-        return "Hello From ProjBirdie 🐦!!!";
-      },
+      hello: () => new Promise((res) => setTimeout(res, 4000, `Hello From Server 📮`)),
       countries
     },
   },

@@ -1,0 +1,11 @@
+:host {
+  display: block;
+}
+
+mat-progress-bar {
+  height: 2px;
+}
+
+::ng-deep .mat-progress-bar-buffer {
+  background-color: #000;
+}

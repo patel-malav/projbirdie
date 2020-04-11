@@ -1,7 +1,7 @@
 :host {
   display: grid;
   height: 100%;
-  grid-template-rows: min-content 0px auto min-content;
+  grid-template-rows: min-content min-content 0px auto min-content;
 }
 
 router-outlet {

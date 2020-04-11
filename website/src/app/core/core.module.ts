@@ -4,18 +4,21 @@ import { RouterModule } from "@angular/router";
 import { MatButtonModule } from "@angular/material/button";
 import { MatIconModule } from "@angular/material/icon";
 import { MatRippleModule } from "@angular/material/core";
+import { MatProgressBarModule } from "@angular/material/progress-bar";
 import { HeaderComponent } from "./header/header.component";
 import { FooterComponent } from "./footer/footer.component";
+import { ProgressbarComponent } from './progressbar/progressbar.component';
 
 @NgModule({
-  declarations: [HeaderComponent, FooterComponent],
+  declarations: [HeaderComponent, FooterComponent, ProgressbarComponent],
   imports: [
     CommonModule,
+    RouterModule,
     MatButtonModule,
     MatIconModule,
     MatRippleModule,
-    RouterModule
+    MatProgressBarModule,
   ],
-  exports: [HeaderComponent, FooterComponent]
+  exports: [HeaderComponent, FooterComponent, ProgressbarComponent],
 })
 export class CoreModule {}
