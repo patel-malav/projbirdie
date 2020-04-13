@@ -5,10 +5,11 @@ import {
   Scene,
   Light,
   DirectionalLight,
+  Object3D,
 } from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { Subject, Subscription } from "rxjs";
-import { Apollo } from "apollo-angular";
+import { DataService } from "../shared/data.service";
 
 @Injectable({
   providedIn: "root",
@@ -28,13 +29,13 @@ export class ExploreService implements OnDestroy {
   private renderer: WebGLRenderer;
   private control: OrbitControls;
 
-  constructor(private ngZone: NgZone, private apollo: Apollo) {
-    console.log(`Explore Service Created...`);
+  constructor(private ngZone: NgZone, private data: DataService) {
+    console.info(`Explore Service Created...`);
     // Camera Stuff
     this.camera.position.set(0, 0, 100);
     this.camera.fov = 75;
     this.camera.near = 1;
-    this.camera.far = 500;
+    this.camera.far = 50;
     this.camera.updateProjectionMatrix();
     this.scene.add(this.camera);
 
@@ -42,33 +43,38 @@ export class ExploreService implements OnDestroy {
     // this.light.lookAt(0,0,0);
     this.camera.add(this.light);
 
-    this.canvas$.subscribe((canvas) => this.init(canvas));
-  }
-
-  public ngOnDestroy(): void {
-    console.log("Destroying Explore Service... ");
-    this.renderer.setAnimationLoop(null);
-    this.renderer.dispose();
-    this.subs.forEach((sub) => sub.unsubscribe());
+    let sub = this.canvas$.subscribe((canvas) => this.init(canvas));
+    this.subs.push(sub);
   }
 
   private init(canvas: HTMLCanvasElement): void {
+    // Creater Renderer From The Changed Canvas
     this.renderer = new WebGLRenderer({
       canvas: canvas,
       alpha: true,
       antialias: true,
     });
+    // Renderer Settings
     this.renderer.setPixelRatio(window.devicePixelRatio);
+
+    // Created Control From Changed Canvas
+    // Controller Settings
     this.control = new OrbitControls(this.camera, canvas);
     this.control.minDistance = 6;
     this.control.maxDistance = 10;
-    this.control.autoRotate = true;
-    this.control.autoRotateSpeed = 1;
-    this.control.enableKeys = false;
-    this.control.enableZoom = false;
-    this.control.enablePan = false;
-    this.control.enableDamping = true;
-    this.control.zoomSpeed = 0.4;
+    // this.control.autoRotate = true;
+    // this.control.autoRotateSpeed = 1;
+    this.control.enableKeys = false; // Use keys to move
+    // this.control.enableZoom = false; // Zoom
+    this.control.enablePan = false; // Move the camera
+    this.control.enableDamping = true; // Weight to controls
+    // this.control.zoomSpeed = 0.4;
+  }
+
+  public ngOnDestroy(): void {
+    this.renderer.setAnimationLoop(null);
+    this.renderer.dispose();
+    this.subs.forEach((sub) => sub.unsubscribe());
   }
 
   private render() {
@@ -87,7 +93,7 @@ export class ExploreService implements OnDestroy {
   }
 
   public start(): void {
-    console.log("Rendering Started...");
+    console.info("Rendering Started...");
     this.renderer.setAnimationLoop(() => {
       this.render();
     });
@@ -95,6 +101,20 @@ export class ExploreService implements OnDestroy {
 
   public stop(): void {
     this.renderer.setAnimationLoop(null);
-    console.log("Rendering Stopped...");
+    console.info("Rendering Stopped...");
+  }
+
+  public remove(thing: any, target?: any): void {
+    console.log(
+      `Was Ordered to Remove ${thing} From ${target ? target : "Scene"}`
+    );
+  }
+
+  public addObject(obj: Object3D, target?: string): void {
+    // console.log(
+      // `Was Ordered to Add ${obj.name} To ${target ? target : "Scene"}`
+    // );
+    if (!target || target === "scene") this.scene.add(obj);
+    else this.scene.getObjectByName(target).add(obj);
   }
 }

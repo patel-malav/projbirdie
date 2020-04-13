@@ -1,19 +1,35 @@
 import { Injectable, OnDestroy } from "@angular/core";
-import { Subscription, BehaviorSubject, Subject } from "rxjs";
+import { Subscription, Subject } from "rxjs";
 import { Apollo } from "apollo-angular";
 import { DocumentNode } from "graphql";
 import { map } from "rxjs/operators";
+import { OBJLoader2 } from "three/examples/jsm/loaders/OBJLoader2";
+import { Object3D } from "three";
 
 @Injectable()
 export class DataService implements OnDestroy {
   private subs: Subscription[] = [];
   private reqCount = 0;
   public reqCount$ = new Subject<number>();
+  // private objLoader = new OBJLoader2();
 
   constructor(private apollo: Apollo) {}
 
   ngOnDestroy(): void {
     this.subs.forEach((sub) => sub.unsubscribe());
+  }
+
+  /**
+   *
+   * @param path Relative to assets/
+   */
+  public async object(path: string, root: Object3D) {
+    this.reqCount$.next(++this.reqCount);
+    let data = await fetch('/assets/' + path).then(data => data.arrayBuffer());
+    this.reqCount$.next(--this.reqCount);
+    let obj = new OBJLoader2().parse(data);
+    obj.scale.set(6,6,6);
+    return obj;
   }
 
   public query<T>(query: DocumentNode, variables?: any) {

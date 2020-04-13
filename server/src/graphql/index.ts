@@ -17,8 +17,9 @@ const typeDefs = gql`
   }
   type Country {
     name: String!
-    id: String!
-    border: Border
+    cid: ID!
+    model: String
+    # border: Border
   }
   type Query {
     hello: String!
@@ -29,8 +30,9 @@ const typeDefs = gql`
 let resolvers = [
   {
     Query: {
-      hello: () => new Promise((res) => setTimeout(res, 4000, `Hello From Server 📮`)),
-      countries
+      hello: () =>
+        new Promise((res) => setTimeout(res, 4000, `Hello From Server 👨🏼‍💻`)),
+      countries,
     },
   },
 ];
