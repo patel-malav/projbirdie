@@ -2,24 +2,19 @@ import { ApolloServer, gql } from "apollo-server-express";
 import { countries } from "./country";
 
 const typeDefs = gql`
-  enum PolygonType {
-    MULTIPOLYGON
-    POLYGON
-  }
   type Coordinate {
     lat: Float!
     lng: Float!
     alti: Float
   }
-  type Border {
-    type: PolygonType!
-    polygon: [[Coordinate]]!
-  }
   type Country {
     name: String!
     cid: ID!
     model: String
-    # border: Border
+    centroid: Coordinate
+    level: Int
+    displaySize: Int
+    zoomLevel: Int
   }
   type Query {
     hello: String!
@@ -28,6 +23,13 @@ const typeDefs = gql`
 `;
 
 let resolvers = [
+  {
+    Country: {
+      level: () => Math.floor(Math.random() * 10),
+      displaySize: () => 10,
+      zoomLevel: () => 1
+    }
+  },
   {
     Query: {
       hello: () =>

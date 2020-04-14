@@ -32,7 +32,7 @@ export class ExploreService implements OnDestroy {
   constructor(private ngZone: NgZone, private data: DataService) {
     console.info(`Explore Service Created...`);
     // Camera Stuff
-    this.camera.position.set(0, 0, 100);
+    this.camera.position.set(0, 0, 10);
     this.camera.fov = 75;
     this.camera.near = 1;
     this.camera.far = 50;
@@ -68,7 +68,7 @@ export class ExploreService implements OnDestroy {
     // this.control.enableZoom = false; // Zoom
     this.control.enablePan = false; // Move the camera
     this.control.enableDamping = true; // Weight to controls
-    // this.control.zoomSpeed = 0.4;
+    this.control.zoomSpeed = 0.4;
   }
 
   public ngOnDestroy(): void {
@@ -111,9 +111,6 @@ export class ExploreService implements OnDestroy {
   }
 
   public addObject(obj: Object3D, target?: string): void {
-    // console.log(
-      // `Was Ordered to Add ${obj.name} To ${target ? target : "Scene"}`
-    // );
     if (!target || target === "scene") this.scene.add(obj);
     else this.scene.getObjectByName(target).add(obj);
   }

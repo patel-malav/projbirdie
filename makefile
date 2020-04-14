@@ -14,10 +14,10 @@ build-website:
 	cd website && ng build --prod=true --outputPath="../dist/public"
 
 build-server:
-	cd server && cp -u -r ./node_modules ../dist && npx tsc
+	cd server && cp -u -r ./node_modules ./assets ../dist && npx tsc
 
 build:
 	make build-server && make build-website
 
 deploy:
-	rsync -avzz dist/ malav@projbirdie.tech:apps/dist
+	rsync -avzz dist/ malav@projbirdie.tech:apps/dist --delete
