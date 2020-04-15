@@ -59,20 +59,21 @@ export class ExploreComponent implements OnInit, OnDestroy {
               model
               level
               name
+              displaySize
             }
           }
         `
       )
       .pipe(switchMap((res) => of(...res.data.countries, asyncScheduler)))
       // .pipe(take(50))
-      .subscribe(async ({ cid, model: modelPath, level, name }) => {
+      .subscribe(async ({ cid, model: modelPath, level, name, displaySize }) => {
         let obj = new Country(cid, level);
         this.explore.addObject(obj);
         if (modelPath) {
           let model = await this.data.object(modelPath);
           obj.addMesh(model);
           let font = await this.data.font;
-          let nameMesh = new Text(name, font, new Vector3().copy(obj.center), 1);
+          let nameMesh = new Text(name, font, new Vector3().copy(obj.center), displaySize);
           obj.add(nameMesh);
         }
       });

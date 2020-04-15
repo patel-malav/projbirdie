@@ -1,5 +1,5 @@
 import { ApolloServer, gql } from "apollo-server-express";
-import { countries } from "./country";
+import { countries, Country } from "./country";
 
 const typeDefs = gql`
   type Coordinate {
@@ -24,11 +24,7 @@ const typeDefs = gql`
 
 let resolvers = [
   {
-    Country: {
-      level: () => Math.floor(Math.random() * 10),
-      displaySize: () => 10,
-      zoomLevel: () => 1
-    }
+    Country: Country
   },
   {
     Query: {

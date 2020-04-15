@@ -1,10 +1,11 @@
-import path from "path";
-import express from "express";
-import { ApolloGraphQLServer } from "./graphql";
+import { join } from "path";
 
 globalThis.port = 5555;
-globalThis.public = path.join(__dirname, "./public");
-globalThis.assets = path.join(__dirname, "./assets");
+globalThis.public = join(__dirname, "./public");
+globalThis.assets = join(__dirname, "./assets");
+
+import express from "express";
+import { ApolloGraphQLServer } from "./graphql";
 
 const graphql = new ApolloGraphQLServer();
 const app = express();
