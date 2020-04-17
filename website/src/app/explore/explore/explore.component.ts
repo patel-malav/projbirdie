@@ -26,7 +26,7 @@ export class ExploreComponent implements OnInit, OnDestroy {
   public resize$ = new Subject<any>();
   private subs: Subscription[] = [];
 
-  constructor(private explore: ExploreService, private data: DataService) {}
+  constructor(private explore: ExploreService, private data: DataService) { }
 
   ngOnInit(): void {
     this.explore.setCanvas = this.canvas.nativeElement;
@@ -34,10 +34,12 @@ export class ExploreComponent implements OnInit, OnDestroy {
     let resize_sub = this.resize$.subscribe((event) => this.change(event));
     this.subs.push(resize_sub);
 
-    let earth = new Earth();
-    // earth.wireframe = true;
-    this.explore.addObject(earth);
-    this.loadCountries();
+    if(!this.explore.hasObject("Earth")) {
+      let earth = new Earth();
+      // earth.wireframe = true;
+      this.explore.addObject(earth);
+      this.loadCountries();
+    }
   }
 
   ngOnDestroy(): void {
@@ -50,23 +52,8 @@ export class ExploreComponent implements OnInit, OnDestroy {
   }
 
   private loadCountries() {
-    this.data
-      .query<any>(
-        gql`
-          {
-            countries {
-              cid
-              model
-              level
-              name
-              displaySize
-              zoomLevel
-            }
-          }
-        `
-      )
+    this.data.query<any>(gql`{countries{cid model level name displaySize zoomLevel}}`)
       .pipe(switchMap((res) => of(...res.data.countries, asyncScheduler)))
-      // .pipe(take(50))
       .subscribe(async ({ cid, model: modelPath, level, name, displaySize, zoomLevel }) => {
         let obj = new Country(cid, level);
         this.explore.addObject(obj);
@@ -74,11 +61,9 @@ export class ExploreComponent implements OnInit, OnDestroy {
           let model = await this.data.object(modelPath);
           obj.addMesh(model);
           let font = await this.data.font;
-          let nameMesh = new Text(name, font, new Vector3().copy(obj.center), displaySize, zoomLevel);
+          let nameMesh = new Text(name, font, new Vector3().copy(await obj.center), displaySize, zoomLevel);
           obj.add(nameMesh);
         }
       });
   }
-
-  private showNames() {}
 }

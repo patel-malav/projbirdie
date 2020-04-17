@@ -19,9 +19,6 @@ export class ExploreService implements OnDestroy {
   private subs: Subscription[] = [];
   // Canvas
   private canvas$ = new Subject<HTMLCanvasElement>();
-  public set setCanvas(canvas: HTMLCanvasElement) {
-    this.canvas$.next(canvas);
-  }
   // Three Globals
   private scene: Scene = new Scene();
   private camera: PerspectiveCamera = new PerspectiveCamera();
@@ -71,17 +68,21 @@ export class ExploreService implements OnDestroy {
     this.control.zoomSpeed = 0.4;
   }
 
+  private render(): void {
+    this.ngZone.runOutsideAngular(() => {
+      this.control.update();
+      this.renderer.render(this.scene, this.camera);
+    });
+  }
+
   public ngOnDestroy(): void {
     this.renderer.setAnimationLoop(null);
     this.renderer.dispose();
     this.subs.forEach((sub) => sub.unsubscribe());
   }
 
-  private render() {
-    this.ngZone.runOutsideAngular(() => {
-      this.control.update();
-      this.renderer.render(this.scene, this.camera);
-    });
+  public set setCanvas(canvas: HTMLCanvasElement) {
+    this.canvas$.next(canvas);
   }
 
   public resize(width: number, height: number): void {
@@ -104,14 +105,16 @@ export class ExploreService implements OnDestroy {
     console.info("Rendering Stopped...");
   }
 
-  public remove(thing: any, target?: any): void {
-    console.log(
-      `Was Ordered to Remove ${thing} From ${target ? target : "Scene"}`
-    );
-  }
+  public removeObject(thing: any, target?: any): void {}
 
   public addObject(obj: Object3D, target?: string): void {
     if (!target || target === "scene") this.scene.add(obj);
     else this.scene.getObjectByName(target).add(obj);
+  }
+
+  public hasObject(obj: string, target?: string): boolean {
+    if (!target || target === "scene") {
+      return !!this.scene.getObjectByName(obj);
+    }
   }
 }

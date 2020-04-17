@@ -1,6 +1,6 @@
 # Output
 /dist
-
+/mongo
 # IDE - VSCode
 .vscode/*
 !.vscode/settings.json
