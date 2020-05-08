@@ -1,0 +1,2602 @@
+[
+  {
+    "Aruba": [
+      {
+        "id": 8359,
+        "name": "Aruba",
+        "location": "12.5118638478,-69.9710477193",
+        "display_name": "Aruba",
+        "bbox_area": 0.0912516560880371
+      }
+    ]
+  },
+  {
+    "Afghanistan": [
+      {
+        "id": 7341,
+        "name": "Afghanistan",
+        "location": "33.828417674,66.0295875313",
+        "display_name": "Afghanistan",
+        "bbox_area": 131.36332356
+      }
+    ]
+  },
+  {
+    "Angola": [
+      {
+        "id": 7100,
+        "name": "Angola",
+        "location": "-12.2897910478,17.5136666432",
+        "display_name": "Angola",
+        "bbox_area": 170.3329056
+      }
+    ]
+  },
+  {
+    "Anguilla": [
+      {
+        "id": 10281,
+        "name": "Anguilla",
+        "location": "18.2870040301,-63.1394711706",
+        "display_name": "Anguilla",
+        "bbox_area": 0.326253529108897
+      }
+    ]
+  },
+  {
+    "Albania": [
+      {
+        "id": 8505,
+        "name": "Albania",
+        "location": "41.1185972418,20.029100141",
+        "display_name": "Albania",
+        "bbox_area": 5.54736676
+      }
+    ]
+  },
+  {
+    "Aland": [
+      {
+        "id": 10282,
+        "name": "Åland",
+        "location": "60.1712065169,20.3960172484",
+        "display_name": "Åland",
+        "bbox_area": 2.10694614
+      }
+    ]
+  },
+  {
+    "Andorra": [
+      {
+        "id": 8226,
+        "name": "Andorra",
+        "location": "42.5437979851,1.5751494001",
+        "display_name": "Andorra",
+        "bbox_area": 0.08280675
+      }
+    ]
+  },
+  {
+    "United Arab Emirates": [
+      {
+        "id": 7359,
+        "name": "United Arab Emirates",
+        "location": "23.9310254776,54.1226705597",
+        "display_name": "United Arab Emirates",
+        "bbox_area": 17.9636674
+      }
+    ]
+  },
+  {
+    "Argentina": [
+      {
+        "id": 7190,
+        "name": "Argentina",
+        "location": "-35.4928967025,-65.1547796479",
+        "display_name": "Argentina",
+        "bbox_area": 666.183345
+      }
+    ]
+  },
+  {
+    "American Samoa": [
+      {
+        "id": 8548,
+        "name": "American Samoa",
+        "location": "-13.9660192363,-170.0795917838",
+        "display_name": "American Samoa",
+        "bbox_area": 10.95907775995
+      }
+    ]
+  },
+  {
+    "Armenia": [
+      {
+        "id": 8433,
+        "name": "Armenia",
+        "location": "40.2949955026,44.9389461016",
+        "display_name": "Armenia",
+        "bbox_area": 7.85922826
+      }
+    ]
+  },
+  {
+    "Ashmore and Cartier Islands": [
+      {
+        "id": 10460,
+        "name": "Ashmore and Cartier Islands",
+        "location": "-12.3166782986,123.1628275678",
+        "display_name": "Ashmore and Cartier Islands, AU",
+        "bbox_area": 0.27371508864883
+      }
+    ]
+  },
+  { "Antarctica": [] },
+  { "French Southern and Antarctic Lands": [] },
+  {
+    "Antigua and Barbuda": [
+      {
+        "id": 10283,
+        "name": "Antigua and Barbuda",
+        "location": "17.2694506155,-61.8441051949",
+        "display_name": "Antigua and Barbuda",
+        "bbox_area": 0.71149596
+      }
+    ]
+  },
+  {
+    "Australia": [
+      {
+        "id": 6744,
+        "name": "Australia",
+        "location": "-25.6803686499,134.5200758781",
+        "display_name": "Australia",
+        "bbox_area": 2133.44673897
+      }
+    ]
+  },
+  {
+    "Austria": [
+      {
+        "id": 8057,
+        "name": "Austria",
+        "location": "47.587968406,14.1431589677",
+        "display_name": "Austria",
+        "bbox_area": 20.15197392
+      }
+    ]
+  },
+  {
+    "Azerbaijan": [
+      {
+        "id": 8434,
+        "name": "Azerbaijan",
+        "location": "40.2801634445,47.620982421",
+        "display_name": "Azerbaijan",
+        "bbox_area": 20.79675578
+      }
+    ]
+  },
+  {
+    "Burundi": [
+      {
+        "id": 7106,
+        "name": "Burundi",
+        "location": "-3.3678148962,29.8894571805",
+        "display_name": "Burundi",
+        "bbox_area": 3.99183575
+      }
+    ]
+  },
+  {
+    "Belgium": [
+      {
+        "id": 7008,
+        "name": "Belgium",
+        "location": "50.6485545601,4.6413892425",
+        "display_name": "Belgium",
+        "bbox_area": 7.76674596
+      }
+    ]
+  },
+  {
+    "Benin": [
+      {
+        "id": 8509,
+        "name": "Benin",
+        "location": "9.6351032567,2.3387754252",
+        "display_name": "Benin",
+        "bbox_area": 19.1734101
+      }
+    ]
+  },
+  {
+    "Burkina Faso": [
+      {
+        "id": 8510,
+        "name": "Burkina Faso",
+        "location": "12.2742905167,-1.745661537",
+        "display_name": "Burkina Faso",
+        "bbox_area": 45.02191045
+      }
+    ]
+  },
+  {
+    "Bangladesh": [
+      {
+        "id": 7154,
+        "name": "Bangladesh",
+        "location": "23.7297111819,90.306114926",
+        "display_name": "Bangladesh",
+        "bbox_area": 27.71047175
+      }
+    ]
+  },
+  {
+    "Bulgaria": [
+      {
+        "id": 8241,
+        "name": "Bulgaria",
+        "location": "42.7571876377,25.2606330646",
+        "display_name": "Bulgaria",
+        "bbox_area": 18.80603408
+      }
+    ]
+  },
+  {
+    "Bahrain": [
+      {
+        "id": 10284,
+        "name": "Bahrain",
+        "location": "26.0075192737,50.5777568274",
+        "display_name": "Bahrain",
+        "bbox_area": 0.5016333
+      }
+    ]
+  },
+  {
+    "Canada": [
+      {
+        "id": 6712,
+        "name": "Canada",
+        "location": "61.786135123,-97.6582829209",
+        "display_name": "Canada",
+        "bbox_area": 3668.43742174
+      }
+    ]
+  },
+  {
+    "The Bahamas": [
+      {
+        "id": 7313,
+        "name": "Bahamas",
+        "location": "24.4005494694,-76.5843322713",
+        "display_name": "Bahamas",
+        "bbox_area": 50.79113285
+      }
+    ]
+  },
+  {
+    "Bosnia and Herzegovina": [
+      {
+        "id": 8268,
+        "name": "Bosnia and Herzegovina",
+        "location": "44.1753184391,17.7887085131",
+        "display_name": "Bosnia and Herzegovina",
+        "bbox_area": 10.53225062
+      }
+    ]
+  },
+  {
+    "Saint Barthelemy": [
+      {
+        "id": 51356,
+        "name": "Saint-Barthélemy",
+        "location": "17.9221877479,-62.8589426677",
+        "display_name": "Saint-Barthélemy",
+        "bbox_area": 0.0496872065804268
+      }
+    ]
+  },
+  {
+    "Belarus": [
+      {
+        "id": 7578,
+        "name": "Belarus",
+        "location": "53.5461716581,28.0604945625",
+        "display_name": "Belarus",
+        "bbox_area": 47.03974724
+      }
+    ]
+  },
+  {
+    "Belize": [
+      {
+        "id": 6953,
+        "name": "Belize",
+        "location": "17.2027431307,-88.5367450707",
+        "display_name": "Belize",
+        "bbox_area": 4.6562124
+      }
+    ]
+  },
+  {
+    "Bermuda": [
+      {
+        "id": 8638,
+        "name": "Bermuda",
+        "location": "32.3382258954,-64.7690325503",
+        "display_name": "Bermuda",
+        "bbox_area": 0.11127527
+      }
+    ]
+  },
+  {
+    "Bolivia": [
+      {
+        "id": 6783,
+        "name": "Bolivia",
+        "location": "-16.7133389318,-64.6567561552",
+        "display_name": "Bolivia",
+        "bbox_area": 161.17120336
+      }
+    ]
+  },
+  {
+    "Brazil": [
+      {
+        "id": 6878,
+        "name": "Brazil",
+        "location": "-10.790124682,-53.0155689434",
+        "display_name": "Brazil",
+        "bbox_area": 1764.68529057
+      }
+    ]
+  },
+  {
+    "Barbados": [
+      {
+        "id": 10285,
+        "name": "Barbados",
+        "location": "13.1787956549,-59.5572512142",
+        "display_name": "Barbados",
+        "bbox_area": 0.12896706
+      }
+    ]
+  },
+  {
+    "Brunei": [
+      {
+        "id": 7838,
+        "name": "Brunei",
+        "location": "4.5773067619,114.7537064455",
+        "display_name": "Brunei",
+        "bbox_area": 1.3438607
+      }
+    ]
+  },
+  {
+    "Bhutan": [
+      {
+        "id": 7707,
+        "name": "Bhutan",
+        "location": "27.3956722502,90.4284057418",
+        "display_name": "Bhutan",
+        "bbox_area": 5.2270036
+      }
+    ]
+  },
+  {
+    "Botswana": [
+      {
+        "id": 7105,
+        "name": "Botswana",
+        "location": "-22.1884723878,23.813776899",
+        "display_name": "Botswana",
+        "bbox_area": 85.49135848
+      }
+    ]
+  },
+  {
+    "Central African Republic": [
+      {
+        "id": 8356,
+        "name": "Central African Republic",
+        "location": "6.5743196459,20.4856384912",
+        "display_name": "Central African Republic",
+        "bbox_area": 114.63387047
+      }
+    ]
+  },
+  {
+    "Switzerland": [
+      {
+        "id": 7236,
+        "name": "Switzerland",
+        "location": "46.8012371978,8.230334554",
+        "display_name": "Switzerland",
+        "bbox_area": 9.0389646
+      }
+    ]
+  },
+  {
+    "Chile": [
+      {
+        "id": 7182,
+        "name": "Chile",
+        "location": "-39.5018169685,-71.593043242",
+        "display_name": "Chile",
+        "bbox_area": 1661.96437454788
+      }
+    ]
+  },
+  {
+    "China": [
+      {
+        "id": 6903,
+        "name": "China",
+        "location": "36.507419842,103.9687408191",
+        "display_name": "China",
+        "bbox_area": 2170.19387106
+      }
+    ]
+  },
+  {
+    "Ivory Coast": [
+      {
+        "id": 8004,
+        "name": "Côte d'Ivoire",
+        "location": "7.6015983916,-5.5524888814",
+        "display_name": "Côte d'Ivoire",
+        "bbox_area": 39.21588648
+      }
+    ]
+  },
+  {
+    "Cameroon": [
+      {
+        "id": 7546,
+        "name": "Cameroon",
+        "location": "5.6841221705,12.7238115604",
+        "display_name": "Cameroon",
+        "bbox_area": 88.42684647
+      }
+    ]
+  },
+  {
+    "Democratic Republic of the Congo": [
+      {
+        "id": 7054,
+        "name": "Democratic Republic of the Congo",
+        "location": "-2.8791836549,23.6571413295",
+        "display_name": "Democratic Republic of the Congo",
+        "bbox_area": 360.40589312
+      }
+    ]
+  },
+  {
+    "Republic of Congo": [
+      {
+        "id": 7046,
+        "name": "Republic of Congo",
+        "location": "-0.8421477457,15.2355062602",
+        "display_name": "Republic of Congo",
+        "bbox_area": 65.5424504
+      }
+    ]
+  },
+  {
+    "Cook Islands": [
+      {
+        "id": 10288,
+        "name": "Cook Islands",
+        "location": "-15.6670356461,-160.1732782815",
+        "display_name": "Cook Islands",
+        "bbox_area": 113.764932435797
+      }
+    ]
+  },
+  {
+    "Colombia": [
+      {
+        "id": 7196,
+        "name": "Colombia",
+        "location": "3.9678483108,-73.1330030471",
+        "display_name": "Colombia",
+        "bbox_area": 303.27844749
+      }
+    ]
+  },
+  {
+    "Comoros": [
+      {
+        "id": 8421,
+        "name": "Comoros",
+        "location": "-11.9746675179,43.7534416094",
+        "display_name": "Comoros",
+        "bbox_area": 1.63394091
+      }
+    ]
+  },
+  {
+    "Cape Verde": [
+      {
+        "id": 9445,
+        "name": "Cape Verde",
+        "location": "16.0038599576,-24.0119196149",
+        "display_name": "Cape Verde",
+        "bbox_area": 7.0213462
+      }
+    ]
+  },
+  {
+    "Costa Rica": [
+      {
+        "id": 6924,
+        "name": "Costa Rica",
+        "location": "9.9194802561,-84.2264752602",
+        "display_name": "Costa Rica",
+        "bbox_area": 26.5990193
+      }
+    ]
+  },
+  {
+    "Cuba": [
+      {
+        "id": 6944,
+        "name": "Cuba",
+        "location": "21.6632086778,-79.2611857216",
+        "display_name": "Cuba",
+        "bbox_area": 38.78341884
+      }
+    ]
+  },
+  {
+    "Curaçao": [
+      {
+        "id": 10408,
+        "name": "Curaçao",
+        "location": "12.1644476031,-68.9436721827",
+        "display_name": "Curaçao",
+        "bbox_area": 0.317500872504378
+      }
+    ]
+  },
+  {
+    "Cayman Islands": [
+      {
+        "id": 7488,
+        "name": "Cayman Islands",
+        "location": "19.4893436233,-80.6766713015",
+        "display_name": "Cayman Islands",
+        "bbox_area": 1.060525
+      }
+    ]
+  },
+  {
+    "Northern Cyprus": [
+      {
+        "id": 96773,
+        "name": "Northern Cyprus",
+        "location": "35.3302024437,33.6717895112",
+        "display_name": "Northern Cyprus",
+        "bbox_area": 1.5716613
+      }
+    ]
+  },
+  {
+    "Cyprus": [
+      {
+        "id": 10289,
+        "name": "Cyprus",
+        "location": "34.9173060788,33.000901312",
+        "display_name": "Cyprus",
+        "bbox_area": 1.25501937
+      }
+    ]
+  },
+  {
+    "Czech Republic": [
+      {
+        "id": 8264,
+        "name": "Czech Republic",
+        "location": "49.7401770963,15.3286777797",
+        "display_name": "Czech Republic",
+        "bbox_area": 17.03014833
+      }
+    ]
+  },
+  {
+    "Germany": [
+      {
+        "id": 7207,
+        "name": "Germany",
+        "location": "51.1934021156,10.3856612203",
+        "display_name": "Germany",
+        "bbox_area": 71.8929492
+      }
+    ]
+  },
+  {
+    "Djibouti": [
+      {
+        "id": 8511,
+        "name": "Djibouti",
+        "location": "11.7527583985,42.6070252666",
+        "display_name": "Djibouti",
+        "bbox_area": 2.99663364
+      }
+    ]
+  },
+  {
+    "Dominica": [
+      {
+        "id": 6931,
+        "name": "Dominican Republic",
+        "location": "18.8802007273,-70.4388107432",
+        "display_name": "Dominican Republic",
+        "bbox_area": 9.54534752
+      }
+    ]
+  },
+  {
+    "Denmark": [
+      {
+        "id": 8051,
+        "name": "Denmark",
+        "location": "55.9213694965,10.1980269746",
+        "display_name": "Denmark",
+        "bbox_area": 23.7039612
+      }
+    ]
+  },
+  {
+    "Dominican Republic": [
+      {
+        "id": 6931,
+        "name": "Dominican Republic",
+        "location": "18.8802007273,-70.4388107432",
+        "display_name": "Dominican Republic",
+        "bbox_area": 9.54534752
+      }
+    ]
+  },
+  {
+    "Algeria": [
+      {
+        "id": 7300,
+        "name": "Algeria",
+        "location": "28.1849725658,2.6786575407",
+        "display_name": "Algeria",
+        "bbox_area": 375.753018
+      }
+    ]
+  },
+  {
+    "Ecuador": [
+      {
+        "id": 7512,
+        "name": "Ecuador",
+        "location": "-1.3953124538,-79.1851038837",
+        "display_name": "Ecuador",
+        "bbox_area": 113.75845632
+      }
+    ]
+  },
+  {
+    "Egypt": [
+      {
+        "id": 7055,
+        "name": "Egypt",
+        "location": "26.6056786414,29.8268397258",
+        "display_name": "Egypt",
+        "bbox_area": 115.4736971
+      }
+    ]
+  },
+  {
+    "Eritrea": [
+      {
+        "id": 8208,
+        "name": "Eritrea",
+        "location": "15.3926790189,39.0434542859",
+        "display_name": "Eritrea",
+        "bbox_area": 38.12869536
+      }
+    ]
+  },
+  {
+    "Spain": [
+      {
+        "id": 6774,
+        "name": "Spain",
+        "location": "40.1005769737,-3.7261206293",
+        "display_name": "Spain",
+        "bbox_area": 367.1092112
+      }
+    ]
+  },
+  {
+    "Estonia": [
+      {
+        "id": 8265,
+        "name": "Estonia",
+        "location": "58.6998415762,25.2807511613",
+        "display_name": "Estonia",
+        "bbox_area": 15.2871416
+      }
+    ]
+  },
+  {
+    "Ethiopia": [
+      {
+        "id": 6846,
+        "name": "Ethiopia",
+        "location": "8.6297645573,39.6261918276",
+        "display_name": "Ethiopia",
+        "bbox_area": 171.20485789
+      }
+    ]
+  },
+  {
+    "Finland": [
+      {
+        "id": 7020,
+        "name": "Finland",
+        "location": "64.356836857,26.1005185797",
+        "display_name": "Finland",
+        "bbox_area": 114.94050795
+      }
+    ]
+  },
+  {
+    "Fiji": [
+      {
+        "id": 7332,
+        "name": "Fiji",
+        "location": "-17.4819183018,180.0",
+        "display_name": "Fiji",
+        "bbox_area": 43.13438514
+      }
+    ]
+  },
+  {
+    "Falkland Islands": [
+      {
+        "id": 7690,
+        "name": "Falkland Islands",
+        "location": "-51.7325557335,-59.5686570067",
+        "display_name": "Falkland Islands",
+        "bbox_area": 7.82885781677596
+      }
+    ]
+  },
+  {
+    "France": [
+      {
+        "id": 6753,
+        "name": "France",
+        "location": "46.5502287166,2.4848841133",
+        "display_name": "France",
+        "bbox_area": 145.811998
+      }
+    ]
+  },
+  {
+    "Faroe Islands": [
+      {
+        "id": 10290,
+        "name": "Faroe Islands",
+        "location": "62.0325660645,-6.870913672",
+        "display_name": "Faroe Islands",
+        "bbox_area": 1.68628668
+      }
+    ]
+  },
+  {
+    "Federated States of Micronesia": [
+      {
+        "id": 10322,
+        "name": "Federated States of Micronesia",
+        "location": "7.3785048014,150.7332109416",
+        "display_name": "Federated States of Micronesia",
+        "bbox_area": 235.63380449
+      }
+    ]
+  },
+  {
+    "Gabon": [
+      {
+        "id": 7112,
+        "name": "Gabon",
+        "location": "-0.6359096451,11.7390729056",
+        "display_name": "Gabon",
+        "bbox_area": 37.14967508
+      }
+    ]
+  },
+  {
+    "United Kingdom": [
+      {
+        "id": 6857,
+        "name": "United Kingdom",
+        "location": "54.3624102926,-3.0666895582",
+        "display_name": "United Kingdom",
+        "bbox_area": 182.95096716
+      }
+    ]
+  },
+  {
+    "Georgia": [
+      {
+        "id": 8857,
+        "name": "Georgia",
+        "location": "42.1859747148,43.4699940734",
+        "display_name": "Georgia",
+        "bbox_area": 17.0867152
+      }
+    ]
+  },
+  {
+    "Guernsey": [
+      {
+        "id": 10291,
+        "name": "Guernsey",
+        "location": "49.5429247994,-2.4282516299",
+        "display_name": "Guernsey",
+        "bbox_area": 0.27149088
+      }
+    ]
+  },
+  {
+    "Ghana": [
+      {
+        "id": 7228,
+        "name": "Ghana",
+        "location": "7.9309665636,-1.2048483384",
+        "display_name": "Ghana",
+        "bbox_area": 28.9303896
+      }
+    ]
+  },
+  {
+    "Guinea": [
+      {
+        "id": 8512,
+        "name": "Guinea",
+        "location": "10.4316282883,-10.9764832963",
+        "display_name": "Guinea",
+        "bbox_area": 41.15233129
+      }
+    ]
+  },
+  {
+    "Gambia": [
+      {
+        "id": 7063,
+        "name": "Gambia",
+        "location": "13.4439161567,-15.4782887564",
+        "display_name": "Gambia",
+        "bbox_area": 2.45166285
+      }
+    ]
+  },
+  {
+    "Guinea Bissau": [
+      {
+        "id": 8513,
+        "name": "Guinea-Bissau",
+        "location": "11.9145234868,-15.1433047071",
+        "display_name": "Guinea-Bissau",
+        "bbox_area": 5.76106237
+      }
+    ]
+  },
+  {
+    "Equatorial Guinea": [
+      {
+        "id": 9240,
+        "name": "Equatorial Guinea",
+        "location": "1.7400609596,10.1946609119",
+        "display_name": "Equatorial Guinea",
+        "bbox_area": 30.8885876
+      }
+    ]
+  },
+  {
+    "Greece": [
+      {
+        "id": 7094,
+        "name": "Greece",
+        "location": "38.6782826827,23.3393143313",
+        "display_name": "Greece",
+        "bbox_area": 62.71426877
+      }
+    ]
+  },
+  {
+    "Grenada": [
+      {
+        "id": 9992,
+        "name": "Grenada",
+        "location": "12.2270277183,-61.6082981378",
+        "display_name": "Grenada",
+        "bbox_area": 0.33218291
+      }
+    ]
+  },
+  {
+    "Greenland": [
+      {
+        "id": 7704,
+        "name": "Greenland",
+        "location": "74.7056465423,-41.2895597401",
+        "display_name": "Greenland",
+        "bbox_area": 1760.80806814
+      }
+    ]
+  },
+  {
+    "Guatemala": [
+      {
+        "id": 6940,
+        "name": "Guatemala",
+        "location": "15.6772153178,-90.3540767145",
+        "display_name": "Guatemala",
+        "bbox_area": 16.9918245
+      }
+    ]
+  },
+  {
+    "Guam": [
+      {
+        "id": 7316,
+        "name": "Guam",
+        "location": "13.4427595479,144.7694516973",
+        "display_name": "Guam",
+        "bbox_area": 0.233498748404
+      }
+    ]
+  },
+  {
+    "Guyana": [
+      {
+        "id": 8142,
+        "name": "Guyana",
+        "location": "4.8279091965,-58.9728695621",
+        "display_name": "Guyana",
+        "bbox_area": 36.23475034
+      }
+    ]
+  },
+  {
+    "Hong Kong S.A.R.": [
+      {
+        "id": 7613,
+        "name": "Hong Kong",
+        "location": "22.3371967789,114.1490797877",
+        "display_name": "Hong Kong",
+        "bbox_area": 0.31214188
+      }
+    ]
+  },
+  {
+    "Heard Island and McDonald Islands": [
+      {
+        "id": 10293,
+        "name": "Heard Island and McDonald Islands",
+        "location": "-53.0687908693,73.470514008",
+        "display_name": "Heard Island and McDonald Islands",
+        "bbox_area": 0.544702376447104
+      }
+    ]
+  },
+  {
+    "Honduras": [
+      {
+        "id": 6929,
+        "name": "Honduras",
+        "location": "14.8717991997,-86.552669275",
+        "display_name": "Honduras",
+        "bbox_area": 31.36532889
+      }
+    ]
+  },
+  {
+    "Croatia": [
+      {
+        "id": 8196,
+        "name": "Croatia",
+        "location": "44.8048583939,16.2489382006",
+        "display_name": "Croatia",
+        "bbox_area": 25.26071013
+      }
+    ]
+  },
+  {
+    "Haiti": [
+      {
+        "id": 7526,
+        "name": "Haiti",
+        "location": "18.9278609432,-72.7841287635",
+        "display_name": "Haiti",
+        "bbox_area": 6.30423971
+      }
+    ]
+  },
+  {
+    "Hungary": [
+      {
+        "id": 7399,
+        "name": "Hungary",
+        "location": "47.16732285,19.414042984",
+        "display_name": "Hungary",
+        "bbox_area": 19.28715156
+      }
+    ]
+  },
+  {
+    "Indonesia": [
+      {
+        "id": 6966,
+        "name": "Indonesia",
+        "location": "-2.3388243348,117.5997275379",
+        "display_name": "Indonesia",
+        "bbox_area": 792.09984959
+      }
+    ]
+  },
+  {
+    "Isle of Man": [
+      {
+        "id": 10294,
+        "name": "Isle of Man",
+        "location": "54.2160276475,-4.5542406765",
+        "display_name": "Isle of Man",
+        "bbox_area": 0.30467806
+      }
+    ]
+  },
+  {
+    "India": [
+      {
+        "id": 6681,
+        "name": "India",
+        "location": "22.7676078445,79.641640532",
+        "display_name": "India",
+        "bbox_area": 843.03063516
+      }
+    ]
+  },
+  {
+    "Indian Ocean Territories": [
+      {
+        "id": 10295,
+        "name": "British Indian Ocean Territory",
+        "location": "-6.1094407487,71.9117752263",
+        "display_name": "British Indian Ocean Territory",
+        "bbox_area": 3.13280881927198
+      }
+    ]
+  },
+  {
+    "British Indian Ocean Territory": [
+      {
+        "id": 10295,
+        "name": "British Indian Ocean Territory",
+        "location": "-6.1094407487,71.9117752263",
+        "display_name": "British Indian Ocean Territory",
+        "bbox_area": 3.13280881927198
+      }
+    ]
+  },
+  {
+    "Ireland": [
+      {
+        "id": 6718,
+        "name": "Ireland",
+        "location": "53.1859433944,-8.2710240309",
+        "display_name": "Ireland",
+        "bbox_area": 19.66763934
+      }
+    ]
+  },
+  {
+    "Iran": [
+      {
+        "id": 6818,
+        "name": "Iran",
+        "location": "32.5223859244,54.2994670912",
+        "display_name": "Iran",
+        "bbox_area": 284.58424062
+      }
+    ]
+  },
+  {
+    "Iraq": [
+      {
+        "id": 8206,
+        "name": "Iraq",
+        "location": "32.9984847447,43.7568829343",
+        "display_name": "Iraq",
+        "bbox_area": 82.0060821
+      }
+    ]
+  },
+  {
+    "Iceland": [
+      {
+        "id": 7278,
+        "name": "Iceland",
+        "location": "65.0104441096,-18.783118729",
+        "display_name": "Iceland",
+        "bbox_area": 108.9893298
+      }
+    ]
+  },
+  {
+    "Israel": [
+      {
+        "id": 6815,
+        "name": "Israel",
+        "location": "31.4903257354,35.0049417056",
+        "display_name": "Israel",
+        "bbox_area": 6.36896316
+      }
+    ]
+  },
+  {
+    "Italy": [
+      {
+        "id": 6973,
+        "name": "Italy",
+        "location": "42.5896942134,12.1644159206",
+        "display_name": "Italy",
+        "bbox_area": 139.0514364
+      }
+    ]
+  },
+  {
+    "Jamaica": [
+      {
+        "id": 8748,
+        "name": "Jamaica",
+        "location": "18.1299163451,-77.2836628317",
+        "display_name": "Jamaica",
+        "bbox_area": 3.99424176
+      }
+    ]
+  },
+  {
+    "Jersey": [
+      {
+        "id": 10296,
+        "name": "Jersey",
+        "location": "49.2195442023,-2.1053567453",
+        "display_name": "Jersey",
+        "bbox_area": 0.105651
+      }
+    ]
+  },
+  {
+    "Jordan": [
+      {
+        "id": 7833,
+        "name": "Jordan",
+        "location": "31.2475949139,36.7871907122",
+        "display_name": "Jordan",
+        "bbox_area": 18.37744443
+      }
+    ]
+  },
+  {
+    "Japan": [
+      {
+        "id": 6737,
+        "name": "Japan",
+        "location": "36.9843872647,137.2967205848",
+        "display_name": "Japan",
+        "bbox_area": 672.08044488
+      }
+    ]
+  },
+  { "Siachen Glacier": [] },
+  {
+    "Kazakhstan": [
+      {
+        "id": 7342,
+        "name": "Kazakhstan",
+        "location": "48.1471089056,67.1995365839",
+        "display_name": "Kazakhstan",
+        "bbox_area": 607.41758608
+      }
+    ]
+  },
+  {
+    "Kenya": [
+      {
+        "id": 7042,
+        "name": "Kenya",
+        "location": "0.5317738773,37.860393781",
+        "display_name": "Kenya",
+        "bbox_area": 78.8111946
+      }
+    ]
+  },
+  {
+    "Kyrgyzstan": [
+      {
+        "id": 7346,
+        "name": "Kyrgyzstan",
+        "location": "41.4622354864,74.5537744307",
+        "display_name": "Kyrgyzstan",
+        "bbox_area": 44.7336289
+      }
+    ]
+  },
+  {
+    "Cambodia": [
+      {
+        "id": 7002,
+        "name": "Cambodia",
+        "location": "12.6589927289,104.8773506233",
+        "display_name": "Cambodia",
+        "bbox_area": 25.53118512
+      }
+    ]
+  },
+  {
+    "Kiribati": [
+      {
+        "id": 10323,
+        "name": "Kiribati",
+        "location": "-0.3193840873,-178.8468361566",
+        "display_name": "Kiribati",
+        "bbox_area": 1072.66195576608
+      }
+    ]
+  },
+  {
+    "Saint Kitts and Nevis": [
+      {
+        "id": 10297,
+        "name": "Saint Kitts and Nevis",
+        "location": "17.2631988638,-62.6917028131",
+        "display_name": "Saint Kitts and Nevis",
+        "bbox_area": 0.178716
+      }
+    ]
+  },
+  {
+    "South Korea": [
+      {
+        "id": 6891,
+        "name": "South Korea",
+        "location": "36.1534846845,127.5911362466",
+        "display_name": "South Korea",
+        "bbox_area": 35.74921896
+      }
+    ]
+  },
+  {
+    "Kosovo": [
+      {
+        "id": 10298,
+        "name": "Kosovo",
+        "location": "42.5658825484,20.8754521601",
+        "display_name": "Kosovo",
+        "bbox_area": 2.65547312
+      }
+    ]
+  },
+  {
+    "Kuwait": [
+      {
+        "id": 7355,
+        "name": "Kuwait",
+        "location": "29.3530243772,47.6798642917",
+        "display_name": "Kuwait",
+        "bbox_area": 3.35871734
+      }
+    ]
+  },
+  {
+    "Laos": [
+      {
+        "id": 7001,
+        "name": "Laos",
+        "location": "18.4948904775,103.7674743765",
+        "display_name": "Laos",
+        "bbox_area": 64.84681932
+      }
+    ]
+  },
+  {
+    "Liberia": [
+      {
+        "id": 8514,
+        "name": "Liberia",
+        "location": "6.4148569526,-9.3162621874",
+        "display_name": "Liberia",
+        "bbox_area": 17.60747298
+      }
+    ]
+  },
+  {
+    "Lebanon": [
+      {
+        "id": 10299,
+        "name": "Lebanon",
+        "location": "33.9179678974,35.8554380797",
+        "display_name": "Lebanon",
+        "bbox_area": 2.56718432
+      }
+    ]
+  },
+  {
+    "Libya": [
+      {
+        "id": 7305,
+        "name": "Libya",
+        "location": "27.0707772986,18.0349478545",
+        "display_name": "Libya",
+        "bbox_area": 216.55916558
+      }
+    ]
+  },
+  {
+    "Saint Lucia": [
+      {
+        "id": 10300,
+        "name": "Saint Lucia",
+        "location": "13.9022604399,-60.9651515491",
+        "display_name": "Saint Lucia",
+        "bbox_area": 0.1525472
+      }
+    ]
+  },
+  {
+    "Sri Lanka": [
+      {
+        "id": 7077,
+        "name": "Sri Lanka",
+        "location": "7.6938455134,80.6691801587",
+        "display_name": "Sri Lanka",
+        "bbox_area": 9.85274117
+      }
+    ]
+  },
+  {
+    "Liechtenstein": [
+      {
+        "id": 8263,
+        "name": "Liechtenstein",
+        "location": "47.1424740025,9.5538043552",
+        "display_name": "Liechtenstein",
+        "bbox_area": 0.0370095
+      }
+    ]
+  },
+  {
+    "Lesotho": [
+      {
+        "id": 8489,
+        "name": "Lesotho",
+        "location": "-29.5829296353,28.246368368",
+        "display_name": "Lesotho",
+        "bbox_area": 5.1451836
+      }
+    ]
+  },
+  {
+    "Lithuania": [
+      {
+        "id": 8266,
+        "name": "Lithuania",
+        "location": "55.3366992743,23.8791732637",
+        "display_name": "Lithuania",
+        "bbox_area": 15.16599666
+      }
+    ]
+  },
+  {
+    "Luxembourg": [
+      {
+        "id": 8147,
+        "name": "Luxembourg",
+        "location": "49.7765014484,6.0941881488",
+        "display_name": "Luxembourg",
+        "bbox_area": 0.57728046
+      }
+    ]
+  },
+  {
+    "Latvia": [
+      {
+        "id": 8050,
+        "name": "Latvia",
+        "location": "56.8645232819,24.8614282512",
+        "display_name": "Latvia",
+        "bbox_area": 17.72419077
+      }
+    ]
+  },
+  { "Macao S.A.R": [] },
+  {
+    "Saint Martin": [
+      {
+        "id": 51360,
+        "name": "Saint-Martin",
+        "location": "18.098030251,-63.0481308383",
+        "display_name": "Saint-Martin",
+        "bbox_area": 0.0451522932904124
+      }
+    ]
+  },
+  {
+    "Morocco": [
+      {
+        "id": 7306,
+        "name": "Morocco",
+        "location": "31.8615705632,-6.3113600586",
+        "display_name": "Morocco",
+        "bbox_area": 101.4357297
+      }
+    ]
+  },
+  {
+    "Monaco": [
+      {
+        "id": 8227,
+        "name": "Monaco",
+        "location": "43.7130273887,7.4380013399",
+        "display_name": "Monaco",
+        "bbox_area": 0.00438974738922962
+      }
+    ]
+  },
+  {
+    "Moldova": [
+      {
+        "id": 10302,
+        "name": "Moldova",
+        "location": "47.204216223,28.4689660557",
+        "display_name": "Moldova",
+        "bbox_area": 10.71009216
+      }
+    ]
+  },
+  {
+    "Madagascar": [
+      {
+        "id": 7783,
+        "name": "Madagascar",
+        "location": "-19.2909168493,46.7211052153",
+        "display_name": "Madagascar",
+        "bbox_area": 101.7728064
+      }
+    ]
+  },
+  {
+    "Maldives": [
+      {
+        "id": 8425,
+        "name": "Maldives",
+        "location": "3.9513699971,73.1753176947",
+        "display_name": "Maldives",
+        "bbox_area": 9.66679172523277
+      }
+    ]
+  },
+  {
+    "Mexico": [
+      {
+        "id": 6793,
+        "name": "Mexico",
+        "location": "23.9337914811,-102.5957072489",
+        "display_name": "Mexico",
+        "bbox_area": 579.71200836
+      }
+    ]
+  },
+  {
+    "Marshall Islands": [
+      {
+        "id": 10324,
+        "name": "Marshall Islands",
+        "location": "8.9954807785,168.5403528664",
+        "display_name": "Marshall Islands",
+        "bbox_area": 117.612190177567
+      }
+    ]
+  },
+  {
+    "Macedonia": [
+      {
+        "id": 10303,
+        "name": "Macedonia",
+        "location": "41.5929625252,21.6919739359",
+        "display_name": "Macedonia",
+        "bbox_area": 3.78285999
+      }
+    ]
+  },
+  {
+    "Mali": [
+      {
+        "id": 7846,
+        "name": "Mali",
+        "location": "17.3562401082,-3.5221537539",
+        "display_name": "Mali",
+        "bbox_area": 244.62931795
+      }
+    ]
+  },
+  {
+    "Malta": [
+      {
+        "id": 8240,
+        "name": "Malta",
+        "location": "35.9317248496,14.3835041465",
+        "display_name": "Malta",
+        "bbox_area": 0.194296372140963
+      }
+    ]
+  },
+  {
+    "Myanmar": [
+      {
+        "id": 6992,
+        "name": "Myanmar",
+        "location": "20.7223015851,96.5312422309",
+        "display_name": "Myanmar",
+        "bbox_area": 177.65681125
+      }
+    ]
+  },
+  {
+    "Montenegro": [
+      {
+        "id": 8859,
+        "name": "Montenegro",
+        "location": "42.7512607122,19.2237415055",
+        "display_name": "Montenegro",
+        "bbox_area": 3.27893267
+      }
+    ]
+  },
+  {
+    "Mongolia": [
+      {
+        "id": 7347,
+        "name": "Mongolia",
+        "location": "46.8363907819,103.0670326694",
+        "display_name": "Mongolia",
+        "bbox_area": 340.61962036
+      }
+    ]
+  },
+  {
+    "Northern Mariana Islands": [
+      {
+        "id": 8355,
+        "name": "Commonwealth of the Northern Mariana Islands",
+        "location": "16.8170853972,145.5957224362",
+        "display_name": "Commonwealth of the Northern Mariana Islands",
+        "bbox_area": 8.82429433028
+      }
+    ]
+  },
+  {
+    "Mozambique": [
+      {
+        "id": 7134,
+        "name": "Mozambique",
+        "location": "-17.2854428129,35.5988256342",
+        "display_name": "Mozambique",
+        "bbox_area": 175.44693005
+      }
+    ]
+  },
+  {
+    "Mauritania": [
+      {
+        "id": 7133,
+        "name": "Mauritania",
+        "location": "20.2601031134,-10.3625024587",
+        "display_name": "Mauritania",
+        "bbox_area": 153.994701
+      }
+    ]
+  },
+  {
+    "Montserrat": [
+      {
+        "id": 10304,
+        "name": "Montserrat",
+        "location": "16.7440394041,-62.1909513927",
+        "display_name": "Montserrat",
+        "bbox_area": 0.04785986
+      }
+    ]
+  },
+  {
+    "Mauritius": [
+      {
+        "id": 8357,
+        "name": "Mauritius",
+        "location": "-18.7533313378,58.570782141",
+        "display_name": "Mauritius",
+        "bbox_area": 72.1357143
+      }
+    ]
+  },
+  {
+    "Malawi": [
+      {
+        "id": 7113,
+        "name": "Malawi",
+        "location": "-13.2150279407,34.3002705021",
+        "display_name": "Malawi",
+        "bbox_area": 25.1671623
+      }
+    ]
+  },
+  {
+    "Malaysia": [
+      {
+        "id": 7155,
+        "name": "Malaysia",
+        "location": "3.8537501924,109.7545612691",
+        "display_name": "Malaysia",
+        "bbox_area": 129.6925325
+      }
+    ]
+  },
+  {
+    "New Caledonia": [
+      {
+        "id": 7083,
+        "name": "New Caledonia",
+        "location": "-21.1887916107,165.6016344429",
+        "display_name": "New Caledonia",
+        "bbox_area": 90.56140992
+      }
+    ]
+  },
+  {
+    "Namibia": [
+      {
+        "id": 7140,
+        "name": "Namibia",
+        "location": "-22.1486082514,17.1909868449",
+        "display_name": "Namibia",
+        "bbox_area": 162.9809245
+      }
+    ]
+  },
+  {
+    "Niger": [
+      {
+        "id": 8515,
+        "name": "Niger",
+        "location": "17.4243686805,9.4012446214",
+        "display_name": "Niger",
+        "bbox_area": 187.2289604
+      }
+    ]
+  },
+  {
+    "Norfolk Island": [
+      {
+        "id": 7333,
+        "name": "Norfolk Island",
+        "location": "-29.0573308062,167.9534598892",
+        "display_name": "Norfolk Island",
+        "bbox_area": 0.0423387619128735
+      }
+    ]
+  },
+  {
+    "Nigeria": [
+      {
+        "id": 7141,
+        "name": "Nigeria",
+        "location": "9.5623819675,8.0824385899",
+        "display_name": "Nigeria",
+        "bbox_area": 116.1341712
+      }
+    ]
+  },
+  {
+    "Niue": [
+      {
+        "id": 10307,
+        "name": "Niue",
+        "location": "-19.0534668478,-169.8614434108",
+        "display_name": "Niue",
+        "bbox_area": 0.0841210699398997
+      }
+    ]
+  },
+  {
+    "Nicaragua": [
+      {
+        "id": 6925,
+        "name": "Nicaragua",
+        "location": "12.8367940259,-85.0068723652",
+        "display_name": "Nicaragua",
+        "bbox_area": 25.00828624
+      }
+    ]
+  },
+  {
+    "Netherlands": [
+      {
+        "id": 7506,
+        "name": "Netherlands",
+        "location": "52.3341788268,5.524804544",
+        "display_name": "Netherlands",
+        "bbox_area": 11.1814491
+      }
+    ]
+  },
+  {
+    "Norway": [
+      {
+        "id": 7016,
+        "name": "Norway",
+        "location": "64.7276695089,14.1493870178",
+        "display_name": "Norway",
+        "bbox_area": 364.41719712
+      }
+    ]
+  },
+  {
+    "Nepal": [
+      {
+        "id": 7335,
+        "name": "Nepal",
+        "location": "28.2590353809,83.9460735032",
+        "display_name": "Nepal",
+        "bbox_area": 33.38591805
+      }
+    ]
+  },
+  {
+    "Nauru": [
+      {
+        "id": 10308,
+        "name": "Nauru",
+        "location": "-0.5282896803,166.9347478827",
+        "display_name": "Nauru",
+        "bbox_area": 0.02239206
+      }
+    ]
+  },
+  {
+    "New Zealand": [
+      {
+        "id": 6803,
+        "name": "New Zealand",
+        "location": "-41.7170655291,-179.8806",
+        "display_name": "New Zealand",
+        "bbox_area": 432.3481218
+      }
+    ]
+  },
+  {
+    "Oman": [
+      {
+        "id": 7356,
+        "name": "Oman",
+        "location": "20.6043329057,56.1431523048",
+        "display_name": "Oman",
+        "bbox_area": 78.57169848
+      }
+    ]
+  },
+  {
+    "Pakistan": [
+      {
+        "id": 7076,
+        "name": "Pakistan",
+        "location": "29.9266903897,69.3685595665",
+        "display_name": "Pakistan",
+        "bbox_area": 227.79279717
+      }
+    ]
+  },
+  {
+    "Panama": [
+      {
+        "id": 7003,
+        "name": "Panama",
+        "location": "8.503098278,-80.1458318249",
+        "display_name": "Panama",
+        "bbox_area": 14.9563773
+      }
+    ]
+  },
+  {
+    "Pitcairn Islands": [
+      {
+        "id": 10309,
+        "name": "Pitcairn Islands",
+        "location": "-24.461542135,-128.5961285284",
+        "display_name": "Pitcairn Islands",
+        "bbox_area": 7.70722372530968
+      }
+    ]
+  },
+  {
+    "Peru": [
+      {
+        "id": 7513,
+        "name": "Peru",
+        "location": "-9.1982909508,-74.3901533361",
+        "display_name": "Peru",
+        "bbox_area": 233.48214536
+      }
+    ]
+  },
+  {
+    "Philippines": [
+      {
+        "id": 6873,
+        "name": "Philippines",
+        "location": "11.5013096904,122.7083409917",
+        "display_name": "Philippines",
+        "bbox_area": 162.04602505
+      }
+    ]
+  },
+  {
+    "Palau": [
+      {
+        "id": 7320,
+        "name": "Palau",
+        "location": "6.7707876845,133.9730501838",
+        "display_name": "Palau",
+        "bbox_area": 19.32394519
+      }
+    ]
+  },
+  {
+    "Papua New Guinea": [
+      {
+        "id": 7013,
+        "name": "Papua New Guinea",
+        "location": "-6.4926881882,145.9156829654",
+        "display_name": "Papua New Guinea",
+        "bbox_area": 178.70144544
+      }
+    ]
+  },
+  {
+    "Poland": [
+      {
+        "id": 7800,
+        "name": "Poland",
+        "location": "52.1482338661,19.3788685716",
+        "display_name": "Poland",
+        "bbox_area": 58.9637064
+      }
+    ]
+  },
+  {
+    "Portugal": [
+      {
+        "id": 7122,
+        "name": "Portugal",
+        "location": "39.4066096366,-9.3788757662",
+        "display_name": "Portugal",
+        "bbox_area": 305.86791048
+      }
+    ]
+  },
+  {
+    "Puerto Rico": [
+      {
+        "id": 6848,
+        "name": "Puerto Rico",
+        "location": "18.2156983373,-66.414666784",
+        "display_name": "Puerto Rico",
+        "bbox_area": 2.084457840264
+      }
+    ]
+  },
+  {
+    "North Korea": [
+      {
+        "id": 8432,
+        "name": "North Korea",
+        "location": "40.0762297601,127.1235231776",
+        "display_name": "North Korea",
+        "bbox_area": 35.1535734
+      }
+    ]
+  },
+  {
+    "Paraguay": [
+      {
+        "id": 7254,
+        "name": "Paraguay",
+        "location": "-23.2429738578,-58.3927876219",
+        "display_name": "Paraguay",
+        "bbox_area": 69.74119455
+      }
+    ]
+  },
+  {
+    "French Polynesia": [
+      {
+        "id": 6748,
+        "name": "French Polynesia",
+        "location": "-16.7747538897,-144.2490002557",
+        "display_name": "French Polynesia",
+        "bbox_area": 409.5922392
+      }
+    ]
+  },
+  {
+    "Palestine": [
+      {
+        "id": 9753,
+        "name": "Palestine",
+        "location": "31.9028610926,35.1832630593",
+        "display_name": "Palestine",
+        "bbox_area": 1.831312
+      }
+    ]
+  },
+  {
+    "Qatar": [
+      {
+        "id": 7357,
+        "name": "Qatar",
+        "location": "25.3136201721,51.2033340554",
+        "display_name": "Qatar",
+        "bbox_area": 1.76113207
+      }
+    ]
+  },
+  {
+    "Romania": [
+      {
+        "id": 8858,
+        "name": "Romania",
+        "location": "45.8338336627,25.0040909379",
+        "display_name": "Romania",
+        "bbox_area": 44.15879358
+      }
+    ]
+  },
+  {
+    "Rwanda": [
+      {
+        "id": 7142,
+        "name": "Rwanda",
+        "location": "-1.9999549241,29.9259270805",
+        "display_name": "Rwanda",
+        "bbox_area": 3.64861788
+      }
+    ]
+  },
+  {
+    "Russia": [
+      {
+        "id": 7161,
+        "name": "Russia",
+        "location": "62.1477901548,179.99895",
+        "display_name": "Russia",
+        "bbox_area": 6953.37522012
+      }
+    ]
+  },
+  {
+    "Western Sahara": [
+      {
+        "id": 10321,
+        "name": "Western Sahara",
+        "location": "24.6697704684,-13.1813974814",
+        "display_name": "Western Sahara",
+        "bbox_area": 59.1602088
+      }
+    ]
+  },
+  {
+    "Saudi Arabia": [
+      {
+        "id": 7358,
+        "name": "Saudi Arabia",
+        "location": "24.0604421959,44.4756542514",
+        "display_name": "Saudi Arabia",
+        "bbox_area": 344.15671393
+      }
+    ]
+  },
+  {
+    "Sudan": [
+      {
+        "id": 7064,
+        "name": "Sudan",
+        "location": "16.0658285965,30.03800934",
+        "display_name": "Sudan",
+        "bbox_area": 247.30073424
+      }
+    ]
+  },
+  {
+    "South Sudan": [
+      {
+        "id": 51754,
+        "name": "South Sudan",
+        "location": "7.2876695917,30.3214397515",
+        "display_name": "South Sudan",
+        "bbox_area": 102.3965712
+      }
+    ]
+  },
+  {
+    "Senegal": [
+      {
+        "id": 6845,
+        "name": "Senegal",
+        "location": "14.3595159096,-14.5052862303",
+        "display_name": "Senegal",
+        "bbox_area": 27.5236364
+      }
+    ]
+  },
+  {
+    "Singapore": [
+      {
+        "id": 6734,
+        "name": "Singapore",
+        "location": "1.3112398121,103.8130900596",
+        "display_name": "Singapore",
+        "bbox_area": 0.1868093
+      }
+    ]
+  },
+  {
+    "South Georgia and South Sandwich Islands": [
+      {
+        "id": 7985,
+        "name": "South Georgia and the South Sandwich Islands",
+        "location": "-55.0864769222,-34.88940943",
+        "display_name": "South Georgia and the South Sandwich Islands",
+        "bbox_area": 93.075290847356
+      }
+    ]
+  },
+  {
+    "Saint Helena": [
+      {
+        "id": 6685,
+        "name": "Saint Helena",
+        "location": "-27.4943526877,-10.7414915685",
+        "display_name": "Saint Helena",
+        "bbox_area": 289.61725091
+      }
+    ]
+  },
+  {
+    "Sierra Leone": [
+      {
+        "id": 7487,
+        "name": "Sierra Leone",
+        "location": "8.5242592069,-11.83682781",
+        "display_name": "Sierra Leone",
+        "bbox_area": 9.64212174
+      }
+    ]
+  },
+  {
+    "Solomon Islands": [
+      {
+        "id": 7081,
+        "name": "Solomon Islands",
+        "location": "-8.7399871129,159.6377398471",
+        "display_name": "Solomon Islands",
+        "bbox_area": 118.6094491
+      }
+    ]
+  },
+  {
+    "El Salvador": [
+      {
+        "id": 7563,
+        "name": "El Salvador",
+        "location": "13.6936271105,-88.8567451918",
+        "display_name": "El Salvador",
+        "bbox_area": 3.3828192
+      }
+    ]
+  },
+  {
+    "San Marino": [
+      {
+        "id": 10310,
+        "name": "San Marino",
+        "location": "43.9390516491,12.4610010902",
+        "display_name": "San Marino",
+        "bbox_area": 0.0114534
+      }
+    ]
+  },
+  { "Somaliland": [] },
+  {
+    "Somalia": [
+      {
+        "id": 7218,
+        "name": "Somalia",
+        "location": "6.0932839656,45.905509545",
+        "display_name": "Somalia",
+        "bbox_area": 143.97005493
+      }
+    ]
+  },
+  {
+    "Saint Pierre and Miquelon": [
+      {
+        "id": 10311,
+        "name": "Saint Pierre and Miquelon",
+        "location": "46.9201963782,-56.2949359449",
+        "display_name": "Saint Pierre and Miquelon",
+        "bbox_area": 0.18772424
+      }
+    ]
+  },
+  {
+    "Sao Tome and Principe": [
+      {
+        "id": 9173,
+        "name": "Sao Tome and Principe",
+        "location": "0.6365883824,6.8402447787",
+        "display_name": "Sao Tome and Principe",
+        "bbox_area": 2.0014005
+      }
+    ]
+  },
+  {
+    "Republic of Serbia": [
+      {
+        "id": 7147,
+        "name": "Serbia",
+        "location": "44.2260959965,20.7820067335",
+        "bbox_area": 16.5226869
+      }
+    ]
+  },
+  {
+    "Suriname": [
+      {
+        "id": 7827,
+        "name": "Suriname",
+        "location": "4.1649019511,-55.9107698828",
+        "display_name": "Suriname",
+        "bbox_area": 17.50761961
+      }
+    ]
+  },
+  {
+    "Slovakia": [
+      {
+        "id": 8267,
+        "name": "Slovakia",
+        "location": "48.7094538987,19.4835126984",
+        "display_name": "Slovakia",
+        "bbox_area": 10.73405977
+      }
+    ]
+  },
+  {
+    "Slovenia": [
+      {
+        "id": 8228,
+        "name": "Slovenia",
+        "location": "46.121123299,14.8110869653",
+        "display_name": "Slovenia",
+        "bbox_area": 4.64286978
+      }
+    ]
+  },
+  {
+    "Sweden": [
+      {
+        "id": 7599,
+        "name": "Sweden",
+        "location": "62.6351359635,16.8123024471",
+        "display_name": "Sweden",
+        "bbox_area": 182.970417
+      }
+    ]
+  },
+  {
+    "Eswatini": [
+      {
+        "id": 7143,
+        "name": "Eswatini",
+        "location": "-26.565444044,31.4982011516",
+        "display_name": "Eswatini",
+        "bbox_area": 2.15169033
+      }
+    ]
+  },
+  {
+    "Sint Maarten": [
+      {
+        "id": 10411,
+        "name": "Sint Maarten",
+        "location": "18.007905829,-63.0539480174",
+        "display_name": "Sint Maarten",
+        "bbox_area": 0.0250279020912704
+      }
+    ]
+  },
+  {
+    "Seychelles": [
+      {
+        "id": 8358,
+        "name": "Seychelles",
+        "location": "-6.8331688013,52.3078703606",
+        "display_name": "Seychelles",
+        "bbox_area": 67.37167109
+      }
+    ]
+  },
+  {
+    "Syria": [
+      {
+        "id": 8207,
+        "name": "Syria",
+        "location": "35.0260193261,38.5142166405",
+        "display_name": "Syria",
+        "bbox_area": 33.64993708
+      }
+    ]
+  },
+  {
+    "Turks and Caicos Islands": [
+      {
+        "id": 7315,
+        "name": "Turks and Caicos Islands",
+        "location": "21.618750196,-71.7691915729",
+        "display_name": "Turks and Caicos Islands",
+        "bbox_area": 1.32812706
+      }
+    ]
+  },
+  {
+    "Chad": [
+      {
+        "id": 7074,
+        "name": "Chad",
+        "location": "15.3647711227,18.6666533579",
+        "display_name": "Chad",
+        "bbox_area": 168.56512156
+      }
+    ]
+  },
+  {
+    "Togo": [
+      {
+        "id": 8516,
+        "name": "Togo",
+        "location": "8.5182090198,0.9790760112",
+        "display_name": "Togo",
+        "bbox_area": 9.9192856
+      }
+    ]
+  },
+  {
+    "Tajikistan": [
+      {
+        "id": 8435,
+        "name": "Tajikistan",
+        "location": "38.5289402916,71.0375285887",
+        "display_name": "Tajikistan",
+        "bbox_area": 33.86948702
+      }
+    ]
+  },
+  {
+    "Thailand": [
+      {
+        "id": 6967,
+        "name": "Thailand",
+        "location": "14.8500778509,100.9638697092",
+        "display_name": "Thailand",
+        "bbox_area": 123.11363791
+      }
+    ]
+  },
+  {
+    "Turkmenistan": [
+      {
+        "id": 7351,
+        "name": "Turkmenistan",
+        "location": "39.196246987,59.1247435938",
+        "display_name": "Turkmenistan",
+        "bbox_area": 109.46149136
+      }
+    ]
+  },
+  {
+    "East Timor": [
+      {
+        "id": 10314,
+        "name": "East Timor",
+        "location": "-8.7979048888,125.8798126488",
+        "display_name": "East Timor",
+        "bbox_area": 4.79607261
+      }
+    ]
+  },
+  {
+    "Tonga": [
+      {
+        "id": 7841,
+        "name": "Tonga",
+        "location": "-19.6757346628,-174.6785188818",
+        "display_name": "Tonga",
+        "bbox_area": 17.75099719
+      }
+    ]
+  },
+  {
+    "Trinidad and Tobago": [
+      {
+        "id": 7375,
+        "name": "Trinidad and Tobago",
+        "location": "10.5274596866,-61.2514009944",
+        "display_name": "Trinidad and Tobago",
+        "bbox_area": 2.1759624
+      }
+    ]
+  },
+  {
+    "Tunisia": [
+      {
+        "id": 7312,
+        "name": "Tunisia",
+        "location": "34.1771066184,9.6274246945",
+        "display_name": "Tunisia",
+        "bbox_area": 29.99402496
+      }
+    ]
+  },
+  {
+    "Turkey": [
+      {
+        "id": 7183,
+        "name": "Turkey",
+        "location": "39.0789524011,34.9561398237",
+        "display_name": "Turkey",
+        "bbox_area": 121.69848481
+      }
+    ]
+  },
+  {
+    "Taiwan": [
+      {
+        "id": 7887,
+        "name": "Taiwan",
+        "location": "23.7785353908,120.8662501376",
+        "display_name": "Taiwan",
+        "bbox_area": 31.8207746
+      }
+    ]
+  },
+  {
+    "United Republic of Tanzania": [
+      {
+        "id": 7144,
+        "name": "Tanzania",
+        "location": "-6.2757331089,34.8780748501",
+        "display_name": "Tanzania",
+        "bbox_area": 120.12137162
+      }
+    ]
+  },
+  {
+    "Uganda": [
+      {
+        "id": 6968,
+        "name": "Uganda",
+        "location": "1.280186319,32.3911667988",
+        "display_name": "Uganda",
+        "bbox_area": 31.03264944
+      }
+    ]
+  },
+  {
+    "Ukraine": [
+      {
+        "id": 8860,
+        "name": "Ukraine",
+        "location": "48.9511531071,31.4499159404",
+        "display_name": "Ukraine",
+        "bbox_area": 145.27782051
+      }
+    ]
+  },
+  {
+    "Uruguay": [
+      {
+        "id": 7259,
+        "name": "Uruguay",
+        "location": "-32.8324926898,-56.0164066612",
+        "display_name": "Uruguay",
+        "bbox_area": 26.6912637
+      }
+    ]
+  },
+  {
+    "United States of America": [
+      {
+        "id": 1,
+        "name": "United States",
+        "location": "45.9643322098,-113.2690112346",
+        "display_name": "United States",
+        "bbox_area": 6349.38211750929
+      }
+    ]
+  },
+  {
+    "Uzbekistan": [
+      {
+        "id": 7352,
+        "name": "Uzbekistan",
+        "location": "41.7505967044,63.1717714244",
+        "display_name": "Uzbekistan",
+        "bbox_area": 143.84458552
+      }
+    ]
+  },
+  {
+    "Vatican": [
+      {
+        "id": 9213,
+        "name": "Vatican City",
+        "location": "41.9035402376,12.4528609114",
+        "display_name": "Vatican City",
+        "bbox_area": 0.0000955356881612786
+      }
+    ]
+  },
+  {
+    "Saint Vincent and the Grenadines": [
+      {
+        "id": 10317,
+        "name": "Saint Vincent and the Grenadines",
+        "location": "13.0077288605,-61.2380823679",
+        "display_name": "Saint Vincent and the Grenadines",
+        "bbox_area": 0.39408864
+      }
+    ]
+  },
+  {
+    "Venezuela": [
+      {
+        "id": 1303,
+        "name": "Venezuela",
+        "location": "7.2531756423,-66.2092470655",
+        "display_name": "Venezuela",
+        "bbox_area": 204.706278
+      }
+    ]
+  },
+  {
+    "British Virgin Islands": [
+      {
+        "id": 10318,
+        "name": "British Virgin Islands",
+        "location": "18.4990749278,-64.5133264106",
+        "display_name": "British Virgin Islands",
+        "bbox_area": 0.36113888
+      }
+    ]
+  },
+  {
+    "United States Virgin Islands": [
+      {
+        "id": 10319,
+        "name": "United States Virgin Islands",
+        "location": "18.0598178968,-64.8390369643",
+        "display_name": "United States Virgin Islands",
+        "bbox_area": 0.539785389104
+      }
+    ]
+  },
+  {
+    "Vietnam": [
+      {
+        "id": 6847,
+        "name": "Vietnam",
+        "location": "16.4976087771,106.3571637061",
+        "display_name": "Vietnam",
+        "bbox_area": 109.72515942
+      }
+    ]
+  },
+  {
+    "Vanuatu": [
+      {
+        "id": 7082,
+        "name": "Vanuatu",
+        "location": "-16.1740039042,167.8467519951",
+        "display_name": "Vanuatu",
+        "bbox_area": 27.62054976
+      }
+    ]
+  },
+  {
+    "Wallis and Futuna": [
+      {
+        "id": 7334,
+        "name": "Wallis and Futuna",
+        "location": "-13.7513765523,-177.0532564518",
+        "display_name": "Wallis and Futuna",
+        "bbox_area": 2.76545654
+      }
+    ]
+  },
+  {
+    "Samoa": [
+      {
+        "id": 8504,
+        "name": "Samoa",
+        "location": "-13.7615840521,-172.13943144",
+        "display_name": "Samoa",
+        "bbox_area": 1.10155719
+      }
+    ]
+  },
+  {
+    "Yemen": [
+      {
+        "id": 7837,
+        "name": "Yemen",
+        "location": "15.8394046638,47.5551786777",
+        "display_name": "Yemen",
+        "bbox_area": 88.9333179
+      }
+    ]
+  },
+  {
+    "South Africa": [
+      {
+        "id": 6986,
+        "name": "South Africa",
+        "location": "-29.0388888306,25.0694275366",
+        "display_name": "South Africa",
+        "bbox_area": 210.621222
+      }
+    ]
+  },
+  {
+    "Zambia": [
+      {
+        "id": 7145,
+        "name": "Zambia",
+        "location": "-13.4574299472,27.7943287833",
+        "display_name": "Zambia",
+        "bbox_area": 115.36675713
+      }
+    ]
+  },
+  {
+    "Zimbabwe": [
+      {
+        "id": 7146,
+        "name": "Zimbabwe",
+        "location": "-19.0005639576,29.8688391718",
+        "display_name": "Zimbabwe",
+        "bbox_area": 53.26116195
+      }
+    ]
+  }
+]

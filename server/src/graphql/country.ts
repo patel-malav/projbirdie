@@ -13,19 +13,20 @@ export const CountryType = gql`
     model: String
     # centroid: Coordinate
     level: Int
-    displaySize: Int
-    zoomLevel: Int
+    display_size: Int
+    zoom_level: Int
   }
 `;
 
 export const CountryResolver = {
-  level: () => Math.floor(Math.random() * 10),
+  level: (parent: Country) => {
+    return parent.level;
+  },
 };
 
-export async function CountriesQuery(parent: Country, { ids }: Args) {
+export async function CountriesQuery(parent: any, { ids }: Args) {
   if (ids) {
-    console.log(ids);
-    return collection.find({ cid: { $in: ids } });
+    return collection.find({ cid: { $in: ids } }).exec();
   }
-  return collection.find();
+  return collection.find().exec();
 }

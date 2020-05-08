@@ -1,4 +1,4 @@
-import { Schema, model } from 'mongoose';
+import { model, Schema } from 'mongoose';
 
 let countrySchema = {
   name: {
@@ -14,10 +14,14 @@ let countrySchema = {
     type: String,
     required: true,
   },
-  level: Number,
   model: String,
-  zoom_level: Number,
-  display_size: Number,
+  zoomLevel: Number,
+  displaySize: Number,
+  level: Number,
+  inat: {
+    place_id: Number,
+    obs_count: Number,
+  },
 };
 
 export const Country = model('country', new Schema(countrySchema));
