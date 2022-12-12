@@ -18,7 +18,7 @@
     "apollo-server-express": "^2.11.0",
     "axios": "^0.19.2",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "graphql": "^14.6.0",
     "mongoose": "^5.9.9",
     "rxjs": "^6.5.5"
